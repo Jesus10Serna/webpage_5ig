@@ -1,14 +1,12 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import Header from "../Components/header";
-import Footer from "../Components/footer"
+import Header from "./Components/header";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Footer/>
+      <Header></Header>
     </div>
   );
 }
