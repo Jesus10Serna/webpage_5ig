@@ -27,10 +27,14 @@
     height:24px;
     gap: 20px;
 }
+.header-logos img{
+    cursor: pointer;
+}
 
 .img-5ig{
     width: 38px;
     height:38px;
+    cursor: pointer;
 }
 
 .logo-5ig{
@@ -51,6 +55,7 @@
 .header-button:hover {
     background: linear-gradient(#FFD60A, #FBBC05); /* Cambiado a 'background' */
     color: var(--color-primary);
+    cursor: pointer;
 }
 
 
