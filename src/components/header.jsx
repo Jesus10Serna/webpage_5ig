@@ -4,7 +4,7 @@ import home from "./home.svg";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 
-import "./header.css";
+import "../style/header.css";
 
 const header = () => {
   return (
