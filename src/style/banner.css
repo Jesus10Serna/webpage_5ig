@@ -10,6 +10,10 @@
     margin-top: 244px;
     margin-left: 150px;
     position: relative;
+
+}
+.titles{
+    margin-bottom: 17px;
 }
 
 .banner-title h1, .banner-title h2{
@@ -23,3 +27,18 @@
     color: var(--color-yellow-primary)
 }
 
+.banner-buttons .yellow-button, .banner-buttons .blue-button{
+    border: none;
+    border-radius: 16px;
+    width: 387px;
+    height:54px;
+    gap:8px;
+    margin-right: 8px;
+}
+.yellow-button{
+    background-color:var(--color-yellow-primary)
+}
+.blue-button {
+    background: linear-gradient(#0898F2, #003566); /* Cambiado a 'background' */
+    color: white;
+}
