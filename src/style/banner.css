@@ -1,0 +1,25 @@
+.banner-container{
+    margin: 0;
+    padding: 0;
+    background-image: url('../components/background_banner.svg');
+    height: 597px;
+    z-index: -1;
+    display: flex;
+}
+.banner-title{
+    margin-top: 244px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.banner-title h1, .banner-title h2{
+    margin: 0;
+    padding: 0;
+}
+.banner-title h2{
+    color: white;
+}
+.banner-title h1{
+    color: var(--color-yellow-primary)
+}
+
