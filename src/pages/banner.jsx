@@ -6,9 +6,6 @@ const banner = () => {
     window.location.href = `/${route}`;
   };
   return (
-    
-
-
     <div className="banner-container">
       <div className="banner-title">
         <div className="titles">
@@ -16,8 +13,13 @@ const banner = () => {
           <h1>AUTOMATIZAR TU MUNDO</h1>
         </div>
         <div className="banner-buttons">
-          <button className="yellow-button" >Trabaja Con Nosotros</button>
-          <button className="blue-button" onClick={()=>handleRedirect('automate')}>Automatiza Tu Empresa</button>
+          <button className="yellow-button">Trabaja Con Nosotros</button>
+          <button
+            className="blue-button"
+            onClick={() => handleRedirect("automate")}
+          >
+            Automatiza Tu Empresa
+          </button>
         </div>
       </div>
     </div>
