@@ -27,6 +27,10 @@
     color: var(--color-yellow-primary)
 }
 
+.banner-buttons{
+    display: flex;
+}
+
 .banner-buttons .yellow-button, .banner-buttons .blue-button{
     border: none;
     border-radius: 16px;
