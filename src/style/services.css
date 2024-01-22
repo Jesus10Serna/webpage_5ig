@@ -1,0 +1,82 @@
+.services-container{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+                 rgba(0, 53, 102, 0.6), 
+                rgba(0, 6, 10, 0.6),
+                rgba(8, 152, 242, 0.6))
+    ,url('../components/background_services.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 3203px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+.services-title{
+    position: absolute;
+    color: white;
+    top:769px;
+    height: 64px;
+    width: 1352px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.line_1, .line_2{
+    top:770px;
+    background-color:white;
+    height:2px;
+}
+.line_1{
+    width:119px;
+}
+.line_2{
+    width: 892px;
+}
+
+.services-title h2{
+    font-size: 55px;
+    line-height: 85px;
+    letter-spacing: -1.46px;
+    font-weight: 900px;
+}
+
+.services-portfolio{
+    position:absolute;
+    top:871px;
+    width: 1352px;
+    height: 2250px;
+    border-radius: 35px;
+
+}
+
+.services-portfolio-height{
+    z-index: 1000;
+    height:450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ia{
+    background-image: url('../components/ia.svg');
+
+}
+.rpa{
+    background-image: url('../components/rpa.svg');
+}
+.cloud{
+    background-image: url('../components/cloud.svg');
+}
+.bi{
+    background-image: url('../components/bi.svg');
+}
+
+.wdad{
+    background-image: url('../components/wd&ad.svg');
+}
+
