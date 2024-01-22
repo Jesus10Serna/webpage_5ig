@@ -23,8 +23,17 @@ const contact_us = () => {
             </div>
           </div>
         </div>
-
-        <div className="contact-us-forms"></div>
+        <div className="contact-us-forms">
+          <form>
+            <p>¿Quien nos escribe?</p>
+            <input className="input-width" placeholder="Nombre"></input>
+            <p>Regálanos tu correo</p>
+            <input className="input-width" placeholder="E-mail"></input>
+            <p>Déjanos tu mensaje</p>
+            <input className="input-width" placeholder="Mensaje"></input>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -44,6 +44,14 @@
     background-color:var(--color-yellow-primary)
 }
 .blue-button {
-    background: linear-gradient(#0898F2, #003566); /* Cambiado a 'background' */
+    background: linear-gradient(#0898F2, #003566);
     color: white;
+}
+
+.yellow-button:hover{
+    background: linear-gradient(#FFD60A, #FBBC05);
+}
+
+.blue-button:hover{
+    background:linear-gradient( #003566,#0898F2);
 }
