@@ -12,6 +12,7 @@ const Benefits = () => {
             <img src={WspIcon} />
           </span>
           Chatea con nosotros
+          <p>AHHHHHHHHH</p>
         </button>
       </div>
     </div>
