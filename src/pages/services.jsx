@@ -16,6 +16,12 @@ const services = () => {
         <div className="services-portfolio-height bi"></div>
         <div className="services-portfolio-height wdad"></div>
       </div>
+      <div className="services-title second-child">
+        <div className="line_1"></div>
+        <h2>ACERCA DE NOSOTROS</h2>
+        <div className="line_2"></div>
+      </div>
+
     </div>
   );
 };

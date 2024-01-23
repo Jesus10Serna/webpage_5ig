@@ -80,3 +80,31 @@
     background-image: url('../components/wd&ad.svg');
 }
 
+.second-child{
+    position: absolute;
+    color: white;
+    top:3221px;
+    height: 62px;
+    width: 1352px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.second-child h2{
+    width: 630.39px;
+    height: 90px; /*Revisar esto */
+    font-weight:900px;
+    padding: 0;
+    margin:0;
+
+}
+
+.second-child .line_1{
+    width:113px;
+
+}
+.second-child .line_2{
+    width:562px;
+}
+

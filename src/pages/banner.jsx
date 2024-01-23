@@ -13,7 +13,9 @@ const banner = () => {
           <h1>AUTOMATIZAR TU MUNDO</h1>
         </div>
         <div className="banner-buttons">
-          <button className="yellow-button">Trabaja Con Nosotros</button>
+          <button className="yellow-button"
+          onClick={() => handleRedirect("wwus")}
+          >Trabaja Con Nosotros</button>
           <button
             className="blue-button"
             onClick={() => handleRedirect("automate")}
