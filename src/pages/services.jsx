@@ -36,6 +36,7 @@ const services = () => {
             lenguaje natural.
           </p>
           <h3>Siempre de la mano con nuestros clientes y la tecnología</h3>
+          <button className="button-contact-us">Encuentranos en LinkedIn</button>
         </div>
       </div>
     </div>

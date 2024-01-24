@@ -120,9 +120,23 @@
 }
 
 .about-us{
-
     width: 661px;
     height: 457px;
     border-radius: 42px;
     background-image: url("../components/about-us.svg");
+    gap: 40px;
+}
+
+.text-about-us p, .text-about-us h3{
+    color: white;
+}
+
+.button-contact-us{
+    width: 421px;
+    height: 52px;
+    background-color: var(--color-yellow-primary);
+    border: none;
+    padding: 13px 28px;
+    border-radius: 16px;
+    cursor: pointer;
 }
