@@ -50,12 +50,10 @@
     top:871px;
     width: 1352px;
     height: 2250px;
-    border-radius: 35px;
 
 }
 
 .services-portfolio-height{
-    z-index: 1000;
     height:450px;
     background-size: cover;
     background-position: center;
@@ -64,7 +62,7 @@
 
 .ia{
     background-image: url('../components/ia.svg');
-
+    border-radius: 35px 35px 0 0;
 }
 .rpa{
     background-image: url('../components/rpa.svg');
@@ -78,6 +76,7 @@
 
 .wdad{
     background-image: url('../components/wd&ad.svg');
+    border-radius: 0 0 35px 35px;
 }
 
 .second-child{
