@@ -108,3 +108,21 @@
     width:562px;
 }
 
+.container-about-us-grid{
+    position: absolute;
+    width: 1346px;
+    height: 457px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    top:3323px;
+    gap: 24px;
+    text-align: center;
+}
+
+.about-us{
+
+    width: 661px;
+    height: 457px;
+    border-radius: 42px;
+    background-image: url("../components/about-us.svg");
+}

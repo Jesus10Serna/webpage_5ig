@@ -21,7 +21,23 @@ const services = () => {
         <h2>ACERCA DE NOSOTROS</h2>
         <div className="line_2"></div>
       </div>
-
+      <div className="container-about-us-grid">
+        <div className="image-about-us about-us"></div>
+        <div className="text-about-us">
+          <p>
+            Líderes innovadores en inteligencia artificial y automatización, nos
+            especializamos en automatización inteligente, RPA e inteligencia
+            empresarial.
+          </p>
+          <p>
+            Nuestra misión es simplificar los procesos organizativos para los
+            clientes aprovechando tecnologías de vanguardia como la inteligencia
+            artificial, el aprendizaje automático y el procesamiento del
+            lenguaje natural.
+          </p>
+          <h3>Siempre de la mano con nuestros clientes y la tecnología</h3>
+        </div>
+      </div>
     </div>
   );
 };
