@@ -1,0 +1,92 @@
+.benefits-container {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(0, 53, 102, 0.6),
+      rgba(0, 6, 10, 0.6),
+      rgba(8, 152, 242, 0.6)
+    ),
+    url("../components/background_services.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2600px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-title {
+  position: absolute;
+  color: white;
+  top: 504px;
+  height: 85px;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.line_1 {
+  width: 119px;
+  top: 542px;
+  left: 287px;
+  border: 2px, color white (255, 255, 255, 1);
+}
+
+.line_2 {
+  width: 683px;
+  top: 541px;
+  left: 950px;
+  border: 2px, color(white 255, 255, 255, 1);
+}
+
+.advantages-title h2 {
+  font-size: 42px;
+  line-height: 85px;
+  letter-spacing: -1.46px;
+  font-weight: 900px;
+}
+
+.benefit-portfolio {
+  position: absolute;
+  top: 627px;
+  width: 1352px;
+  height: 2250px;
+  /*border-radius: 35px;*/
+}
+
+.benefit-portfolio-height {
+  z-index: 1000;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.remote {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/background_remote.svg");
+  border-radius: 35px 35px 0 0;
+}
+
+.conectivity {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/background_conectivity.svg");
+}
+
+.plan {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/background_plan.svg");
+}
+
+.company {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/background_company.svg");
+}
+
+.certfied {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/background_certified.svg");
+  border-radius: 0 0 35px 35px;
+}
