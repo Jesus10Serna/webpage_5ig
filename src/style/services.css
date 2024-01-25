@@ -52,6 +52,8 @@
   top: 871px;
   width: 1352px;
   height: 2250px;
+  box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.45);
+  border-radius: 35px;
 }
 
 .services-portfolio-height {
@@ -66,10 +68,33 @@
     url("../components/ia.svg");
   border-radius: 35px 35px 0 0;
 }
+.ia h2, .rpa h2, .cloud h2, .bi h2, .wdad h2{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    gap: 40px;
+    width: 536px;
+    height: 178px;
+    color: white;
+    margin-top: 193px;
+}
+.ia h2, .cloud h2, .wdad h2{
+    
+    margin-left: 141px;
+}
+.rpa h2, .bi h2{
+    margin-left:878px;
+    width: 337px;
+
+}
+
+
 .rpa {
   background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
     url("../components/rpa.svg");
 }
+
+
 .cloud {
   background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
     url("../components/cloud.svg");

@@ -10,11 +10,27 @@ const services = () => {
         <div className="line_2"></div>
       </div>
       <div className="services-portfolio">
-        <div className="services-portfolio-height ia"></div>
-        <div className="services-portfolio-height rpa"></div>
-        <div className="services-portfolio-height cloud"></div>
-        <div className="services-portfolio-height bi"></div>
-        <div className="services-portfolio-height wdad"></div>
+        <div className="services-portfolio-height ia">
+          <h2>
+          INTELIGENCIA ARTIFICIAL (IA) Y MACHINE LEARNING (ML)
+          </h2>
+        </div>
+        <div className="services-portfolio-height rpa">
+          <h2>
+          ROBOTIC PROCESS AUTOMATION (RPA)
+          </h2>
+        </div>
+        <div className="services-portfolio-height cloud">
+          <h2>CLOUD SOLUTIONS</h2>
+        </div>
+        <div className="services-portfolio-height bi">
+          <h2>BUSINESS INTELLIGENCE (BI)</h2>
+        </div>
+        <div className="services-portfolio-height wdad">
+          <h2>
+          WEB DEVELOPMENT Y APP DEVELOPMENT
+          </h2>
+        </div>
       </div>
       <div className="services-title second-child">
         <div className="line_1"></div>
