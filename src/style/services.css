@@ -84,12 +84,25 @@
 .max-container-services{
     display: inline-block;
     position: relative;
-    left: 141px;
-    max-width: 536px;
     max-height: 178px;
     top: 193px;
     gap:40px;
 }
+
+.l{
+    left: 141px;
+    max-width: 536px;
+}
+.r{
+    left: 812px;
+    max-width: 306px;
+}
+
+.r h2{
+    width: 100%;
+}
+
+
 .max-container-services h2{
     height: 84px;
 }
@@ -102,6 +115,7 @@
     font-weight:bold;
     padding: 16px 28px;
     border-radius: 16px;
+    border:none;
 }
 
 

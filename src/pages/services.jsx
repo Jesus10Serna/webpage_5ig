@@ -11,25 +11,31 @@ const services = () => {
       </div>
       <div className="services-portfolio">
         <div className="services-portfolio-height ia">
-          <div className="max-container-services">
+          <div className="max-container-services l">
             <h2>INTELIGENCIA ARTIFICIAL (IA) Y MACHINE LEARNING (ML)</h2>
             <button>Más Informacion</button>
           </div>
         </div>
         <div className="services-portfolio-height rpa">
-          <h2>ROBOTIC PROCESS AUTOMATION (RPA)</h2>
+        <div className="max-container-services r">
+            <h2>ROBOTIC PROCESS AUTOMATION (RPA)</h2>
+            <button>Más Informacion</button>
+          </div>
         </div>
         <div className="services-portfolio-height cloud">
-          <div className="max-container-services">
+          <div className="max-container-services l">
             <h2>CLOUD SOLUTIONS</h2>
             <button>Más Informacion</button>
           </div>
         </div>
         <div className="services-portfolio-height bi">
-          <h2>BUSINESS INTELLIGENCE (BI)</h2>
+        <div className="max-container-services r">
+            <h2>BUSINESS INTELLIGENCE (BI)</h2>
+            <button>Más Informacion</button>
+          </div>
         </div>
         <div className="services-portfolio-height wdad">
-          <div className="max-container-services">
+          <div className="max-container-services l">
             <h2>WEB DEVELOPMENT Y APP DEVELOPMENT</h2>
             <button>Más Informacion</button>
           </div>
