@@ -197,6 +197,20 @@
   gap: 40px;
 }
 
+.text-about-us{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(1,1fr);
+  text-align: center
+}
+
+.text-about-us h3{
+  width: 564px;
+  margin: 0 auto;
+}
+
+
 .text-about-us p,
 .text-about-us h3{
   color: white;  
@@ -207,7 +221,7 @@
 .text-about-us p,
 .text-about-us h3, 
 .button-contact-us {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .button-contact-us {
@@ -216,12 +230,14 @@
   width: 421px;
   height: 52px;
   background-color: var(--color-yellow-primary);
+  color: var(--color-secondary);
   border: none;
   padding: 13px 28px;
   border-radius: 16px;
   cursor: pointer;
   margin-left: 120px;
   gap: 8px;
+  font-weight: bold;
 }
 
 .button-contact-us .img_link {
