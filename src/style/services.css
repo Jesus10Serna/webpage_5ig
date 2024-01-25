@@ -63,6 +63,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
 }
 
 .ia {
@@ -73,20 +74,46 @@
 .ia h2, .rpa h2, .cloud h2, .bi h2, .wdad h2{
     margin: 0;
     padding: 0;
-    display: inline-block;
     gap: 40px;
     width: 536px;
     height: 178px;
     color: white;
-    margin-top: 193px;
+    /* margin-top: 193px; */
 }
+
+.max-container-services{
+    display: inline-block;
+    position: relative;
+    left: 141px;
+    max-width: 536px;
+    max-height: 178px;
+    top: 193px;
+    gap:40px;
+}
+.max-container-services h2{
+    height: 84px;
+}
+.max-container-services button{
+    margin-top: 40px;
+    height: 54px;
+    background-color: var(--color-yellow-primary);
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight:bold;
+    padding: 16px 28px;
+    border-radius: 16px;
+}
+
+
+
+
 .ia h2, .cloud h2, .wdad h2{
     
-    margin-left: 141px;
+    /* margin-left: 141px; */
 }
 .rpa h2, .bi h2{
-    margin-left:878px;
-    width: 337px;
+    /* margin-left:878px;
+    width: 337px; */
 
 }
 
@@ -181,3 +208,5 @@
   width: 24px;
   height: 24px;
 }
+
+
