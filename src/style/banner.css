@@ -39,9 +39,11 @@
     gap:8px;
     margin-right: 8px;
     cursor: pointer;
+    font-weight: bold;
 }
 .yellow-button{
-    background-color:var(--color-yellow-primary)
+    background-color:var(--color-yellow-primary);
+    color:var(--color-secondary)
 }
 .blue-button {
     background: linear-gradient(#0898F2, #003566);

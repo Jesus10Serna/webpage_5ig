@@ -10,11 +10,36 @@ const services = () => {
         <div className="line_2"></div>
       </div>
       <div className="services-portfolio">
-        <div className="services-portfolio-height ia"></div>
-        <div className="services-portfolio-height rpa"></div>
-        <div className="services-portfolio-height cloud"></div>
-        <div className="services-portfolio-height bi"></div>
-        <div className="services-portfolio-height wdad"></div>
+        <div className="services-portfolio-height ia">
+          <div className="max-container-services l">
+            <h2>INTELIGENCIA ARTIFICIAL (IA) Y MACHINE LEARNING (ML)</h2>
+            <button>Más Informacion</button>
+          </div>
+        </div>
+        <div className="services-portfolio-height rpa">
+        <div className="max-container-services r">
+            <h2>ROBOTIC PROCESS AUTOMATION (RPA)</h2>
+            <button>Más Informacion</button>
+          </div>
+        </div>
+        <div className="services-portfolio-height cloud">
+          <div className="max-container-services l">
+            <h2>CLOUD SOLUTIONS</h2>
+            <button>Más Informacion</button>
+          </div>
+        </div>
+        <div className="services-portfolio-height bi">
+        <div className="max-container-services r">
+            <h2>BUSINESS INTELLIGENCE (BI)</h2>
+            <button>Más Informacion</button>
+          </div>
+        </div>
+        <div className="services-portfolio-height wdad">
+          <div className="max-container-services l">
+            <h2>WEB DEVELOPMENT Y APP DEVELOPMENT</h2>
+            <button>Más Informacion</button>
+          </div>
+        </div>
       </div>
       <div className="services-title second-child">
         <div className="line_1"></div>
@@ -36,7 +61,11 @@ const services = () => {
             lenguaje natural.
           </p>
           <h3>Siempre de la mano con nuestros clientes y la tecnología</h3>
-          <button className="button-contact-us">Encuentranos en LinkedIn</button>
+
+          <button className="button-contact-us">
+            <div className="img_link" alt="Encuentranos en linkedin"></div>
+            Encuentranos en LinkedIn
+          </button>
         </div>
       </div>
     </div>
