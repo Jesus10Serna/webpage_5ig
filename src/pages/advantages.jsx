@@ -13,25 +13,29 @@ const Advantages = () => {
 
       <div className="benefit-portfolio">
         <div className="benefit-portfolio-height remote">
-          <span className="benefit-text">Trabajo 100% remoto</span>
+          <span className="benefit-text-remote">Trabajo 100% remoto</span>
         </div>
 
         <div className="benefit-portfolio-height conectivity">
-          <span className="benefit-text">Auxilio de conectividad</span>
+          <span className="benefit-text-conectivity">
+            Auxilio de conectividad
+          </span>
         </div>
 
         <div className="benefit-portfolio-height plan">
-          <span className="benefit-text">Plan de referidos</span>
+          <span className="benefit-text-plan">Plan de referidos</span>
         </div>
 
         <div className="benefit-portfolio-height company">
-          <span className="benefit-text">
+          <span className="benefit-text-company">
             Formaciones y capacitaciones brindadas por la empresa
           </span>
         </div>
 
         <div className="benefit-portfolio-height certfied">
-          <span className="benefit-text">Certificaciones Microsoft</span>
+          <span className="benefit-text-certfied">
+            Certificaciones Microsoft
+          </span>
         </div>
       </div>
     </div>

@@ -99,3 +99,78 @@
     url("../components/background_certified.svg");
   border-radius: 0 0 35px 35px;
 }
+
+.benefit-text-remote {
+  display: inline-block;
+  position: relative;
+  width: 560px;
+  height: 85px;
+  margin-top: 300px;
+  margin-left: 141px;
+  color: rgba(255, 195, 0, 1);
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 85px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
+
+.benefit-text-conectivity {
+  display: inline-block;
+  position: relative;
+  width: 616px;
+  height: 85px;
+  margin-top: 300px;
+  margin-left: 141px;
+  color: rgba(255, 195, 0, 1);
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 85px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
+
+.benefit-text-plan {
+  display: inline-block;
+  position: relative;
+  width: 441px;
+  height: 85px;
+  margin-top: 300px;
+  margin-left: 141px;
+  color: rgba(255, 195, 0, 1);
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 85px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
+
+.benefit-text-company {
+  display: inline-block;
+  position: relative;
+  width: 819px;
+  height: 170px;
+  margin-top: 215px;
+  margin-left: 141px;
+  color: rgba(255, 195, 0, 1);
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 85px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
+
+.benefit-text-certfied {
+  display: inline-block;
+  position: relative;
+  width: 686px;
+  height: 97px;
+  margin-top: 295px;
+  margin-left: 141px;
+  color: rgba(255, 195, 0, 1);
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 85px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
