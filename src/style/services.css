@@ -78,7 +78,6 @@
     width: 536px;
     height: 178px;
     color: white;
-    /* margin-top: 193px; */
 }
 
 .max-container-services{
@@ -181,7 +180,7 @@
 
 .container-about-us-grid {
   position: absolute;
-  width: 1346px;
+  max-width: 1346px;
   height: 457px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -199,8 +198,16 @@
 }
 
 .text-about-us p,
-.text-about-us h3 {
-  color: white;
+.text-about-us h3{
+  color: white;  
+}
+
+
+
+.text-about-us p,
+.text-about-us h3, 
+.button-contact-us {
+  margin-top: 50px;
 }
 
 .button-contact-us {
