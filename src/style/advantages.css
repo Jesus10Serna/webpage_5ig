@@ -16,6 +16,15 @@
   justify-content: center;
 }
 
+
+.advantages-title .line_1,
+.advantages-title .line_2 {
+  top: 504px;
+  background-color: white;
+  height: 2px;
+}
+
+
 .advantages-title {
   position: absolute;
   color: white;
@@ -27,14 +36,14 @@
   gap: 20px;
 }
 
-.line_1 {
+.advantages-title .line_1 {
   width: 119px;
   top: 542px;
   left: 287px;
   border: 2px, color white (255, 255, 255, 1);
 }
 
-.line_2 {
+.advantages-title .line_2 {
   width: 683px;
   top: 541px;
   left: 950px;

@@ -27,18 +27,20 @@
   gap: 20px;
 }
 
-.line_1,
-.line_2 {
+.services-title .line_1,
+.services-title .line_2 {
   top: 770px;
   background-color: white;
   height: 2px;
 }
-.line_1 {
-  width: 119px;
+
+.services-title .line_1{
+    width:119px;
 }
-.line_2 {
-  width: 892px;
+.services-title .line_2{
+    width: 892px;
 }
+
 
 .services-title h2 {
   font-size: 55px;
