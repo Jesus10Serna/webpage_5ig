@@ -10,6 +10,7 @@ const Advantages = () => {
         <div className="line_2"></div>
       </div>
 
+
       <div className="benefit-portfolio">
         <div className="benefit-portfolio-height remote">
           <span className="benefit-text">Trabajo 100% remoto</span>
