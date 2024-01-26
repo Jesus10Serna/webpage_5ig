@@ -12,9 +12,18 @@ import Contact from "../components/contact_us"
 
 
 function automate() {
+  const handleRedirect2 = (sectionId) => {
+    const section = document.getElementsByClassName(sectionId);
+    console.log("Section Id:",sectionId);
+    console.log(section);
+    const firstElement = section instanceof HTMLCollection ? section[0] : section;
+    if (section) {
+      firstElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className='automate'>
-    <Header></Header>
+    <Header handleRedirect2={handleRedirect2}></Header>
     <div className='automate-top-banner'>
         <div className='blend'>
             <div className='automate-top-container'>
@@ -40,19 +49,19 @@ function automate() {
           </div>
           <div>
             <div>
-              <img src={Brain} />
+              <img src={Brain} href="Cerebro"/>
               <h2>Inteligencia artificial</h2>
             </div>
             <div>
-            <img src={PowerPlatform} />
+            <img src={PowerPlatform} href="Logo de Power Platform" />
               <h2>Microsoft Power Platform</h2>
             </div>
             <div>
-            <img src={Robot} />
+            <img src={Robot} href="Simbolo de Robot(Machine Learning)"/>
               <h2>Machine Learning</h2>
             </div>
             <div>
-            <img src={Chip} />
+            <img src={Chip} href="MicroChip"/>
               <h2>Plataformas Tecnológicas Innovadoras</h2>
             </div>
           </div>
