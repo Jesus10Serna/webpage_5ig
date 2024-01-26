@@ -10,20 +10,14 @@ import Footer from "../components/footer";
 import Header from '../components/header';
 import Contact from "../components/contact_us"
 
+import call_Contact from '../components/access_contact.jsx'
+
 
 function automate() {
-  const handleRedirect2 = (sectionId) => {
-    const section = document.getElementsByClassName(sectionId);
-    console.log("Section Id:",sectionId);
-    console.log(section);
-    const firstElement = section instanceof HTMLCollection ? section[0] : section;
-    if (section) {
-      firstElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
   return (
     <div className='automate'>
-    <Header handleRedirect2={handleRedirect2}></Header>
+    <Header handleRedirect2={call_Contact}></Header>
     <div className='automate-top-banner'>
         <div className='blend'>
             <div className='automate-top-container'>

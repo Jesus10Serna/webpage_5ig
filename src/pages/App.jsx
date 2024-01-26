@@ -6,20 +6,13 @@ import Footer from "../components/footer"
 import Banner from "../pages/banner"
 import Contact from "../components/contact_us"
 import Services from "../pages/services"
+import call_Contact from '../components/access_contact.jsx'
 
 function App() {
-  const handleRedirect2 = (sectionId) => {
-    const section = document.getElementsByClassName(sectionId);
-    console.log("Section Id:",sectionId);
-    console.log(section);
-    const firstElement = section instanceof HTMLCollection ? section[0] : section;
-    if (section) {
-      firstElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
   return (
     <div className="App">
-      <Header handleRedirect2={handleRedirect2}/>
+      <Header handleRedirect2={call_Contact}/>
       <Banner/>
       <Services/> 
       <Contact/>   
