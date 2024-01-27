@@ -23,8 +23,8 @@ const header = (props) => {
         <button className="header-button">¿Quienes Somos?</button>
         <button className="header-button" onClick={()=>props.handleRedirect2('contact-us-container')}>Contáctanos</button>
         <div className="header-logos">
-          <img src={insta} alt="Home"></img>
-          <img src={linkedin} alt="Home"></img>
+          <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
+          <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
         </div>
       </div>
     </div>

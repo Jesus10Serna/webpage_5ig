@@ -22,7 +22,7 @@ function automate() {
         <div className='blend'>
             <div className='automate-top-container'>
                 <h1>AUTOMATIZA TU EMPRESA</h1>
-                <button className="blue-button"><span><img src={WspIcon} alt="" /></span>Chatea con nosotros</button>
+                <button className="blue-button"><span><img src={WspIcon} alt="Whatsapp Logo para chatear con nosotros" /></span>Chatea con nosotros</button>
             </div>
         </div>
     </div>
@@ -43,19 +43,19 @@ function automate() {
           </div>
           <div>
             <div>
-              <img src={Brain} href="Cerebro"/>
+              <img src={Brain} alt="Cerebro"/>
               <h2>Inteligencia artificial</h2>
             </div>
             <div>
-            <img src={PowerPlatform} href="Logo de Power Platform" />
+            <img src={PowerPlatform} alt="Logo de Power Platform" />
               <h2>Microsoft Power Platform</h2>
             </div>
             <div>
-            <img src={Robot} href="Simbolo de Robot(Machine Learning)"/>
+            <img src={Robot} alt="Simbolo de Robot(Machine Learning)"/>
               <h2>Machine Learning</h2>
             </div>
             <div>
-            <img src={Chip} href="MicroChip"/>
+            <img src={Chip} alt="MicroChip"/>
               <h2>Plataformas Tecnológicas Innovadoras</h2>
             </div>
           </div>
@@ -107,4 +107,4 @@ function automate() {
   )
 }
 
-export default automate
+export default automate;
