@@ -9,6 +9,7 @@ import WorkWithUs from './pages/work_with_us'
 import Services from './pages/services_content'
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +18,7 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/automate" element={<Automate/>}/>
           <Route exact path="/wwus" element={<WorkWithUs/>}/>
-          <Route exact path="/services" element={<Services/>}/>
+          <Route exact path="/services/:service" element={<Services/>}/>
         </Routes>
       </Layout>
     </BrowserRouter>
