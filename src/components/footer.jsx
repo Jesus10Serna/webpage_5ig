@@ -13,8 +13,8 @@ const footer = () => {
           <p>¿Quienes somos?</p>
           <p>Contáctanos</p>
           <div className="footer-logos">
-            <img src={insta} alt="Home"></img>
-            <img src={linkedin} alt="Home"></img>
+          <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
+          <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
           </div>
         </div>
       </div>

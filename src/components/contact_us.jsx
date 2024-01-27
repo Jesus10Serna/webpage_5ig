@@ -17,9 +17,9 @@ const contact_us = () => {
           <div className="contact-us-social">
             <h3>SIGUENOS EN</h3>
             <div className="contact-us-logos">
-              <img src={insta} alt="Instagram"></img>
-              <img src={linkedin} alt="Linkedin"></img>
-              <img src={facebook} alt="Facebook"></img>
+              <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
+              <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
+              <a href="https://www.facebook.com/profile.php?id=100087891016427"  target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook"></img></a>
             </div>
           </div>
         </div>

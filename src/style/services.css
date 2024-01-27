@@ -246,4 +246,8 @@
   height: 24px;
 }
 
+button{
+  cursor: pointer;
+}
+
 

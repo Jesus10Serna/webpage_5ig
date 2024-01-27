@@ -29,3 +29,7 @@
     height:24px;
     gap: 20px;
 }
+
+.footer-logos img{
+    cursor: pointer;
+}
