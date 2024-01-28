@@ -1,0 +1,12 @@
+.container_1, .container_2, .container_3{
+    width: 1620px;
+    background-color: red;
+    height:399px;
+    margin: 0 auto;
+    margin-top:45px;
+    margin-bottom: 45px;
+    padding: 70px 50px;
+}
+.content_services{
+    width:100%;
+}
