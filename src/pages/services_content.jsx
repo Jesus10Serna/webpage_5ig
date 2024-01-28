@@ -19,8 +19,8 @@ const Services_content = () => {
     content = (
       <div className="content-services">
         <div className="container_1"></div>
-        <div className="container_2"></div>
         <div className="container_3"></div>
+        <div className="container_2"></div>
       </div>
     );
   } else {

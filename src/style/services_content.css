@@ -1,12 +1,22 @@
 .container_1, .container_2, .container_3{
     width: 1620px;
-    background-color: red;
+    border: solid 1px black;
     height:399px;
     margin: 0 auto;
     margin-top:45px;
     margin-bottom: 45px;
     padding: 70px 50px;
 }
+
+.container_1{
+    border-radius: 45px 45px 0px 0px;
+}
+
+.container_2 {
+    border-radius: 0px 0px 45px 45px;
+}
+
+
 .content_services{
     width:100%;
 }
