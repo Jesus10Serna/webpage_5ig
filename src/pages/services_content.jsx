@@ -20,33 +20,32 @@ const Services_content = () => {
 
   if (service === "ia") {
     startIdx = 0;
-    endIdx = 3;
+    endIdx = startIdx + 3;
   } else if (service === "rpa") {
     startIdx = 3;
-    endIdx = 5;
+    endIdx = startIdx + 2;
   } else if (service === "cloud") {
     startIdx = 5;
-    endIdx = 7;
+    endIdx = startIdx + 2;
   } else if (service === "bi") {
     startIdx = 7;
-    endIdx = 9;
+    endIdx = startIdx + 2;
+  } else if (service === "web-app-dev") {
+    startIdx = 9;
+    endIdx = startIdx + 2;
   }
- else if (service === "web-app-dev") {
-  startIdx = 9;
-  endIdx = 11;
-}
-
-
 
   if (startIdx !== undefined && endIdx !== undefined) {
     content = (
       <div className="content-services">
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
-            <div key={index} className={`container_${startIdx + index + 1}`}>
-              <img src={item.img_source} alt="Imagen" />
-              <h2>{item.title}</h2>
-              <p>{item.info}</p>
+            <div key={index} className={`container_content`}>
+              <img className="image_service" src={item.img_source} alt="Imagen" />
+              <div className="desc_service">
+                <h2>{item.title}</h2>
+                <p>{item.info}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -56,12 +55,14 @@ const Services_content = () => {
     content = (
       <div className="content-services">
         <div className="parent_container">
-          {/* Renderizar los primeros tres elementos por defecto */}
+          <div className="banner_services"></div>
           {info.slice(0, 3).map((item, index) => (
-            <div key={index} className={`container_${index + 1}`}>
+            <div key={index} className={`container_content`}>
               <img src={item.img_source} alt="Imagen" />
-              <h2>{item.title}</h2>
-              <p>{item.info}</p>
+              <div className="desc_service">
+                <h2>{item.title}</h2>
+                <p>{item.info}</p>
+              </div>
             </div>
           ))}
         </div>
