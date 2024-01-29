@@ -1,0 +1,62 @@
+.banner-container{
+    margin: 0;
+    padding: 0;
+    background-image: url('../components/background_banner.svg');
+    height: 597px;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.banner-title{
+    margin-top: 244px;
+    margin-left: 150px;
+    position: relative;
+
+}
+.titles{
+    margin-bottom: 17px;
+}
+
+.banner-title h1, .banner-title h2{
+    margin: 0;
+    padding: 0;
+}
+.banner-title h2{
+    color: white;
+}
+.banner-title h1{
+    color: var(--color-yellow-primary)
+}
+
+.banner-buttons{
+    display: flex;
+}
+
+.banner-buttons .yellow-button, .banner-buttons .blue-button{
+    border: none;
+    border-radius: 16px;
+    width: 387px;
+    height:54px;
+    gap:8px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.yellow-button{
+    background-color:var(--color-yellow-primary);
+    color:var(--color-secondary)
+}
+.blue-button {
+    background: linear-gradient(#0898F2, #003566);
+    color: white;
+}
+
+.yellow-button:hover{
+    background: linear-gradient(#FFD60A, #FBBC05);
+}
+
+.blue-button:hover{
+    background:linear-gradient( #003566,#0898F2);
+}
