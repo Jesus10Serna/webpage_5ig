@@ -1,22 +1,19 @@
-.container_1, .container_2, .container_3{
-    width: 1620px;
-    border: solid 1px black;
+.container_1, .container_2, .container_3, .container_4, .container_5, .container_6, .container_7, .container_8, .container_9, .container_10, .container_11 {
     height:399px;
+    margin-top: 50px;
+}
+.parent_container{
+    background-color: white;
+    width: 1620px;
     margin: 0 auto;
-    margin-top:45px;
-    margin-bottom: 45px;
-    padding: 70px 50px;
-}
+    height: auto;
+    border-radius: 45px;
+    box-shadow: 4px 4px 20px 0px #00000040;
 
-.container_1{
-    border-radius: 45px 45px 0px 0px;
-}
-
-.container_2 {
-    border-radius: 0px 0px 45px 45px;
 }
 
 
-.content_services{
-    width:100%;
+.content-services{
+    background-color:#F0F0F0;
+    padding: 45px;
 }
