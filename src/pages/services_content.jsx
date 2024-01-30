@@ -6,7 +6,31 @@ import { useParams } from "react-router-dom";
 import "../style/services_content.css";
 import { info } from "../pages/dataservices.js";
 
+
 const Services_content = () => {
+
+  const DynamicImage = ({ src, alt }) => {
+    const [imageSrc, setImageSrc] = useState(null);
+  
+    useEffect(() => {
+      // Cargar la imagen dinámicamente
+      import(`../components/${src}`)
+        .then(image => {
+          // Actualizar el estado con la URL de la imagen
+          setImageSrc(image.default);
+        })
+        .catch(error => {
+          console.error('Error al cargar la imagen:', error);
+        });
+    }, [src]); // Ejecutar el efecto cuando cambie la ruta de la imagen
+  
+    // Renderizar la imagen
+    return (
+      <img className="image_service" src={imageSrc} alt={alt} />
+    );
+  };
+
+
   const params = useParams();
   const [service, setService] = useState("");
   useEffect(() => {
@@ -41,7 +65,7 @@ const Services_content = () => {
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
             <div key={index} className={`container_content`}>
-              <img className="image_service" src={item.img_source} alt="Imagen" />
+              <DynamicImage src={item.img_source} alt="Imagen" />
               <div className="desc_service">
                 <h2>{item.title}</h2>
                 <p>{item.info}</p>
@@ -58,7 +82,7 @@ const Services_content = () => {
           <div className="banner_services"></div>
           {info.slice(0, 3).map((item, index) => (
             <div key={index} className={`container_content`}>
-              <img src={item.img_source} alt="Imagen" />
+              <DynamicImage src={item.img_source} alt="Imagen" />
               <div className="desc_service">
                 <h2>{item.title}</h2>
                 <p>{item.info}</p>
