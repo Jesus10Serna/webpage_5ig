@@ -1,0 +1,132 @@
+.about-container {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(0, 53, 102, 1.8) 2.31%,
+      rgba(0, 6, 10, 0.8) 102.31%,
+      rgba(8, 152, 242, 0.6) 102.31%
+    ),
+    url("../components/background_services.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2600px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-title .line_1,
+.about-title .line_2 {
+  top: 504px;
+  background-color: white;
+  height: 2px;
+}
+
+.about-title {
+  position: absolute;
+  color: white;
+  top: 150px;
+  height: 85px;
+  width: 1300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-title .line_1 {
+  width: 119px;
+  top: 542px;
+  left: 287px;
+  border: 2px, color white (255, 255, 255, 1);
+}
+
+.about-title .line_2 {
+  width: 683px;
+  top: 541px;
+  left: 950px;
+  border: 2px, color(white 255, 255, 255, 1);
+}
+
+.about-title h2 {
+  font-size: 50px;
+  line-height: 85px;
+  letter-spacing: -1.46px;
+  font-weight: 900px;
+}
+
+.about-portfolio {
+  position: absolute;
+  top: 627px;
+  width: 1352px;
+  height: 2250px;
+}
+
+.valores, .mision, .vision {
+  z-index: 1000;
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -30px;
+}
+
+.valores h1, .mision h1, .vision h1{
+  position: relative;
+  color: rgba(255, 195, 0, 1);
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 54.46px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+  top: 142px;
+  left: 141px;
+}
+
+.image {
+  position: absolute;
+  width: 475px;
+  height: 321px;
+  top: -350px;
+  left: 410px;
+}
+
+.valores, .mision, .vision {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.valores {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/diamond.svg");
+  border-radius: 35px 35px 0 0;
+}
+
+.mision {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/mision.svg");
+}
+
+.vision {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/vision.svg");
+  border-radius: 0 0 35px 35px;
+}
+
+.about-text-valores, .about-text-mision, .about-text-vision {
+  display: inline-block;
+  position: relative;
+  top: 150px;
+  left: 141px;
+  width: 873px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36.31px;
+  letter-spacing: -1.46px;
+  color: white;
+}
+
+.about-text-valores {
+  font-size: 32px;
+}

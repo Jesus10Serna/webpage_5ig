@@ -1,0 +1,104 @@
+.contact-us-container{
+    height: 606px;
+    background-image: linear-gradient(
+        rgba(0,53,102,0.5),
+        rgba(0, 0, 0, 0.5)
+        ),url('../components/bckimagecontact.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.contact-us-total{
+    display: flex;
+    align-items: center;
+    width: 1072px;
+    height: 504px;
+    margin-left: 424px;
+    margin-top: 51px;
+}
+.contact-us-set{
+    justify-content: start;
+    align-items:center;
+    width: 304px;
+    height: 423px;
+}
+
+.contact-us-countries, .contact-us-social {
+    color: white;
+    z-index: 1000;
+    width: 100%;
+    height: 187px;
+    border-radius: 18px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--color-yellow-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.contact-us-countries h3, .contact-us-countries h4, .contact-us-countries p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.contact-us-countries h3{
+    width: 252px;
+    height: 42px;
+}
+.contact-us-countries h4{
+    width: 244px;
+    height: 47px;
+}
+.contact-us-countries p{
+    width: 274px;
+    height: 38px;
+}
+
+.contact-us-logos {
+    display: flex;
+    justify-content: center;
+    width: 211px;
+    height:37px;
+    gap: 50px;
+}
+
+.contact-us-forms{
+    margin-left: 100px;
+    width: 661px;
+    height: 504px;
+    padding: 10px 35px;
+    border-radius: 17px;
+    gap: 20px;
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+.input-width{
+    width:591px;
+    border-radius: 14px;
+    border: none;
+    padding: 13px 24px;
+}
+
+.contact-us-forms form p{
+    color:var(--color-secondary)
+}
+
+.contact-us-forms form button{
+    width: 641px;
+    height: 54px;
+    padding: 16px 28px;
+    margin-top: 30px;
+    background-color:var(--color-yellow-primary);
+    color: var(--color-secondary);
+    font-weight: bold;
+    border: none;
+    border-radius:16px;
+}
+
+.contact-us-forms form button:hover{
+    background: linear-gradient(#FFD60A, #FBBC05);
+}
+

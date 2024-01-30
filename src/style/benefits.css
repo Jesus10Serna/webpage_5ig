@@ -1,0 +1,26 @@
+.benefits-primary-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 386px;
+    background-image: url("../components/work_with_us.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.work-with-us-banner {
+    width: 1035px;
+    height: 85px;
+    top: 182px;
+    left: 150px;
+    color: var(--color-yellow-primary);
+    position: absolute;
+}
+
+.work-with-us-banner h1 {
+    font-size: 77px;
+    font-weight: 900px;
+    line-height: 85px;
+    letter-spacing: -1.46px;
+}

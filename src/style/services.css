@@ -1,0 +1,253 @@
+.services-container {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(0, 53, 102, 0.6),
+      rgba(0, 6, 10, 0.6),
+      rgba(8, 152, 242, 0.6)
+    ),
+    url("../components/background_services.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 3203px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.services-title {
+  position: absolute;
+  color: white;
+  top: 769px;
+  height: 64px;
+  width: 1352px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.services-title .line_1,
+.services-title .line_2 {
+  top: 770px;
+  background-color: white;
+  height: 2px;
+}
+
+.services-title .line_1{
+    width:119px;
+}
+.services-title .line_2{
+    width: 892px;
+}
+
+
+.services-title h2 {
+  font-size: 55px;
+  line-height: 85px;
+  letter-spacing: -1.46px;
+  font-weight: 900px;
+}
+
+.services-portfolio {
+  position: absolute;
+  top: 871px;
+  width: 1352px;
+  height: 2250px;
+  box-shadow: 4px 4px 24px 0px rgba(0, 0, 0, 0.45);
+  border-radius: 35px;
+}
+
+.services-portfolio-height {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.ia {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/ia.svg");
+  border-radius: 35px 35px 0 0;
+}
+.ia h2, .rpa h2, .cloud h2, .bi h2, .wdad h2{
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+    width: 536px;
+    height: 178px;
+    color: white;
+}
+
+.max-container-services{
+    display: inline-block;
+    position: relative;
+    max-height: 178px;
+    top: 193px;
+    gap:40px;
+}
+
+.l{
+    left: 141px;
+    max-width: 536px;
+}
+.r{
+    left: 812px;
+    max-width: 306px;
+}
+
+.r h2{
+    width: 100%;
+}
+
+
+.max-container-services h2{
+    height: 84px;
+}
+.max-container-services button{
+    margin-top: 40px;
+    height: 54px;
+    background-color: var(--color-yellow-primary);
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight:bold;
+    padding: 16px 28px;
+    border-radius: 16px;
+    border:none;
+}
+
+
+
+
+.ia h2, .cloud h2, .wdad h2{
+    
+    /* margin-left: 141px; */
+}
+.rpa h2, .bi h2{
+    /* margin-left:878px;
+    width: 337px; */
+
+}
+
+
+.rpa {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/rpa.svg");
+}
+
+
+.cloud {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/cloud.svg");
+}
+.bi {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/bi.svg");
+}
+
+.wdad {
+  background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
+    url("../components/wd&ad.svg");
+  border-radius: 0 0 35px 35px;
+}
+
+.second-child {
+  position: absolute;
+  color: white;
+  top: 3221px;
+  height: 62px;
+  width: 1352px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.second-child h2 {
+  width: 630.39px;
+  height: 90px; /*Revisar esto */
+  font-weight: 900px;
+  padding: 0;
+  margin: 0;
+}
+
+.second-child .line_1 {
+  width: 113px;
+}
+.second-child .line_2 {
+  width: 562px;
+}
+
+.container-about-us-grid {
+  position: absolute;
+  max-width: 1346px;
+  height: 457px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  top: 3323px;
+  gap: 24px;
+  text-align: center;
+}
+
+.about-us {
+  width: 661px;
+  height: 457px;
+  border-radius: 42px;
+  background-image: url("../components/about-us.svg");
+  gap: 40px;
+}
+
+.text-about-us{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(1,1fr);
+  text-align: center
+}
+
+.text-about-us h3{
+  width: 564px;
+  margin: 0 auto;
+}
+
+
+.text-about-us p,
+.text-about-us h3{
+  color: white;  
+}
+
+
+
+.text-about-us p,
+.text-about-us h3, 
+.button-contact-us {
+  margin-top: 25px;
+}
+
+.button-contact-us {
+  display: flex;
+  justify-content: center;
+  width: 421px;
+  height: 52px;
+  background-color: var(--color-yellow-primary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 13px 28px;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-left: 120px;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.button-contact-us .img_link {
+  background-image: url("../components/linkedin2.svg");
+  width: 24px;
+  height: 24px;
+}
+
+button{
+  cursor: pointer;
+}
+
+
