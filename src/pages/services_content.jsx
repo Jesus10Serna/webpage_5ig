@@ -13,18 +13,14 @@ const Services_content = () => {
     const [imageSrc, setImageSrc] = useState(null);
   
     useEffect(() => {
-      // Cargar la imagen dinámicamente
       import(`../components/${src}`)
         .then(image => {
-          // Actualizar el estado con la URL de la imagen
           setImageSrc(image.default);
         })
         .catch(error => {
           console.error('Error al cargar la imagen:', error);
         });
-    }, [src]); // Ejecutar el efecto cuando cambie la ruta de la imagen
-  
-    // Renderizar la imagen
+    }, [src]);   
     return (
       <img className="image_service" src={imageSrc} alt={alt} />
     );
@@ -64,14 +60,26 @@ const Services_content = () => {
       <div className="content-services">
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
-            <div key={index} className={`container_content`}>
-              <DynamicImage src={item.img_source} alt="Imagen" />
-              <div className="desc_service">
-                <h2>{item.title}</h2>
-                <p>{item.info}</p>
-              </div>
-            </div>
-          ))}
+          <div key={index} className={`container_content`}>
+            {index % 2 === 0 ? ( 
+              <>
+                <DynamicImage src={item.img_source} alt="Imagen"/>
+                <div className="desc_service">
+                  <h2>{item.title}</h2>
+                  <p>{item.info}</p>
+                </div>
+              </>
+            ) : ( 
+              <>
+                <div className="desc_service">
+                  <h2>{item.title}</h2>
+                  <p>{item.info}</p>
+                </div>
+                <DynamicImage src={item.img_source} alt="Imagen"/>
+              </>
+            )}
+          </div>
+        ))}
         </div>
       </div>
     );
@@ -79,19 +87,30 @@ const Services_content = () => {
     content = (
       <div className="content-services">
         <div className="parent_container">
-          <div className="banner_services"></div>
-          {info.slice(0, 3).map((item, index) => (
-            <div key={index} className={`container_content`}>
-              <DynamicImage src={item.img_source} alt="Imagen" />
-              <div className="desc_service">
-                <h2>{item.title}</h2>
-                <p>{item.info}</p>
-              </div>
-            </div>
-          ))}
+          {info.slice(startIdx, endIdx).map((item, index) => (
+          <div key={index} className={`container_content`}>
+            {index % 2 === 0 ? ( 
+              <>
+                <DynamicImage src={item.img_source} alt="Imagen"/>
+                <div className="desc_service">
+                  <h2>{item.title}</h2>
+                  <p>{item.info}</p>
+                </div>
+              </>
+            ) : ( 
+              <>
+                <div className="desc_service">
+                  <h2>{item.title}</h2>
+                  <p>{item.info}</p>
+                </div>
+                <DynamicImage src={item.img_source} alt="Imagen"/>
+              </>
+            )}
+          </div>
+        ))}
         </div>
       </div>
-    );
+      );
   }
 
   return (
