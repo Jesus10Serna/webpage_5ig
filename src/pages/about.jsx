@@ -36,7 +36,7 @@ const AboutUS = () => {
           <h1>Visión</h1>
           <p className="about-text-vision">
             Transformar la sociedad y las corporaciones con tecnología e
-            innovación a una velocidad extraordinaria
+            innovación a una velocidad extraordinaria.
           </p>
         </div>
       </div>

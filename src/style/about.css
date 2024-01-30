@@ -1,12 +1,12 @@
 .about-container {
   margin: 0;
   padding: 0;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(0, 53, 102, 1.8) 2.31%,
       rgba(0, 6, 10, 0.8) 102.31%,
       rgba(8, 152, 242, 0.6) 102.31%
     ),
-    url("../components/background_services.svg"); */
+    url("../components/background_services.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,15 +60,15 @@
   top: 627px;
   width: 1352px;
   height: 2250px;
-  /*border-radius: 35px;*/
 }
 
 .valores, .mision, .vision {
   z-index: 1000;
-  height: 600px;
+  height: 650px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: -30px;
 }
 
 .valores h1, .mision h1, .vision h1{
@@ -83,7 +83,6 @@
   left: 141px;
 }
 
-
 .image {
   position: absolute;
   width: 475px;
@@ -92,20 +91,26 @@
   left: 410px;
 }
 
+.valores, .mision, .vision {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .valores {
   background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
-    url();
+    url("../components/diamond.svg");
   border-radius: 35px 35px 0 0;
 }
 
 .mision {
   background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
-    url();
+    url("../components/mision.svg");
 }
 
 .vision {
   background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
-    url();
+    url("../components/vision.svg");
   border-radius: 0 0 35px 35px;
 }
 
@@ -120,4 +125,8 @@
   line-height: 36.31px;
   letter-spacing: -1.46px;
   color: white;
+}
+
+.about-text-valores {
+  font-size: 32px;
 }
