@@ -51,6 +51,10 @@
     display:  flex;
     justify-content: center;
 }
+.blue-button:hover{
+    background-color:white;
+}
+
 .blue-button span{
     height: 23px;
     width: 23px;
