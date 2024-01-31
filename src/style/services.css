@@ -118,19 +118,6 @@
 }
 
 
-
-
-.ia h2, .cloud h2, .wdad h2{
-    
-    /* margin-left: 141px; */
-}
-.rpa h2, .bi h2{
-    /* margin-left:878px;
-    width: 337px; */
-
-}
-
-
 .rpa {
   background-image: linear-gradient(rgba(0, 29, 61, 0.4), rgba(0, 53, 102, 0.4)),
     url("../components/rpa.svg");
@@ -248,6 +235,10 @@
 
 button{
   cursor: pointer;
+}
+
+a{
+  text-decoration:none;
 }
 
 
