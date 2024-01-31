@@ -39,6 +39,7 @@
     color: var(--color-yellow-primary)
 }
 .blue-button {
+    cursor: pointer;
     top: 312px;
     border: none;
     border-radius: 16px;
@@ -49,11 +50,15 @@
     align-items: center;
     display:  flex;
     justify-content: center;
-    cursor: pointer;
 }
+.blue-button:hover{
+    background-color:white;
+}
+
 .blue-button span{
     height: 23px;
     width: 23px;
+    
 }
 .content-automate{
     margin: 0;
