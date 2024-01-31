@@ -55,7 +55,7 @@ export const info = [
   {
     img_source: "mobile_apps.svg",
     title: "Desarrollo de Aplicaciones Móviles",
-    info: "Diseñamos y desarrollamos aplicaciones móviles nativas y multiplataforma para satisfacer las necesidades específicas de nuestros clientes.",
+    info: "Diseñamo y desarrollamos aplicaciones móviles nativas y multiplataforma para satisfacer las necesidades específicas de nuestros clientes.",
   },
 
   
