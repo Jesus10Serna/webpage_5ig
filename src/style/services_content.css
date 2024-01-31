@@ -35,7 +35,49 @@
     background-color:#F0F0F0;
 }
 
+.img-banner {
+    position: relative;
+    background: #003566;
+
+}
+  
 .img-banner img {
     width: 100%;
     height: 39.6rem;
+    display: block;
+    opacity: 60%;
 }
+  
+.img-banner h1 {
+    position: absolute;
+    width: 63.125rem;
+    height: 15.75rem;
+    top: 33.1875rem;
+    left: 5.9375rem;
+    font-weight: 900;
+    font-size: 2.8125rem;
+    line-height: 3.40375rem;
+    letter-spacing: 0.09125rem;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.img-banner button {
+    position: absolute;
+    width: 24.1875rem;
+    top: 30.875rem;
+    height: 3.375rem;
+    left: 77.075rem;
+    transform: translateY(-50%);
+    padding: 1rem 1.75rem 1rem 1.75rem;
+    background: var(--color-yellow-primary);
+    color: var(--color-secondary);
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    font-style: "Manrope";
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}
+  
