@@ -121,7 +121,7 @@ const Services_content = () => {
         <div className="img-banner">
           <img src={route} alt="" />
           <h1>{sectionTitle}</h1>
-          <button>CONTRATA CON NOSOTROS</button>
+          <button>CONTRATA CON  NOSOTROS </button>
         </div>
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
