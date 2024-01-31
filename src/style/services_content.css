@@ -1,4 +1,5 @@
 .container_content {
+    padding: 50px;
     height:399px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -8,16 +9,15 @@
     align-items: center;
 }
 .desc_service{
-    width:750px;
+    width:550px;
     height: 212px;
-    margin: 93px;/*creo que me toca calcularlo para el responsive (height_padre - altura_texto)/2 */
+    margin: 80px;/*creo que me toca calcularlo para el responsive (height_padre - altura_texto)/2 */
 }
 
 .image_service{
     max-width:699px;
     height:399px;
     border-radius: 45px;
-    border: solid 1px black;
 }
 
 .parent_container{
@@ -33,5 +33,9 @@
 
 .content-services{
     background-color:#F0F0F0;
-    padding: 45px;
+}
+
+.img-banner img {
+    width: 100%;
+    height: 39.6rem;
 }
