@@ -18,7 +18,7 @@ const Services_content = () => {
           setImageSrc(image.default);
         })
         .catch(error => {
-          console.error('Error al  cargar la Imagen:', error);
+          console.error('Error al  Cargar la Imagen:', error);
         });
     }, [src]);   
     return (
