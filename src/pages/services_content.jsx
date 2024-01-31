@@ -20,11 +20,9 @@ const Services_content = () => {
         .then((image) => {
           setImageSrc(image.default);
         })
-
         .catch((error) => {
           console.error("Error al cargar la imagen:", error);
 
-  
         });
     }, [src]);
     return <img className="image_service" src={imageSrc} alt={alt} />;
@@ -40,7 +38,7 @@ const Services_content = () => {
   const getTitleByService = () => {
     switch (service) {
       case "ia":
-        return "INTELIGENCIA ARTIFICAL (IA) Y MACHINE LEARNING";
+        return "INTELIGENCIA ARTIFICAL (IA) Y MACHINE LEARNING (LM)";
       case "rpa":
         return "ROBOTIC PROCESS AUTOMATION (RPA)";
       case "cloud":
@@ -54,16 +52,19 @@ const Services_content = () => {
     }
   };
 
+  const miEstilo = {
+    width: '',
+  };
+
   const sectionTitle = getTitleByService();
 
-  let content, route;
-
-  let startIdx, endIdx;
+  let content, route, startIdx, endIdx;
 
   if (service === "ia") {
     startIdx = 0;
     endIdx = startIdx + 3;
     route = imgBanner;
+    miEstilo.width = '46.125rem';
   } else if (service === "rpa") {
     startIdx = 3;
     endIdx = startIdx + 2;
@@ -87,8 +88,8 @@ const Services_content = () => {
       <div className="content-services">
         <div className="img-banner">
           <img src={route} alt="" />
-          <h1>{sectionTitle}</h1>
-          <button>CONTRATA CON NOSOTROS</button>
+          <h1 style={ service === 'ia' ? miEstilo : {}}>{sectionTitle}</h1>
+          <button>Contrata Con Nosotros</button>
         </div>
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
@@ -122,6 +123,8 @@ const Services_content = () => {
           <img src={route} alt="" />
           <h1>{sectionTitle}</h1>
           <button>CONTRATA CON  NOSOTROS </button>
+          <h1 style={ service === 'ia' ? miEstilo : {}}>{sectionTitle}</h1>
+          <button>CONTRATA CON NOSOTROS</button>
         </div>
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
