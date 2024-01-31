@@ -20,13 +20,11 @@ const Services_content = () => {
         .then((image) => {
           setImageSrc(image.default);
         })
-<<<<<<< HEAD
+
         .catch((error) => {
           console.error("Error al cargar la imagen:", error);
-=======
-        .catch(error => {
-          console.error('Error al  Cargar la Imagen:', error);
->>>>>>> d84faa7f57b0df1382a9e06a2eeafd651f44f7fe
+
+  
         });
     }, [src]);
     return <img className="image_service" src={imageSrc} alt={alt} />;
