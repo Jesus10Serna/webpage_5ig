@@ -16,7 +16,7 @@ const header = (props) => {
     <div className="header-container">
       <div className="header-home-container">
         <img className="img-5ig" src={home} onClick={()=>handleRedirect('')} alt="Icono_5ig"></img>
-        <img className="logo-5ig" src={logo5ig} alt="Logo_5ig"></img>
+        <img className="logo-5ig" src={logo5ig} onClick={()=>handleRedirect('')} alt="Logo_5ig"></img>
       </div>
       <div className="header-contact-container">
         <button className="header-button" onClick={()=>handleRedirect('wwus')}>Trabaja con Nosotros </button>
