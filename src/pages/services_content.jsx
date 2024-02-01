@@ -10,8 +10,13 @@ import imgBanner1 from "../components/rpa.svg";
 import imgBanner2 from "../components/cloud.svg";
 import imgBanner3 from "../components/bi.svg";
 import imgBanner4 from "../components/wd&ad.svg";
+import arrow from "../components/arrow_contract.svg";
 
 const Services_content = () => {
+  const handleRedirect = (route) => {
+    window.location.href = `/${route}`;
+  };
+
   const DynamicImage = ({ src, alt }) => {
     const [imageSrc, setImageSrc] = useState(null);
 
@@ -22,7 +27,6 @@ const Services_content = () => {
         })
         .catch((error) => {
           console.error("Error al cargar la imagen:", error);
-
         });
     }, [src]);
     return <img className="image_service" src={imageSrc} alt={alt} />;
@@ -53,7 +57,7 @@ const Services_content = () => {
   };
 
   const miEstilo = {
-    width: '',
+    width: "",
   };
 
   const sectionTitle = getTitleByService();
@@ -64,7 +68,7 @@ const Services_content = () => {
     startIdx = 0;
     endIdx = startIdx + 3;
     route = imgBanner;
-    miEstilo.width = '46.125rem';
+    miEstilo.width = "46.125rem";
   } else if (service === "rpa") {
     startIdx = 3;
     endIdx = startIdx + 2;
@@ -88,8 +92,18 @@ const Services_content = () => {
       <div className="content-services">
         <div className="img-banner">
           <img src={route} alt="" />
-          <h1 style={ service === 'ia' ? miEstilo : {}}>{sectionTitle}</h1>
-          <button>Contrata Con Nosotros</button>
+          <div className="arrow-container">
+            <img
+              className="back-link"
+              src={arrow}
+              onClick={() => handleRedirect("")}
+              alt="arrow_back"
+            ></img>
+          </div>
+          <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
+          <button onClick={() => handleRedirect("contractus")}>
+            Contrata Con Nosotros
+          </button>
         </div>
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
@@ -121,10 +135,20 @@ const Services_content = () => {
       <div className="content-services">
         <div className="img-banner">
           <img src={route} alt="" />
+          <div className="arrow-container">
+            <img
+              className="back-link"
+              src={arrow}
+              onClick={() => handleRedirect("")}
+              alt="arrow_back"
+            ></img>
+          </div>
           <h1>{sectionTitle}</h1>
-          <button>CONTRATA CON  NOSOTROS </button>
-          <h1 style={ service === 'ia' ? miEstilo : {}}>{sectionTitle}</h1>
-          <button>CONTRATA CON NOSOTROS</button>
+          <button>CONTRATA CON NOSOTROS </button>
+          <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
+          <button onClick={() => handleRedirect("contractus")}>
+            CONTRATA CON NOSOTROS
+          </button>
         </div>
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
@@ -156,9 +180,7 @@ const Services_content = () => {
     <div>
       <Header></Header>
       {content}
-      <div className="more-services-container">
-        
-      </div>
+      <div className="more-services-container"></div>
       <Footer></Footer>
     </div>
   );

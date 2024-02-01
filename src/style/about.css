@@ -60,18 +60,29 @@
   top: 627px;
   width: 1352px;
   height: 2250px;
+  display: flex;
+  flex-direction: column;
 }
 
-.valores, .mision, .vision {
+.about-portfolio-section {
+  flex: 1;
+  overflow: hidden;
+}
+
+.valores,
+.mision,
+.vision {
   z-index: 1000;
-  height: 650px;
+  height: 450px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
-.valores h1, .mision h1, .vision h1{
+.valores h1,
+.mision h1,
+.vision h1 {
   position: relative;
   color: rgba(255, 195, 0, 1);
   font-size: 45px;
@@ -91,7 +102,9 @@
   left: 410px;
 }
 
-.valores, .mision, .vision {
+.valores,
+.mision,
+.vision {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +127,9 @@
   border-radius: 0 0 35px 35px;
 }
 
-.about-text-valores, .about-text-mision, .about-text-vision {
+.about-text-valores,
+.about-text-mision,
+.about-text-vision {
   display: inline-block;
   position: relative;
   top: 150px;
