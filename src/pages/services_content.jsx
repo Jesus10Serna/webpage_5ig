@@ -121,6 +121,8 @@ const Services_content = () => {
       <div className="content-services">
         <div className="img-banner">
           <img src={route} alt="" />
+          <h1>{sectionTitle}</h1>
+          <button>CONTRATA CON  NOSOTROS </button>
           <h1 style={ service === 'ia' ? miEstilo : {}}>{sectionTitle}</h1>
           <button>CONTRATA CON NOSOTROS</button>
         </div>
@@ -154,6 +156,9 @@ const Services_content = () => {
     <div>
       <Header></Header>
       {content}
+      <div className="more-services-container">
+        
+      </div>
       <Footer></Footer>
     </div>
   );
