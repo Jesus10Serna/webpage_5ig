@@ -16,7 +16,7 @@
     height: 130px;
 }
 
-.footer-general-info{
+.footer-general-info {
     font-family: Inter;
     color: white;
     width: 188px;
@@ -28,8 +28,4 @@
     width: 68px;
     height:24px;
     gap: 20px;
-}
-
-.footer-logos img{
-    cursor: pointer;
 }

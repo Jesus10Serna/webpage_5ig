@@ -1,7 +1,7 @@
 import React from "react";
 import AboutUS from "../pages/about.jsx";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
 import call_Contact from '../components/access_contact.jsx'
 
 
