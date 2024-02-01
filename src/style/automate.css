@@ -52,7 +52,7 @@
     justify-content: center;
 }
 .blue-button:hover{
-    background-color:white;
+    background:linear-gradient( #003566,#0898F2);
 }
 
 .blue-button span{
