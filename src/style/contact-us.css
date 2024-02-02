@@ -68,7 +68,7 @@
 .contact-us-forms{
     margin-left: 100px;
     width: 661px;
-    height: 504px;
+    height: auto;
     padding: 10px 35px;
     border-radius: 17px;
     gap: 20px;
@@ -100,5 +100,25 @@
 
 .contact-us-forms form button:hover{
     background: linear-gradient(#FFD60A, #FBBC05);
+}
+
+
+
+.phone_container{
+    width: 100%;
+    gap:8px;
+    display: flex;
+}
+
+.input-width-domain{
+    width: 10%;
+    border-radius: 14px;
+    border: none;
+    display: flex;
+
+}
+
+#phone{
+    width:calc(90% - 82px);
 }
 

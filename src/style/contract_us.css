@@ -2,3 +2,8 @@
     width: 100%;
     height: 775px;
 }
+.contract-us-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
