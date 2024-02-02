@@ -142,6 +142,7 @@ const Services_content = () => {
               onClick={() => handleRedirect("")}
               alt="arrow_back"
             ></img>
+            <div className="superposition"></div>
           </div>
           <h1>{sectionTitle}</h1>
           <button>CONTRATA CON NOSOTROS </button>
