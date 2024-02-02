@@ -92,3 +92,41 @@
   display: block;
   cursor: pointer;
 }
+.more-services-background{
+  background-color: rgba(240, 240, 240, 1);
+  width: 100%; 
+  height: auto;
+}
+.more-services-container{
+  width: 1620px;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+.more-services-title{
+  text-transform: uppercase;
+  height: 90px;
+  width: auto;
+  display: flex;
+}
+.more-services-title > div:nth-child(1){
+  width: 119px;
+  height: 2px;
+  background-color: rgba(0, 29, 61, 1);
+  align-self: center;
+}
+.more-services-title > div:nth-child(3){
+  width: 1026px;
+  height: 2px;
+  background-color: rgba(0, 29, 61, 1);
+  align-self: center;
+}
+.more-services-title h1{
+  width: 436px;
+  size: 55px;
+  font-weight: 900;
+  line-height: 85px;
+  align-self: Center;
+  text-align: center;
+  letter-spacing: -1.46px;
+}
