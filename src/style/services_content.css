@@ -29,20 +29,21 @@
   box-shadow: 4px 4px 20px 0px #00000040;
 }
 
-.content-services {
+/* .content-services {
   background-color: #f0f0f0;
-}
+} */
 
 .img-banner {
   position: relative;
-  background: #003566;
-  width: 100vw;
+  width: 100%;
+  background: rgba(0, 53, 102, 1);
 }
 
 .img-banner img {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
   opacity: 0.6;
 }
 
@@ -73,7 +74,6 @@
   border-radius: 1rem;
   cursor: pointer;
   border: none;
-  /* font-style: "Manrope"; */
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -83,12 +83,16 @@
   position: absolute;
   top: calc(45% - 10.60875rem);
   left: 5.9375rem;
+  background: var(--color-yellow-primary);
+  color: var(--color-secondary);
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 0.625rem;
+  padding: 0.25rem;
 }
 
 .back-link {
-  width: 3.4375rem;
-  height: 2.839375rem;
   background: no-repeat center center;
-  display: block;
   cursor: pointer;
+  color: var(--color-primary);
 }
