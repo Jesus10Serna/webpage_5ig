@@ -3,7 +3,6 @@ import logo5ig from "./logo5ig.svg";
 import home from "./home.svg";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
-
 import "../style/header.css";
 
 const header = (props) => {
@@ -19,9 +18,14 @@ const header = (props) => {
         <img className="logo-5ig" src={logo5ig} onClick={()=>handleRedirect('')} alt="Logo_5ig"></img>
       </div>
       <div className="header-contact-container">
-        <button className="header-button" onClick={()=>handleRedirect('wwus')}>Trabaja con Nosotros </button>
+        <button className="header-button" id="contract" onClick={()=>handleRedirect('contractus')}>Contrata con Nosotros</button>
+        
+        {/* Juan Jose porfa revisa eso. Este boton de servicios nos tiene que redirigir desde todas las vistas al services container de la landing page  */}
+        {/* <button className="header-button" onClick={()=>props.handleRedirect2('servicios')}>Servicios</button> */}
+        
+         
         <button className="header-button" onClick={()=>handleRedirect('aboutus')}>¿Quienes Somos?</button>
-        <button className="header-button" onClick={()=>props.handleRedirect2('contact-us-container')}>Contáctanos</button>
+        
         <div className="header-logos">
           <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
           <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
