@@ -180,7 +180,12 @@ const Services_content = () => {
     <div>
       <Header></Header>
       {content}
-      <div className="more-services-container"></div>
+      <div className="more-services-background">
+        <div className="more-services-container">
+          <div className="more-services-title"><div></div><h1>más servicios</h1><div></div></div>
+          <div className="more-services-content"></div>
+        </div>
+      </div>
       <Footer></Footer>
     </div>
   );
