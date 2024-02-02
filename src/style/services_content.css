@@ -28,6 +28,9 @@
   border-radius: 45px;
   box-shadow: 4px 4px 20px 0px #00000040;
 }
+.parent_container div:last-child{
+  margin-bottom: 0;
+}
 
 /* .content-services {
   background-color: #f0f0f0;
@@ -115,14 +118,15 @@
 .more-services-container{
   width: 1620px;
   height: auto;
-  display: flex;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .more-services-title{
   text-transform: uppercase;
   height: 90px;
-  width: auto;
+  width: 100%;
   display: flex;
+  margin-bottom: 35px;
 }
 .more-services-title > div:nth-child(1){
   width: 119px;
@@ -131,7 +135,7 @@
   align-self: center;
 }
 .more-services-title > div:nth-child(3){
-  width: 1026px;
+  width: 100%;
   height: 2px;
   background-color: rgba(0, 29, 61, 1);
   align-self: center;
@@ -144,4 +148,62 @@
   align-self: Center;
   text-align: center;
   letter-spacing: -1.46px;
+}
+.more-services-content-grid{
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 45px;
+  padding: 70px 50px 70px 50px;
+  gap: 40px;
+  display: grid;
+  grid-template-rows: repeat(2, 226px); 
+  grid-template-columns: repeat(2, 720px );
+  justify-content: center; 
+  
+}
+.more-services-content-grid-item{
+  padding: 20px;
+  border: solid 3px rgba(0, 29, 61, 1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.more-services-content-grid-item-content{
+  height: 102px;
+  display: flex;
+  gap: 30px;
+}
+.more-services-content-grid-item-content img{
+  width: 102px;
+  height: 102px;
+}
+.more-services-content-grid-item-content h1{
+  height: 41px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 41.15px;
+  letter-spacing: -1.46px;
+  align-self: center;
+  margin: 0;
+}
+.more-services-content-grid div:last-child h1{
+  padding-top: 4px;
+  align-self: start;
+}
+
+.more-services-content-grid-item-content-button{
+  height: 54px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px 28px 16px 28px;
+  background-color: rgba(0, 29, 61, 1);
+  /* font: Manrope; */
+  color: white;
+  font-weight: 800;
+  size: 20px;
+  line-height: 20px;
 }

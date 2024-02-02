@@ -57,7 +57,82 @@ export const info = [
     title: "Desarrollo de Aplicaciones Móviles",
     info: "Diseñamo y desarrollamos aplicaciones móviles nativas y multiplataforma para satisfacer las necesidades específicas de nuestros clientes.",
   },
-
-  
-  
 ];
+
+export const info2 = [
+  {
+    id:"ia",
+    contentServices:[
+      {
+        text1:"Robotic Process Automation (RPA)",
+        img1:"moreServicesRobot",
+        text2:"Cloud Solutions",
+        img2:"moreServicesCloud",
+        text3:"Business Intelligence (BI)",
+        img3:"moreServicesBi",
+        text4:"Web Development y App Development",
+        img4:"moreServicesDev"
+      }
+    ]
+  },
+  {
+    id:"rpa",
+    contentServices:[
+      {
+        text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
+        img1:"moreServicesIA",
+        text2:"Cloud Solutions",
+        img2:"moreServicesCloud",
+        text3:"Business Intelligence (BI)",
+        img3:"moreServicesBi",
+        text4:"Web Development y App Development",
+        img4:"moreServicesDev"
+      }
+    ]
+  },
+  {
+    id:"cloud",
+    contentServices:[
+      {
+        text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
+        img1:"moreServicesIA",
+        text2:"Cloud Solutions",
+        img2:"moreServicesCloud",
+        text3:"Business Intelligence (BI)",
+        img3:"moreServicesBi",
+        text4:"Web Development y App Development",
+        img4:"moreServicesDev"
+      }
+    ]
+  },
+  {
+    id:"bi",
+    contentServices:[
+      {
+        text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
+        img1:"moreServicesIA",
+        text2:"Robotic Process Automation (RPA)",
+        img2:"moreServicesRobot",
+        text3:"Cloud Solutions",
+        img3:"moreServicesCloud",
+        text4:"Web Development y App Development",
+        img4:"moreServicesDev"
+      }
+    ]
+  },
+  {
+    id:"web-app-dev",
+    contentServices:[
+      {
+        text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
+        img1:"moreServicesIA",
+        text2:"Robotic Process Automation (RPA)",
+        img2:"moreServicesRobot",
+        text3:"Cloud Solutions",
+        img3:"moreServicesCloud",
+        text4:"Business Intelligence (BI)",
+        img4:"moreServicesBi",
+      }
+    ]
+  }
+]

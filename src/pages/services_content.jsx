@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../style/services_content.css";
 import { info } from "../pages/dataservices.js";
+import { info2 } from "../pages/dataservices.js";
 import imgBanner from "../components/ia.svg";
 import imgBanner1 from "../components/rpa.svg";
 import imgBanner2 from "../components/cloud.svg";
@@ -177,6 +178,51 @@ const Services_content = () => {
       </div>
     );
   }
+  const findServices = (idService) => {
+    const foundService = info2.find(service => service.id === idService);
+    return foundService ? foundService.contentServices : null;
+  };
+  const services = findServices(params.service);
+
+  const importImage = (imageName) => {
+    switch (imageName) {
+      case 'moreServicesRobot':
+        return import("../components/more-services-robot.svg");
+      case 'moreServicesBi':
+        return import("../components/more-services-bi.svg");
+      case 'moreServicesCloud':
+        return import("../components/more-services-cloud.svg");
+      case 'moreServicesIA':
+      return import("../components/more-services-ia.svg");
+      case 'moreServicesDev':
+      return import("../components/more-services-dev.svg");
+      default:
+        return null;
+    }
+  };
+  const [iconImg1, setIconImg1] = useState(null);
+  const [iconImg2, setIconImg2] = useState(null);
+  const [iconImg3, setIconImg3] = useState(null);
+  const [iconImg4, setIconImg4] = useState(null);
+  useEffect(() => {
+    const importImagePath1 = importImage(services[0].img1);
+    const importImagePath2 = importImage(services[0].img2);
+    const importImagePath3 = importImage(services[0].img3);
+    const importImagePath4 = importImage(services[0].img4);
+    if (importImagePath1) {
+      importImagePath1.then(module => setIconImg1(module.default));
+    }
+    if (importImagePath2) {
+      importImagePath2.then(module => setIconImg2(module.default));
+    }
+    if (importImagePath3) {
+      importImagePath3.then(module => setIconImg3(module.default));
+    }
+    if (importImagePath4) {
+      importImagePath4.then(module => setIconImg4(module.default));
+    }
+  }, [params.service]);
+
   return (
     <div>
       <Header></Header>
@@ -184,7 +230,36 @@ const Services_content = () => {
       <div className="more-services-background">
         <div className="more-services-container">
           <div className="more-services-title"><div></div><h1>más servicios</h1><div></div></div>
-          <div className="more-services-content"></div>
+          <div className="more-services-content-grid">
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+                {iconImg1 && <img src={iconImg1} alt="" />}
+                <h1>{services[0].text1}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button">Más Información</button>
+            </div>
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+              {iconImg1 && <img src={iconImg2} alt="" />}
+                <h1>{services[0].text2}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button">Más Información</button>
+            </div>
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+                {iconImg1 && <img src={iconImg3} alt="" />}
+                <h1>{services[0].text3}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button">Más Información</button>
+            </div>
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+              {iconImg1 && <img src={iconImg4} alt="" />}
+                <h1 className="last-item-services">{services[0].text4}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button">Más Información</button>
+            </div>
+          </div>
         </div>
       </div>
       <Footer></Footer>
