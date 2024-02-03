@@ -1,22 +1,28 @@
-import React from "react";
+import "../components/form.css";
 
-const form = () => {
+const Form = () => {
   return (
     <div>
       <div className="contact-us-forms">
         <form>
-          <p>¿Quien nos escribe?</p>
+          <p>¿Quién nos escribe?</p>
           <input className="input-width" placeholder="Nombre"></input>
           <p>Regálanos tu correo</p>
           <input className="input-width" placeholder="E-mail"></input>
           <p>Regálanos tu Teléfono</p>
           <div className="phone_container">
             <input className="input-width-domain" placeholder="+57"></input>
-            <input className="input-width" id="phone" placeholder="Teléfono"></input>
+            <input
+              className="input-width"
+              id="phone"
+              placeholder="Teléfono"
+            ></input>
           </div>
-
           <p>Déjanos tu mensaje</p>
-          <input className="input-width" placeholder="Mensaje"></input>
+          <textarea
+            className="input-width message"
+            placeholder="Mensaje"
+          />
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -24,4 +30,4 @@ const form = () => {
   );
 };
 
-export default form;
+export default Form;

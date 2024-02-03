@@ -10,7 +10,7 @@ const Contract_us = () => {
       <Header></Header>
       <div className="contact-us-container">
         <div className="contact-us-total">
-          <div className="contact-us-set">
+          <div className="contract-us-set">
             <p>Lleva tu negocio a la nueva era de la tecnología</p>
             <button>Contrata Con Nosotros</button>
           </div>
