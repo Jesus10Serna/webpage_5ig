@@ -22,7 +22,12 @@ function automate() {
         <div className='blend'>
             <div className='automate-top-container'>
                 <h1>AUTOMATIZA TU EMPRESA</h1>
-                <button className="blue-button"><span><img src={WspIcon} alt="Whatsapp Logo para chatear con nosotros" /></span>Chatea con nosotros</button>
+                <button 
+                  className="blue-button"
+                >
+                  <img src={WspIcon} alt="Whatsapp Logo para chatear con nosotros" />
+                  Chatea con nosotros
+                </button>
             </div>
         </div>
     </div>

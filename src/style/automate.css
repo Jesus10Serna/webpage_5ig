@@ -26,6 +26,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 1000;
 
 }
 .automate-top-container h1{
@@ -38,8 +39,7 @@
     padding: 0;
     color: var(--color-yellow-primary)
 }
-.blue-button {
-    cursor: pointer;
+.automate-top-container .blue-button {
     top: 312px;
     border: none;
     border-radius: 16px;
@@ -50,16 +50,13 @@
     align-items: center;
     display:  flex;
     justify-content: center;
+    background: linear-gradient(#0898F2, #003566);
+    color: white;
 }
-.blue-button:hover{
+automate-top-container .blue-button:hover{
     background:linear-gradient( #003566,#0898F2);
 }
 
-.blue-button span{
-    height: 23px;
-    width: 23px;
-    
-}
 .content-automate{
     margin: 0;
     padding: 0;
