@@ -5,11 +5,17 @@ import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 import "../style/header.css";
 
-const header = (props) => {
+
+const Header = (props) => {
+
   const handleRedirect = (route) => {
     window.location.href = `/${route}`;
-  };
+    console.log("Entré", window.location.href);
+    const servicesSection = document.getElementsByClassName('.services-portfolio');
+    console.log("Valor Services Section:", servicesSection);
 
+  };
+  
 
   return (
     <div className="header-container">
@@ -19,11 +25,8 @@ const header = (props) => {
       </div>
       <div className="header-contact-container">
         <button className="header-button" id="contract" onClick={()=>handleRedirect('contractus')}>Contrata con Nosotros</button>
-        
-        {/* Juan Jose porfa revisa eso. Este boton de servicios nos tiene que redirigir desde todas las vistas al services container de la landing page  */}
-        {/* <button className="header-button" onClick={()=>props.handleRedirect2('servicios')}>Servicios</button> */}
-        
-         
+
+        <button className="header-button" onClick={()=>handleRedirect('')}>Servicios</button>
         <button className="header-button" onClick={()=>handleRedirect('aboutus')}>¿Quienes Somos?</button>
         
         <div className="header-logos">
@@ -35,4 +38,4 @@ const header = (props) => {
   );
 };
 
-export default header;
+export default Header;

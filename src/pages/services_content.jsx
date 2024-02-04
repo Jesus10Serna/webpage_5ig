@@ -111,6 +111,7 @@ const Services_content = () => {
             <div key={index} className={`container_content`}>
               {index % 2 === 0 ? (
                 <>
+  
                   <DynamicImage src={item.img_source} alt="Imagen" />
                   <div className="desc_service">
                     <h2>{item.title}</h2>
