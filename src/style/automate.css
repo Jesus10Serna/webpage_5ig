@@ -3,7 +3,6 @@
     padding: 0;
     background-image: url('../components/rascaciielos1.svg');
     height: 386px;
-    z-index: -1;
     display: flex;
     position: relative;
 }
@@ -52,8 +51,9 @@
     justify-content: center;
     background: linear-gradient(#0898F2, #003566);
     color: white;
+    z-index: 0;
 }
-automate-top-container .blue-button:hover{
+.automate-top-container .blue-button:hover{
     background:linear-gradient( #003566,#0898F2);
 }
 
