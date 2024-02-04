@@ -2,7 +2,6 @@ import React from "react";
 import "../style/contact-us.css";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
-import facebook from "./facebook.svg";
 import Formulario from "../components/form.jsx"
 
 
@@ -21,7 +20,6 @@ const contact_us = () => {
             <div className="contact-us-logos">
               <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
               <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
-              <a href="https://www.facebook.com/profile.php?id=100087891016427"  target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook"></img></a>
             </div>
           </div>
         </div>
