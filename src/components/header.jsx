@@ -8,12 +8,21 @@ import "../style/header.css";
 
 const Header = (props) => {
 
-  const handleRedirect = (route) => {
+  const handleRedirect = (route, container) => {
     window.location.href = `/${route}`;
-    console.log("Entré", window.location.href);
-    const servicesSection = document.getElementsByClassName('.services-portfolio');
-    console.log("Valor Services Section:", servicesSection);
 
+    // Esperar un breve tiempo (500 milisegundos) antes de intentar desplazarse al contenedor
+    setTimeout(() => {
+        // Si se proporciona un contenedor, desplazarse a él
+        if (container) {
+            const containerElement = document.getElementById(container);
+            if (containerElement) {
+                containerElement.scrollIntoView();
+            } else {
+                console.error(`No se encontró el contenedor con id '${container}'.`);
+            }
+        }
+    }, 500);
   };
   
 
@@ -26,7 +35,7 @@ const Header = (props) => {
       <div className="header-contact-container">
         <button className="header-button" id="contract" onClick={()=>handleRedirect('contractus')}>Contrata con Nosotros</button>
 
-        <button className="header-button" onClick={()=>handleRedirect('')}>Servicios</button>
+        <button className="header-button" onClick={()=>props.handleRedirect2('services-container')}>Servicios</button>
         <button className="header-button" onClick={()=>handleRedirect('aboutus')}>¿Quienes Somos?</button>
         
         <div className="header-logos">

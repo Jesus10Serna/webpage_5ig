@@ -7,7 +7,7 @@ const services = () => {
     console.log(from_landing);
   };
   return (
-    <div className="services-container">
+    <div className="services-container" id="services-container">
       <div className="services-title">
         <div className="line_1"></div>
         <h2>SERVICIOS</h2>
