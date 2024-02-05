@@ -4,10 +4,18 @@ import home from "./home.svg";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 import "../style/header.css";
+import {useNavigate} from "react-router-dom";
 
-const header = (props) => {
+const Header = (props) => {
+    const navigate = useNavigate();
   const handleRedirect = (route) => {
-    window.location.href = `/${route}`;
+      if (route === 'servicios'){
+          navigate('/')
+          const serviciosSection = document.getElementById('servicios');
+          serviciosSection.scrollIntoView({ behavior: 'smooth' });
+      } else {
+          window.location.href = `/${route}`;
+      }
   };
 
 
@@ -19,9 +27,8 @@ const header = (props) => {
       </div>
       <div className="header-contact-container">
         <button className="header-button" id="contract" onClick={()=>handleRedirect('contractus')}>Contrata con Nosotros</button>
-        
-        {/* Juan Jose porfa revisa eso. Este boton de servicios nos tiene que redirigir desde todas las vistas al services container de la landing page  */}
-        {/* <button className="header-button" onClick={()=>props.handleRedirect2('servicios')}>Servicios</button> */}
+
+         <button className="header-button" onClick={()=>handleRedirect('servicios')}>Servicios</button>
         
          
         <button className="header-button" onClick={()=>handleRedirect('aboutus')}>¿Quienes Somos?</button>
@@ -35,4 +42,4 @@ const header = (props) => {
   );
 };
 
-export default header;
+export default Header;
