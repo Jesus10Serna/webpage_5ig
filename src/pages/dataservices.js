@@ -66,12 +66,16 @@ export const info2 = [
       {
         text1:"Robotic Process Automation (RPA)",
         img1:"moreServicesRobot",
+        link1:"/services/rpa",
         text2:"Cloud Solutions",
         img2:"moreServicesCloud",
+        link2:"/services/cloud",
         text3:"Business Intelligence (BI)",
         img3:"moreServicesBi",
+        link3:"/services/bi",
         text4:"Web Development y App Development",
-        img4:"moreServicesDev"
+        img4:"moreServicesDev",
+        link4:"/services/web-app-dev"
       }
     ]
   },
@@ -81,12 +85,16 @@ export const info2 = [
       {
         text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
         img1:"moreServicesIA",
+        link1:"/services/ia",
         text2:"Cloud Solutions",
         img2:"moreServicesCloud",
+        link2:"/services/cloud",
         text3:"Business Intelligence (BI)",
         img3:"moreServicesBi",
+        link3:"/services/bi",
         text4:"Web Development y App Development",
-        img4:"moreServicesDev"
+        img4:"moreServicesDev",
+        link4:"/services/web-app-dev"
       }
     ]
   },
@@ -96,12 +104,16 @@ export const info2 = [
       {
         text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
         img1:"moreServicesIA",
+        link1:"/services/ia",
         text2:"Cloud Solutions",
         img2:"moreServicesCloud",
+        link2:"/services/cloud",
         text3:"Business Intelligence (BI)",
         img3:"moreServicesBi",
+        link3:"/services/bi",
         text4:"Web Development y App Development",
-        img4:"moreServicesDev"
+        img4:"moreServicesDev",
+        link4:"/services/web-app-dev"
       }
     ]
   },
@@ -111,12 +123,16 @@ export const info2 = [
       {
         text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
         img1:"moreServicesIA",
+        link1:"/services/ia",
         text2:"Robotic Process Automation (RPA)",
         img2:"moreServicesRobot",
+        link2:"/services/rpa",
         text3:"Cloud Solutions",
         img3:"moreServicesCloud",
+        link3:"/services/cloud",
         text4:"Web Development y App Development",
-        img4:"moreServicesDev"
+        img4:"moreServicesDev",
+        link4:"/services/web-app-dev"
       }
     ]
   },
@@ -126,12 +142,16 @@ export const info2 = [
       {
         text1:"Inteligencia Artificial (IA) y Machine Learning (ML)",
         img1:"moreServicesIA",
+        link1:"/services/ia",
         text2:"Robotic Process Automation (RPA)",
         img2:"moreServicesRobot",
+        link2:"/services/rpa",
         text3:"Cloud Solutions",
         img3:"moreServicesCloud",
+        link3:"/services/cloud",
         text4:"Business Intelligence (BI)",
         img4:"moreServicesBi",
+        link4:"/services/bi"
       }
     ]
   }

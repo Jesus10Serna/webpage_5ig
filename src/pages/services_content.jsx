@@ -12,10 +12,13 @@ import imgBanner2 from "../components/cloud.svg";
 import imgBanner3 from "../components/bi.svg";
 import imgBanner4 from "../components/wd&ad.svg";
 import arrow from "../components/arrow_contract.svg";
+import { useNavigate } from "react-router-dom";
 
 const Services_content = () => {
+  const navigate = useNavigate();
+
   const handleRedirect = (route) => {
-    window.location.href = `/${route}`;
+      navigate(route);
   };
 
   const DynamicImage = ({ src, alt }) => {
@@ -36,6 +39,7 @@ const Services_content = () => {
   const params = useParams();
   const [service, setService] = useState("");
   useEffect(() => {
+    window.scrollTo(0, 0);
     console.log(params.service, ".");
     setService(params.service);
   }, [params.service]);
@@ -97,12 +101,12 @@ const Services_content = () => {
             <img
               className="back-link"
               src={arrow}
-              onClick={() => handleRedirect("")}
+              onClick={() => handleRedirect("/")}
               alt="arrow_back"
             ></img>
           </div>
           <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
-          <button onClick={() => handleRedirect("contractus")}>
+          <button onClick={() => handleRedirect("/contractus")}>
             Contrata Con Nosotros
           </button>
         </div>
@@ -141,7 +145,7 @@ const Services_content = () => {
             <img
               className="back-link"
               src={arrow}
-              onClick={() => handleRedirect("")}
+              onClick={() => handleRedirect("/")}
               alt="arrow_back"
             ></img>
             <div className="superposition"></div>
@@ -149,7 +153,7 @@ const Services_content = () => {
           <h1>{sectionTitle}</h1>
           <button>CONTRATA CON NOSOTROS </button>
           <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
-          <button onClick={() => handleRedirect("contractus")}>
+          <button onClick={() => handleRedirect("/contractus")}>
             CONTRATA CON NOSOTROS
           </button>
         </div>
@@ -237,28 +241,28 @@ const Services_content = () => {
                 {iconImg1 && <img src={iconImg1} alt="" />}
                 <h1>{services[0].text1}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button">Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link1)}}>Más Información</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg2} alt="" />}
                 <h1>{services[0].text2}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button">Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link2)}}>Más Información</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
                 {iconImg1 && <img src={iconImg3} alt="" />}
                 <h1>{services[0].text3}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button">Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link3)}}>Más Información</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg4} alt="" />}
                 <h1 className="last-item-services">{services[0].text4}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button">Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link4)}}>Más Información</button>
             </div>
           </div>
         </div>
