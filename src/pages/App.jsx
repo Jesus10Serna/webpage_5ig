@@ -17,18 +17,14 @@ function App() {
       setTimeout(() => {
         const component = document.querySelector(".services-container");
         if (component) {
-          console.log(component);
           component.scrollIntoView({ behavior: "smooth" });
-          console.log(component);
         }
       }, 100);
     } else if (params.toService === "to-contact") {
       setTimeout(() => {
         const component = document.querySelector(".contact-us-container");
         if (component) {
-          console.log(component);
           component.scrollIntoView({ behavior: "smooth" });
-          console.log(component);
         }
       }, 100);
     }
