@@ -12,6 +12,9 @@
 .input-width{
     overflow: hidden;
 }
+#phone{
+    width:75%;
+}
 form{
     width: 100%;
 }
