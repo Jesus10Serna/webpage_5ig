@@ -20,6 +20,7 @@ function App() {
       <Layout>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/:toService" element={<Home/>}/>
           <Route exact path="/automate" element={<Automate/>}/>
           <Route exact path="/wwus" element={<WorkWithUs/>}/>
           <Route exact path="/aboutus" element={<AboutUs/>}/>
