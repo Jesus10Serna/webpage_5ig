@@ -25,7 +25,7 @@ const Header = (props) => {
       <div className="header-contact-container">
         <button className="header-button" id="contract" onClick={()=>handleRedirect('/contractus')}>Contrata con Nosotros</button>
 
-        <button className="header-button" onClick={()=>handleRedirect('/toServices')}>Servicios</button>
+        <button className="header-button" onClick={()=>handleRedirect('/to-service')}>Servicios</button>
         <button className="header-button" onClick={()=>handleRedirect('/aboutus')}>¿Quienes Somos?</button>
         
         <div className="header-logos">
