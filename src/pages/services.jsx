@@ -79,7 +79,7 @@ const services = () => {
           <a href="https://www.linkedin.com/company/5ig-solutions/about">
             <button className="button-contact-us">
               <div className="img_link" alt="Encuentranos en linkedin"></div>
-              Encuentranos en LinkedIn
+              <p>Encuentranos en LinkedIn</p>
             </button>
           </a>
         </div>

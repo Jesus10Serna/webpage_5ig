@@ -87,6 +87,9 @@
     top: 193px;
     gap:40px;
 }
+.max-container-services button:hover{
+  background: linear-gradient(#FFD60A, #FBBC05);
+}
 
 .l{
     left: 141px;
@@ -240,5 +243,12 @@ button{
 a{
   text-decoration:none;
 }
-
-
+.button-contact-us p{
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  color: #000814;
+}
+.button-contact-us:hover{
+  background: linear-gradient(#FFD60A, #FBBC05);
+}

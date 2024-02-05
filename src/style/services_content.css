@@ -78,6 +78,9 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   width: 100%;
   background: rgba(0, 53, 102, 1);
 }
+.img-banner button:hover{
+  background: linear-gradient(#FFD60A, #FBBC05);
+}
 
 .img-banner img {
   width: 100%;
@@ -128,6 +131,9 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   height: 2.375rem;
   border-radius: 0.625rem;
   padding: 0.25rem;
+}
+.arrow-container img:hover{
+  opacity: 0.5;
 }
 
 .back-link {
@@ -244,5 +250,8 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   font-weight: 800;
   size: 20px;
   line-height: 20px;
+}
+.more-services-content-grid-item-content-button:hover{
+  background-color: rgba(0, 29, 61, 0.9);
 }
 
