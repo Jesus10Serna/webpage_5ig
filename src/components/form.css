@@ -1,0 +1,26 @@
+.message{
+    height: 146px;
+    width:623px;
+    border-radius: 14px;
+    padding: 8px;
+    border: none;
+}
+.input-width-domain{
+    padding: 0px 0px 0px 24px;
+    text-align: left;
+}
+.input-width{
+    overflow: hidden;
+}
+#phone{
+    width:75%;
+}
+form{
+    width: 100%;
+}
+
+
+
+  
+
+

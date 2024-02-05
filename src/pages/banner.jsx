@@ -13,15 +13,13 @@ const banner = () => {
           <h1>AUTOMATIZAR TU MUNDO</h1>
         </div>
         <div className="banner-buttons">
-          <button className="yellow-button"
-          onClick={() => handleRedirect("wwus")}
-          >Trabaja Con Nosotros</button>
           <button
             className="blue-button"
             onClick={() => handleRedirect("automate")}
           >
             Automatiza Tu Empresa
           </button>
+          
         </div>
       </div>
     </div>

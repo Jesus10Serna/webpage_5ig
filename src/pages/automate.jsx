@@ -12,6 +12,11 @@ import Contact from "../components/contact_us"
 
 import call_Contact from '../components/access_contact.jsx'
 
+  const handleRedirectW = () => {
+     window.location.href = 'whatsapp://send?phone=310666666';
+  };
+
+
 
 function automate() {
 
@@ -22,7 +27,13 @@ function automate() {
         <div className='blend'>
             <div className='automate-top-container'>
                 <h1>AUTOMATIZA TU EMPRESA</h1>
-                <button className="blue-button"><span><img src={WspIcon} alt="Whatsapp Logo para chatear con nosotros" /></span>Chatea con nosotros</button>
+                <button 
+                  className="blue-button"
+                  onClick={handleRedirectW}
+                >
+                  <img src={WspIcon} alt="Whatsapp Logo para chatear con nosotros" />
+                  Chatea con nosotros
+                </button>
             </div>
         </div>
     </div>
