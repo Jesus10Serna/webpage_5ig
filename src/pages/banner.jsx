@@ -9,8 +9,8 @@ const banner = () => {
     <div className="banner-container">
       <div className="banner-title">
         <div className="titles">
-          <h2>COMIENZA A</h2>
-          <h1>AUTOMATIZAR TU MUNDO</h1>
+          <div className="title1"><h2>COMIENZA A</h2></div>
+          <div className="title2"><h1>AUTOMATIZAR TU MUNDO</h1></div>
         </div>
         <div className="banner-buttons">
           <button
