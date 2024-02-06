@@ -233,10 +233,10 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   align-self: center;
   margin: 0;
 }
-.more-services-content-grid div:last-child h1 {
+/* .more-services-content-grid div:last-child h1 {
   padding-top: 4px;
   align-self: start;
-}
+} */
 
 .more-services-content-grid-item-content-button {
   height: 54px;

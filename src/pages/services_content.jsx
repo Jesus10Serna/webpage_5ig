@@ -228,6 +228,11 @@ const Services_content = () => {
     }
   }, [params.service]);
 
+  const styleForWebItem = {
+    paddingTop: "4px",
+    alignSelf: "start"
+  }
+
   return (
     <div>
       <Header></Header>
@@ -237,30 +242,30 @@ const Services_content = () => {
           <div className="more-services-title"><div></div><h1>más servicios</h1><div></div></div>
           <div className="more-services-content-grid">
             <div className="more-services-content-grid-item">
-              <div className="more-services-content-grid-item-content">
+              <div className="more-services-content-grid-item-content" >
                 {iconImg1 && <img src={iconImg1} alt="" />}
-                <h1>{services[0].text1}</h1>
+                <h1 style={services[0].link1 === "/services/web-app-dev" || services[0].link1==="/services/ia" ? styleForWebItem : {}}>{services[0].text1}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link1)}}>Más Información</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg2} alt="" />}
-                <h1>{services[0].text2}</h1>
+                <h1 style={services[0].link2 === "/services/web-app-dev" || services[0].link2==="/services/ia" ? styleForWebItem : {}}>{services[0].text2}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link2)}}>Más Información</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
                 {iconImg1 && <img src={iconImg3} alt="" />}
-                <h1>{services[0].text3}</h1>
+                <h1 style={services[0].link3 === "/services/web-app-dev" || services[0].link3==="/services/ia" ? styleForWebItem : {}}>{services[0].text3}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link3)}}>Más Información</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg4} alt="" />}
-                <h1 className="last-item-services">{services[0].text4}</h1>
+                <h1 style={services[0].link4 === "/services/web-app-dev" || services[0].link4 ==="/services/ia" ? styleForWebItem : {}}> {services[0].text4}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link4)}}>Más Información</button>
             </div>
