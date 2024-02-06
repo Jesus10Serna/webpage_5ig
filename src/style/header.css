@@ -58,6 +58,24 @@
   font-weight: 500;
 }
 
+.secondary-header-button{
+  width: auto;
+  height: 45px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  transition: ease-in 0.1s;
+  letter-spacing: -1.46px;
+  padding: 0 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  background: none;
+}
+
+.secondary-header-button:hover{
+  color: var(--color-yellow-primary);
+}
+
 #contract{
   background-color: var(--color-yellow-primary);
   color: var(--color-primary);

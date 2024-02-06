@@ -25,8 +25,8 @@ const Header = (props) => {
       <div className="header-contact-container">
         <button className="header-button" id="contract" onClick={()=>handleRedirect('/contractus')}>Contrata con Nosotros</button>
 
-        <button className="header-button" onClick={()=>handleRedirect('/to-service')}>Servicios</button>
-        <button className="header-button" onClick={()=>handleRedirect('/aboutus')}>¿Quienes Somos?</button>
+        <button className="secondary-header-button" onClick={()=>handleRedirect('/to-service')}>Servicios</button>
+        <button className="secondary-header-button" onClick={()=>handleRedirect('/aboutus')}>¿Quienes Somos?</button>
         
         <div className="header-logos">
           <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
