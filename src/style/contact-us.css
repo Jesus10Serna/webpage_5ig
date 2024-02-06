@@ -1,5 +1,5 @@
 .contact-us-container{
-    height: 848px;
+    height: auto;
     align-items: center;
     background-image: linear-gradient(
         rgba(0,53,102,0.5),
@@ -15,7 +15,8 @@
     display: flex;
     align-items: center;
     width: 1072px;
-    height: 718px;
+    height: auto;
+    margin: 30px 0;
     margin-left: 424px;
 }
 
@@ -97,6 +98,10 @@
     border-radius: 14px;
     border: 2px solid #001D3D;
     padding: 13px 24px;
+}
+
+textarea.input-width {
+    height: 150px;
 }
 
 .input-width:focus-visible{
