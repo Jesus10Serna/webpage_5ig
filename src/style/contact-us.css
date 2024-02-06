@@ -233,7 +233,7 @@ textarea.input-width {
     max-height: 106px;
     overflow: auto;
     scrollbar-width: 1px;
-    scrollbar-color: red;
+    scrollbar-color: rgb(95, 95, 95);
 }
 
 ::-webkit-scrollbar {
@@ -241,7 +241,7 @@ textarea.input-width {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: red; /* Color del pulgar */
+    background-color: rgb(95, 95, 95); /* Color del pulgar */
     border-radius: 6px; /* Radio de borde del pulgar */
 }
 

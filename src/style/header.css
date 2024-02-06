@@ -78,7 +78,7 @@
 
 #contract{
   background-color: var(--color-yellow-primary);
-  color: var(--color-primary);
+  color:#000814 ;
   font-size: 20px;
   font-weight: 500;
 }
