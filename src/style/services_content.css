@@ -106,7 +106,7 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
 .img-banner button {
   position: absolute;
   width: 284px;
-  top: 490px;
+  top: 442px;
   height: 54px;
   left: 1344px;
   /* transform: translateY(-50%); */
@@ -192,6 +192,7 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   align-self: Center;
   text-align: center;
   letter-spacing: -1.46px;
+  color: rgba(0, 29, 61, 1);;
 }
 .more-services-content-grid {
   margin: 0 auto;
