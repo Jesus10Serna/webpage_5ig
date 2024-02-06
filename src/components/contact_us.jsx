@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "../style/contact-us.css";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
-import facebook from "./facebook.svg";
-import facebook2 from "./arrowDown.svg";
+import arrowIcon from "./arrowDown.svg";
 import InputComponent from "./inputComponent";
 import TextAreaComponent from "./textAreaComponent";
 
@@ -109,8 +108,7 @@ const Contact_us = () => {
             <h3>SIGUENOS EN</h3>
             <div className="contact-us-logos">
               <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
-              <a href="https://www.linkedin.com/company/5ig-solutions/about" target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
-              <a href="https://www.facebook.com/profile.php?id=100087891016427" target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook"></img></a>
+              <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
             </div>
           </div>
         </div>
@@ -133,7 +131,7 @@ const Contact_us = () => {
               <div className="phoneContactDropdown">
                 <div className="phoneContactInputContainer">
                   <input type="text" className={`inputNumber ${openDropdown && "active"}`} onClick={() => handleDropdown()} placeholder="+57" name="phone_prefix" readOnly value={selectedPhonePrefix}/>
-                  <img src={facebook2} alt="" />
+                  <img src={arrowIcon} alt="" />
                 </div>
                 {openDropdown &&
                   (<>
@@ -164,6 +162,7 @@ const Contact_us = () => {
             <button type="submit">Enviar</button>
           </form>
         </div>
+        
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 .header-container {
-  height: 76px;
+  height: auto;
   display: grid;
-  padding: 10px 150px;
+  padding: 0.5rem 4rem;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--color-primary);
   justify-content: space-between;
@@ -12,11 +12,12 @@
   align-items: center;
   margin-left: 80px;
   padding-top: 4px;
+  gap: 1rem;
 }
 
 .header-contact-container {
   display: flex;
-  gap: 50px;
+  gap: 1rem;
   justify-self: end;
   align-items: center;
 }
@@ -44,25 +45,50 @@
 }
 
 .header-button {
-  width: 209px;
+  width: auto;
   height: 45px;
   border-radius: 30px;
-  background: var(--color-primary); /* Cambiado a 'background' */
+  background: var(--color-primary);
   color: white;
   border: none;
   transition: ease-in 0.1s;
   letter-spacing: -1.46px;
+  padding: 0 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.secondary-header-button{
+  width: auto;
+  height: 45px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  transition: ease-in 0.1s;
+  letter-spacing: -1.46px;
+  padding: 0 1.5rem;
+  font-size: 20px;
+  font-weight: 500;
+  background: none;
+}
+
+.secondary-header-button:hover{
+  color: var(--color-yellow-primary);
 }
 
 #contract{
   background-color: var(--color-yellow-primary);
   color: var(--color-primary);
+  font-size: 20px;
+  font-weight: 500;
+}
+#contract:hover{
+  background: linear-gradient(180deg, #0898F2 0%, #003566 100%);
+  color:white;
 }
 
-
 .header-button:hover {
-  background: linear-gradient(#ffd60a, #fbbc05); /* Cambiado a 'background' */
-  color: var(--color-primary);
+  color: #FFC300;
   cursor: pointer;
 }
 

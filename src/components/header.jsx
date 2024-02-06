@@ -4,27 +4,29 @@ import home from "./home.svg";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 import "../style/header.css";
+import { useNavigate } from 'react-router-dom';
 
-const header = (props) => {
+
+const Header = (props) => {
+  const navigate = useNavigate();
+ 
+
   const handleRedirect = (route) => {
-    window.location.href = `/${route}`;
+      navigate(route);
   };
-
+  
 
   return (
     <div className="header-container">
       <div className="header-home-container">
-        <img className="img-5ig" src={home} onClick={()=>handleRedirect('')} alt="Icono_5ig"></img>
-        <img className="logo-5ig" src={logo5ig} onClick={()=>handleRedirect('')} alt="Logo_5ig"></img>
+        <img className="img-5ig" src={home} onClick={()=>handleRedirect('/')} alt="Icono_5ig"></img>
+        <img className="logo-5ig" src={logo5ig} onClick={()=>handleRedirect('/')} alt="Logo_5ig"></img>
       </div>
       <div className="header-contact-container">
-        <button className="header-button" id="contract" onClick={()=>handleRedirect('contractus')}>Contrata con Nosotros</button>
-        
-        {/* Juan Jose porfa revisa eso. Este boton de servicios nos tiene que redirigir desde todas las vistas al services container de la landing page  */}
-        {/* <button className="header-button" onClick={()=>props.handleRedirect2('servicios')}>Servicios</button> */}
-        
-         
-        <button className="header-button" onClick={()=>handleRedirect('aboutus')}>¿Quienes Somos?</button>
+        <button className="header-button" id="contract" onClick={()=>handleRedirect('/contractus')}>Contrata con Nosotros</button>
+
+        <button className="secondary-header-button" onClick={()=>handleRedirect('/to-service')}>Servicios</button>
+        <button className="secondary-header-button" onClick={()=>handleRedirect('/aboutus')}>¿Quienes Somos?</button>
         
         <div className="header-logos">
           <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
@@ -35,4 +37,4 @@ const header = (props) => {
   );
 };
 
-export default header;
+export default Header;

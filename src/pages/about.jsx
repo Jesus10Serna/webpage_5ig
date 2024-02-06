@@ -3,7 +3,6 @@ import Logo from "../components/logo_about_us.svg";
 import "../style/about.css";
 
 const AboutUS = () => {
-  const newLocal = "";
   return (
     <div className="about-container">
       <div className="about-title">

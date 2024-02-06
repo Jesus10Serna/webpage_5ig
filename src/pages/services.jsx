@@ -1,13 +1,13 @@
 import React from "react";
 import "../style/services.css";
 
-const services = () => {
+const Services = () => {
+
   const handleRedirect = (route, from_landing) => {
     window.location.href = `/${route}/${from_landing}`;
-    console.log(from_landing);
   };
   return (
-    <div className="services-container">
+    <div className="services-container" id="services-container">
       <div className="services-title">
         <div className="line_1"></div>
         <h2>SERVICIOS</h2>
@@ -79,7 +79,7 @@ const services = () => {
           <a href="https://www.linkedin.com/company/5ig-solutions/about">
             <button className="button-contact-us">
               <div className="img_link" alt="Encuentranos en linkedin"></div>
-              Encuentranos en LinkedIn
+              <p>Encuentranos en LinkedIn</p>
             </button>
           </a>
         </div>
@@ -88,4 +88,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;

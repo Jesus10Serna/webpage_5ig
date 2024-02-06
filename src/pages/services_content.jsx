@@ -5,16 +5,20 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../style/services_content.css";
 import { info } from "../pages/dataservices.js";
+import { info2 } from "../pages/dataservices.js";
 import imgBanner from "../components/ia.svg";
 import imgBanner1 from "../components/rpa.svg";
 import imgBanner2 from "../components/cloud.svg";
 import imgBanner3 from "../components/bi.svg";
 import imgBanner4 from "../components/wd&ad.svg";
 import arrow from "../components/arrow_contract.svg";
+import { useNavigate } from "react-router-dom";
 
 const Services_content = () => {
+  const navigate = useNavigate();
+
   const handleRedirect = (route) => {
-    window.location.href = `/${route}`;
+      navigate(route);
   };
 
   const DynamicImage = ({ src, alt }) => {
@@ -35,6 +39,7 @@ const Services_content = () => {
   const params = useParams();
   const [service, setService] = useState("");
   useEffect(() => {
+    window.scrollTo(0, 0);
     console.log(params.service, ".");
     setService(params.service);
   }, [params.service]);
@@ -96,12 +101,12 @@ const Services_content = () => {
             <img
               className="back-link"
               src={arrow}
-              onClick={() => handleRedirect("")}
+              onClick={() => handleRedirect("/")}
               alt="arrow_back"
             ></img>
           </div>
           <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
-          <button onClick={() => handleRedirect("contractus")}>
+          <button onClick={() => handleRedirect("/contractus")}>
             Contrata Con Nosotros
           </button>
         </div>
@@ -110,6 +115,7 @@ const Services_content = () => {
             <div key={index} className={`container_content`}>
               {index % 2 === 0 ? (
                 <>
+  
                   <DynamicImage src={item.img_source} alt="Imagen" />
                   <div className="desc_service">
                     <h2>{item.title}</h2>
@@ -139,14 +145,15 @@ const Services_content = () => {
             <img
               className="back-link"
               src={arrow}
-              onClick={() => handleRedirect("")}
+              onClick={() => handleRedirect("/")}
               alt="arrow_back"
             ></img>
+            <div className="superposition"></div>
           </div>
           <h1>{sectionTitle}</h1>
           <button>CONTRATA CON NOSOTROS </button>
           <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
-          <button onClick={() => handleRedirect("contractus")}>
+          <button onClick={() => handleRedirect("/contractus")}>
             CONTRATA CON NOSOTROS
           </button>
         </div>
@@ -176,6 +183,56 @@ const Services_content = () => {
       </div>
     );
   }
+  const findServices = (idService) => {
+    const foundService = info2.find(service => service.id === idService);
+    return foundService ? foundService.contentServices : null;
+  };
+  const services = findServices(params.service);
+
+  const importImage = (imageName) => {
+    switch (imageName) {
+      case 'moreServicesRobot':
+        return import("../components/more-services-robot.svg");
+      case 'moreServicesBi':
+        return import("../components/more-services-bi.svg");
+      case 'moreServicesCloud':
+        return import("../components/more-services-cloud.svg");
+      case 'moreServicesIA':
+      return import("../components/more-services-ia.svg");
+      case 'moreServicesDev':
+      return import("../components/more-services-dev.svg");
+      default:
+        return null;
+    }
+  };
+  const [iconImg1, setIconImg1] = useState(null);
+  const [iconImg2, setIconImg2] = useState(null);
+  const [iconImg3, setIconImg3] = useState(null);
+  const [iconImg4, setIconImg4] = useState(null);
+  useEffect(() => {
+    const importImagePath1 = importImage(services[0].img1);
+    const importImagePath2 = importImage(services[0].img2);
+    const importImagePath3 = importImage(services[0].img3);
+    const importImagePath4 = importImage(services[0].img4);
+    if (importImagePath1) {
+      importImagePath1.then(module => setIconImg1(module.default));
+    }
+    if (importImagePath2) {
+      importImagePath2.then(module => setIconImg2(module.default));
+    }
+    if (importImagePath3) {
+      importImagePath3.then(module => setIconImg3(module.default));
+    }
+    if (importImagePath4) {
+      importImagePath4.then(module => setIconImg4(module.default));
+    }
+  }, [params.service]);
+
+  const styleForWebItem = {
+    paddingTop: "4px",
+    alignSelf: "start"
+  }
+
   return (
     <div>
       <Header></Header>
@@ -183,7 +240,36 @@ const Services_content = () => {
       <div className="more-services-background">
         <div className="more-services-container">
           <div className="more-services-title"><div></div><h1>más servicios</h1><div></div></div>
-          <div className="more-services-content"></div>
+          <div className="more-services-content-grid">
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content" >
+                {iconImg1 && <img src={iconImg1} alt="" />}
+                <h1 style={services[0].link1 === "/services/web-app-dev" || services[0].link1==="/services/ia" ? styleForWebItem : {}}>{services[0].text1}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link1)}}>Más Información</button>
+            </div>
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+              {iconImg1 && <img src={iconImg2} alt="" />}
+                <h1 style={services[0].link2 === "/services/web-app-dev" || services[0].link2==="/services/ia" ? styleForWebItem : {}}>{services[0].text2}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link2)}}>Más Información</button>
+            </div>
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+                {iconImg1 && <img src={iconImg3} alt="" />}
+                <h1 style={services[0].link3 === "/services/web-app-dev" || services[0].link3==="/services/ia" ? styleForWebItem : {}}>{services[0].text3}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link3)}}>Más Información</button>
+            </div>
+            <div className="more-services-content-grid-item">
+              <div className="more-services-content-grid-item-content">
+              {iconImg1 && <img src={iconImg4} alt="" />}
+                <h1 style={services[0].link4 === "/services/web-app-dev" || services[0].link4 ==="/services/ia" ? styleForWebItem : {}}> {services[0].text4}</h1>
+              </div>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link4)}}>Más Información</button>
+            </div>
+          </div>
         </div>
       </div>
       <Footer></Footer>

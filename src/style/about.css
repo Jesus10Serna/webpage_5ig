@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 2600px;
+  height: 2080px;
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -59,7 +59,7 @@
   position: absolute;
   top: 627px;
   width: 1352px;
-  height: 2250px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -90,7 +90,7 @@
   line-height: 54.46px;
   letter-spacing: -1.4600000381469727px;
   text-align: left;
-  top: 142px;
+  top: 120px;
   left: 141px;
 }
 
@@ -132,7 +132,7 @@
 .about-text-vision {
   display: inline-block;
   position: relative;
-  top: 150px;
+  top: 80px;
   left: 141px;
   width: 873px;
   font-weight: 700;
