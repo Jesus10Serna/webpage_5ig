@@ -4,7 +4,7 @@
 import Header from "../components/header";
 import Footer from "../components/footer"
 import Banner from "../pages/banner"
-import Contact from "../components/contact_us"
+import Contact_us from "../components/contact_us"
 import Services from "../pages/services"
 import call_Contact from '../components/access_contact.jsx'
 
@@ -15,7 +15,7 @@ function App() {
       <Header handleRedirect2={call_Contact}/>
       <Banner/>
       <Services/> 
-      <Contact/>   
+      <Contact_us/>   
       <Footer/>
     </div>
   );

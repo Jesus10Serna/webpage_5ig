@@ -8,7 +8,7 @@ import Chip from "../components/chip-automate.svg";
 import WspIcon from "../components/wsp.svg";
 import Footer from "../components/footer";
 import Header from '../components/header';
-import Contact from "../components/contact_us"
+import Contact_us from "../components/contact_us"
 
 import call_Contact from '../components/access_contact.jsx'
 
@@ -101,7 +101,7 @@ function automate() {
         </div>
       </div>
     </div>
-    <Contact></Contact>
+    <Contact_us></Contact_us>
     <Footer></Footer>
     </div>
   )

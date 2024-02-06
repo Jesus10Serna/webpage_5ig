@@ -27,7 +27,7 @@
     color: white;
 }
 .banner-title h1{
-    color: var(--color-yellow-primary)
+    color: var(--color-yellow-primary);
 }
 
 .banner-buttons{

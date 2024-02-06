@@ -1,15 +1,14 @@
-.contact-us-container{
+.contact-us-container {
     height: 606px;
-    background-image: linear-gradient(
-        rgba(0,53,102,0.5),
-        rgba(0, 0, 0, 0.5)
-        ),url('../components/bckimagecontact.svg');
+    background-image: linear-gradient(rgba(0, 53, 102, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../components/bckimagecontact.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
 }
-.contact-us-total{
+
+.contact-us-total {
     display: flex;
     align-items: center;
     width: 1072px;
@@ -17,14 +16,16 @@
     margin-left: 424px;
     margin-top: 51px;
 }
-.contact-us-set{
+
+.contact-us-set {
     justify-content: start;
-    align-items:center;
+    align-items: center;
     width: 304px;
     height: 423px;
 }
 
-.contact-us-countries, .contact-us-social {
+.contact-us-countries,
+.contact-us-social {
     color: white;
     z-index: 1000;
     width: 100%;
@@ -39,20 +40,26 @@
     align-items: center;
     margin-bottom: 60px;
 }
-.contact-us-countries h3, .contact-us-countries h4, .contact-us-countries p {
+
+.contact-us-countries h3,
+.contact-us-countries h4,
+.contact-us-countries p {
     text-align: center;
     margin: 0;
     padding: 0;
 }
-.contact-us-countries h3{
+
+.contact-us-countries h3 {
     width: 252px;
     height: 42px;
 }
-.contact-us-countries h4{
+
+.contact-us-countries h4 {
     width: 244px;
     height: 47px;
 }
-.contact-us-countries p{
+
+.contact-us-countries p {
     width: 274px;
     height: 38px;
 }
@@ -61,44 +68,163 @@
     display: flex;
     justify-content: center;
     width: 211px;
-    height:37px;
+    height: 37px;
     gap: 50px;
 }
 
-.contact-us-forms{
+.contact-us-forms {
     margin-left: 100px;
-    width: 661px;
-    height: 504px;
+    min-width: 661px;
     padding: 10px 35px;
     border-radius: 17px;
+    padding-bottom: 30px;
+    display: flex;
+  justify-content: center;
     gap: 20px;
-    background-color:rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-.input-width{
-    width:591px;
+.contact-us-forms form{
+    width: fit-content;
+}
+
+.input-width {
+    width: 591px;
     border-radius: 14px;
-    border: none;
+    border: 2px solid #001D3D;
     padding: 13px 24px;
 }
 
-.contact-us-forms form p{
-    color:var(--color-secondary)
+.input-width:focus-visible{
+    border: 2px solid #0075BF !important;
 }
 
-.contact-us-forms form button{
+.contact-us-forms form p {
+    color: var(--color-secondary);
+    width: fit-content;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    margin: 10px 0 8px;
+}
+
+.contact-us-forms form button {
     width: 641px;
     height: 54px;
     padding: 16px 28px;
     margin-top: 30px;
-    background-color:var(--color-yellow-primary);
+    background-color: var(--color-yellow-primary);
     color: var(--color-secondary);
     font-weight: bold;
     border: none;
-    border-radius:16px;
+    border-radius: 16px;
 }
 
-.contact-us-forms form button:hover{
+.contact-us-forms form button:hover {
     background: linear-gradient(#FFD60A, #FBBC05);
 }
 
+.phoneContactContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.phoneContactContainer .input-width {
+    width: 90%;
+}
+
+.phoneContactContainer .input-width:focus-visible{
+   border: 2px solid #0075BF !important;
+}
+
+.phoneContactContainer .phoneContactDropdown {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.phoneContactContainer .phoneContactDropdown img {
+    width: min-content;
+}
+
+.phoneContactContainer .phoneContactDropdown .phoneContactOptions {
+    background-color: #fff;
+    border-radius: 16px;
+    border: 2px solid #0075BF;
+    width: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+}
+
+.phoneContactContainer .phoneContactDropdown .phoneContactOptions p{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #939094;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.phoneContactContainer .phoneContactInputContainer {
+    display: flex;
+    position: relative;
+}
+
+.phoneContactContainer .phoneContactInputContainer img{
+    position: absolute;
+    left: 100px;
+    top: 19px;
+    color: #FBBC05;
+}
+
+.phoneContactContainer .phoneContactDropdown .phoneContactOptions p:not(:last-child){
+    border-bottom: 1px solid #001D3D;
+}
+
+.phoneContactContainer .inputComponentContainer {
+    width: 100%;
+    display: flex;
+}
+
+.phoneContactContainer .phoneContactDropdown input {
+    border-radius: 14px;
+    border: 2px solid #0075BF;
+    cursor: pointer;
+    padding: 13px 24px;
+    width: 78px;
+}
+
+.inputComponentContainer {
+    width: fit-content;
+}
+
+.phoneContactOptions .optionsContainer{
+    max-height: 106px;
+    overflow: auto;
+    scrollbar-width: 1px;
+    scrollbar-color: red;
+}
+
+::-webkit-scrollbar {
+    width: 1px; /* Cambia el valor según lo que necesites */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red; /* Color del pulgar */
+    border-radius: 6px; /* Radio de borde del pulgar */
+}
