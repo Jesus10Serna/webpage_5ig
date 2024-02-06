@@ -28,3 +28,7 @@ textarea
   border: none; /* Elimina el borde */
   outline: none; /* Elimina el resaltado de enfoque */
 }
+
+* {
+  box-sizing: revert !important;
+}

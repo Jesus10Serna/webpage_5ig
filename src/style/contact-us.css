@@ -85,6 +85,7 @@
   justify-content: center;
     gap: 20px;
     background-color: rgba(255, 255, 255, 0.6);
+    box-sizing: revert;
 }
 
 .contact-us-forms form{
@@ -123,8 +124,14 @@
     border-radius: 16px;
 }
 
-.contact-us-forms form button:hover {
+.contact-us-forms form button.sendFormConatct:hover {
     background: linear-gradient(#FFD60A, #FBBC05);
+}
+
+.contact-us-forms form button.sendFormConatct:disabled {
+    background: linear-gradient(#ffd60a, #fbbd05);
+    color: #939094;
+    cursor:no-drop;
 }
 
 .phoneContactContainer {
@@ -164,7 +171,8 @@
     flex-direction: column;
     padding: 10px;
     position: absolute;
-    top: 50px;
+    top: 61px;
+  z-index: 99;
 }
 
 .phoneContactContainer .phoneContactDropdown .phoneContactOptions p{
@@ -191,7 +199,7 @@
 .phoneContactContainer .phoneContactInputContainer img{
     position: absolute;
     left: 100px;
-    top: 19px;
+    top: 25px;
     color: #FBBC05;
 }
 
@@ -251,3 +259,6 @@
     width:calc(90% - 82px);
 }
 
+.alert.alert-danger.p-2.mt-2{
+    width: 622px;
+}

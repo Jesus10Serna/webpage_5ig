@@ -5,10 +5,24 @@ import linkedin from "./linkedin.svg";
 import arrowIcon from "./arrowDown.svg";
 import InputComponent from "./inputComponent";
 import TextAreaComponent from "./textAreaComponent";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Contact_us = () => {
   const [openDropdown, setOpenDropdown] = useState(false)
-  const [selectedPhonePrefix, setSelectedPhonePrefix] = useState()
+  const [errorMessage, setErrorMessage] = useState(false)
+
+  const initialData = {
+    name: '',
+    email: '',
+    phone_prefix: '',
+    phone: '',
+    message: ''
+  }
+  const [loading, setLoading] = useState(false)
+  const [errors, setErros] = useState({})
+  // const [selectedPhonePrefix, setSelectedPhonePrefix] = useState(initialData.phone_prefix)
+  const [form, setForm] = useState(initialData)
+
   const options = [
     { "country": "Estados Unidos", "code": "+1" },
     { "country": "Canadá", "code": "+1" },
@@ -91,8 +105,67 @@ const Contact_us = () => {
     setOpenDropdown(!openDropdown)
   }
 
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setForm({ ...form, [name]: value })
+  }
+
   const handleSelectOption = (option) => {
-    setSelectedPhonePrefix(option)
+    // setSelectedPhonePrefix(option)
+    setForm({ ...form, ["phone_prefix"]: option })
+  }
+
+  const onValidate = (form) => {
+    let errors = {}
+
+    if (!form.name.trim()) {
+      errors.name = 'Este campo debe ser completado.'
+    }
+
+    if (!form.email.trim()) {
+      errors.email = 'Este campo debe ser completado.'
+    }
+
+    if (!form.phone_prefix.trim()) {
+      errors.phone_prefix = 'El campo del sufijo del telefono debe ser completado.'
+    }
+
+    if (!form.phone.trim()) {
+      errors.phone = 'El campo del numero de telefono debe ser completado.'
+    }
+
+    if (!form.message.trim()) {
+      errors.message = 'Este campo debe ser completado.'
+    }
+
+    return errors
+  }
+
+  const handleSubmitContact = (event) => {
+    event.preventDefault()
+    const err = onValidate(form)
+    setErros(err)
+    if (Object.keys(err).length === 0) {
+      setLoading(true)
+      fetch("https://formsubmit.co/ajax/martin.sanchez0653@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(form)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data)
+          data.success === "true" && setForm(initialData)
+          setLoading(false)
+        })
+        .catch(error => {
+          console.log(error)
+          setLoading(false)
+        });
+    }
   }
 
   return (
@@ -108,40 +181,46 @@ const Contact_us = () => {
             <h3>SIGUENOS EN</h3>
             <div className="contact-us-logos">
               <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
-              <a href="https://www.linkedin.com/company/5ig-solutions/about"  target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
+              <a href="https://www.linkedin.com/company/5ig-solutions/about" target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
             </div>
           </div>
         </div>
         <div className="contact-us-forms">
-          <form target="_blank" action="https://formsubmit.co/martin.sanchez0653@gmail.com" method="POST">            <InputComponent
-            className={`input-width`}
-            label={`¿Quien nos escribe?`}
-            placeholdel={`Nombre`}
-            name={'name'}
-          />
+          <form onSubmit={handleSubmitContact}>
+            <InputComponent
+              className={`input-width`}
+              label={`¿Quien nos escribe?`}
+              placeholdel={`Nombre`}
+              name={'name'}
+              value={form.name}
+              handleChange={handleChange}
+            />
+            {errors.name && <div className="alert alert-danger p-2 mt-2">{errors.name}</div>}
             <InputComponent
               className={`input-width`}
               label={`Regálanos tu correo`}
               placeholdel={`E-mail`}
               name={'email'}
+              value={form.email}
+              handleChange={handleChange}
             />
-
+            {errors.email && <div className="alert alert-danger p-2 mt-2">{errors.email}</div>}
             <p>Regálanos tu télefono</p>
             <div className="phoneContactContainer">
               <div className="phoneContactDropdown">
                 <div className="phoneContactInputContainer">
-                  <input type="text" className={`inputNumber ${openDropdown && "active"}`} onClick={() => handleDropdown()} placeholder="+57" name="phone_prefix" readOnly value={selectedPhonePrefix}/>
+                  <input type="text" className={`inputNumber ${openDropdown && "active"}`} onClick={() => handleDropdown()} placeholder="+57" name="phone_prefix" readOnly value={form.phone_prefix} />
                   <img src={arrowIcon} alt="" />
                 </div>
                 {openDropdown &&
                   (<>
                     <div className="phoneContactOptions">
                       <div className="optionsContainer">
-                      {options.map((option) => {
-                        return (<p onClick={() => handleSelectOption(option.code)}>
-                          {option.country}
-                        </p>)
-                      })}
+                        {options.map((option) => {
+                          return (<p onClick={() => handleSelectOption(option.code)} key={option.country}>
+                            {option.country}
+                          </p>)
+                        })}
                       </div>
                     </div>
                   </>)}
@@ -150,19 +229,28 @@ const Contact_us = () => {
                 className={`input-width`}
                 placeholdel={`Telefono`}
                 name={'phone'}
+                handleChange={handleChange}
+                value={form.phone}
               />
             </div>
+              {errors.phone_prefix && <div className="alert alert-danger p-2 mt-2">{errors.phone_prefix}</div>}
+              {errors.phone && <div className="alert alert-danger p-2 mt-2">{errors.phone}</div>}
 
             <TextAreaComponent
               className={`input-width textArea`}
               label={`Déjanos tu mensaje`}
               placeholdel={`Mensaje`}
               name={'message'}
+              handleChange={handleChange}
+              value={form.message}
             />
-            <button type="submit">Enviar</button>
+            {errors.message && <div className="alert alert-danger p-2 mt-2">{errors.message}</div>}
+            <button className="sendFormConatct" disabled={loading}>{loading ? "Enviando..." : "Enviar"}</button>
+            {/* <input type="hidden" name="_next" value="/"/>
+            <input type="hidden" name="_captcha" valu`e="false"/> */}
           </form>
         </div>
-        
+
       </div>
     </div>
   );

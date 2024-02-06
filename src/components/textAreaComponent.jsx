@@ -1,5 +1,5 @@
 
-const TextAreaComponent = ({label, value, placeholdel, type, className, name}) => {
+const TextAreaComponent = ({label, value, placeholdel, type, className, name, handleChange}) => {
   return (
     <>
       <div className="inputComponentContainer">
@@ -10,6 +10,7 @@ const TextAreaComponent = ({label, value, placeholdel, type, className, name}) =
           value={value}
           placeholder={placeholdel}
           name={name}
+          onChange={handleChange}
         />
       </div>
     </>

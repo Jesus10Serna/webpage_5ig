@@ -1,5 +1,6 @@
 
-const InputComponent = ({label, value, placeholdel, type, className, name}) => {
+const InputComponent = ({label, value, placeholdel, type, className, name, handleChange}) => {
+
   return (
     <>
       <div className="inputComponentContainer">
@@ -10,6 +11,7 @@ const InputComponent = ({label, value, placeholdel, type, className, name}) => {
           value={value}
           placeholder={placeholdel}
           name={name}
+          onChange={handleChange}
         />
       </div>
     </>
