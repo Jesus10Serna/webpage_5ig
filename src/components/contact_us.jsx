@@ -5,7 +5,7 @@ import linkedin from "./linkedin.svg";
 import arrowIcon from "./arrowDown.svg";
 import InputComponent from "./inputComponent";
 import TextAreaComponent from "./textAreaComponent";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Contact_us = () => {
   const [openDropdown, setOpenDropdown] = useState(false)
