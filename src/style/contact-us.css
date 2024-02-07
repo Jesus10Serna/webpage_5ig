@@ -9,15 +9,15 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 30px 0 ;
 }
 
 .contact-us-total {
     display: flex;
     align-items: center;
-    width: 1072px;
-    height: auto;
     margin: 30px 0;
-    margin-left: 424px;
 }
 
 .contact-us-set {
@@ -96,16 +96,17 @@
 .input-width {
     width: 591px;
     border-radius: 14px;
-    border: 2px solid #001D3D;
+    border: 1px solid #001D3D;
     padding: 13px 24px;
 }
 
 textarea.input-width {
     height: 150px;
+    max-width: 591px;
 }
 
 .input-width:focus-visible{
-    border: 2px solid #0075BF !important;
+    border: 1px solid #0075BF !important;
 }
 
 .contact-us-forms form p {
@@ -168,7 +169,7 @@ textarea.input-width {
 .phoneContactContainer .phoneContactDropdown .phoneContactOptions {
     background-color: #fff;
     border-radius: 16px;
-    border: 2px solid #0075BF;
+    border: 1px solid #0075BF;
     width: 106px;
     display: flex;
     align-items: center;
@@ -204,7 +205,7 @@ textarea.input-width {
 .phoneContactContainer .phoneContactInputContainer img{
     position: absolute;
     left: 100px;
-    top: 25px;
+    top: 21px;
     color: #FBBC05;
 }
 
@@ -219,7 +220,7 @@ textarea.input-width {
 
 .phoneContactContainer .phoneContactDropdown input {
     border-radius: 14px;
-    border: 2px solid #0075BF;
+    border: 1px solid #0075BF;
     cursor: pointer;
     padding: 13px 24px;
     width: 78px;
@@ -266,4 +267,7 @@ textarea.input-width {
 
 .alert.alert-danger.p-2.mt-2{
     width: 622px;
+}
+.contact-us-container .contact-us-forms.contract{
+    margin-left: 0;
 }
