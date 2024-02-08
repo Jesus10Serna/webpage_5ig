@@ -12,8 +12,8 @@ import ContactUs from "../components/contact_us"
 
 import call_Contact from '../components/access_contact.jsx'
 
-  const handleRedirectW = () => {
-     window.location.href = 'whatsapp://send?phone=310666666';
+  const handleRedirectWP = () => {
+     window.open("https://api.whatsapp.com/send?phone=573025779018")
   };
 
 
@@ -29,7 +29,7 @@ function automate() {
                 <h1>AUTOMATIZA TU EMPRESA</h1>
                 <button 
                   className="blue-button"
-                  onClick={handleRedirectW}
+                  onClick={handleRedirectWP}
                 >
                   <img src={WspIcon} alt="Whatsapp Logo para chatear con nosotros" />
                   Chatea con nosotros

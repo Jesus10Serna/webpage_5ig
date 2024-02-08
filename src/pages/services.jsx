@@ -6,8 +6,8 @@ import { useNavigate } from "react-router";
 const Services = () => {
   const navigate = useNavigate();
   const handleRedirect = (route, from_landing) => {
-    navigate(route+"/"+from_landing);
-    // window.location.href = `/${route}/${from_landing}`;
+    navigate(route+"/"+from_landing, { replace: false });
+    
   };
   return (
     <div className="services-container" id="services-container">

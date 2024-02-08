@@ -13,6 +13,7 @@ import { useParams } from "react-router-dom";
 function App() {
   const params = useParams();
   useEffect(() => {
+    console.log(params)
     if (params.toService === "to-service") {
       setTimeout(() => {
         const component = document.querySelector(".services-container");
