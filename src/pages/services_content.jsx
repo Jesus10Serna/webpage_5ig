@@ -226,7 +226,7 @@ const Services_content = () => {
     if (importImagePath4) {
       importImagePath4.then(module => setIconImg4(module.default));
     }
-  }, [params.service]);
+  }, [params.service, services]);
 
   const styleForWebItem = {
     paddingTop: "4px",
