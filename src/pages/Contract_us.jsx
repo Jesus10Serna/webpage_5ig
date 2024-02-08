@@ -8,7 +8,6 @@ import TextAreaComponent from "../components/textAreaComponent";
 
 const Contract_us = () => {
   const [openDropdown, setOpenDropdown] = useState(false)
-  const [errorMessage, setErrorMessage] = useState(false)
 
   const initialData = {
     name: '',
@@ -111,7 +110,7 @@ const Contract_us = () => {
 
   const handleSelectOption = (option) => {
     // setSelectedPhonePrefix(option)
-    setForm({ ...form, ["phone_prefix"]: option })
+    setForm({ ...form, phone_prefix : option })
   }
 
   const onValidate = (form) => {
