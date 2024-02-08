@@ -1,10 +1,13 @@
 import React from "react";
 import "../style/services.css";
+import { useNavigate } from "react-router";
+
 
 const Services = () => {
-
+  const navigate = useNavigate();
   const handleRedirect = (route, from_landing) => {
-    window.location.href = `/${route}/${from_landing}`;
+    navigate(route+"/"+from_landing);
+    // window.location.href = `/${route}/${from_landing}`;
   };
   return (
     <div className="services-container" id="services-container">
