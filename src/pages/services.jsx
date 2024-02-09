@@ -6,7 +6,7 @@ import { useNavigate } from "react-router";
 const Services = () => {
   const navigate = useNavigate();
   const handleRedirect = (route, from_landing) => {
-    navigate(route+"/"+from_landing, { replace: false });
+    navigate(route+"/"+from_landing, { replace: true });
     
   };
   return (
