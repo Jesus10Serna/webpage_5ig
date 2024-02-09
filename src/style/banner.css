@@ -3,11 +3,13 @@
   padding: 0;
   background-image: url("../components/background_banner.svg");
   height: 597px;
+  width: 100%;
   z-index: -1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  position: relative;
 }
 .banner-title {
   margin-top: 244px;
@@ -15,6 +17,7 @@
   position: relative;
 }
 .titles {
+  position: relative;
   margin-bottom: 17px;
   font-weight: 900;
   text-align: left;

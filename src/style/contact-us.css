@@ -1,5 +1,7 @@
 .contact-us-container{
+    position: relative;
     height: auto;
+    width: 100%;
     align-items: center;
     background-image: linear-gradient(
         rgba(0,53,102,0.5),
@@ -31,7 +33,7 @@
 .contact-us-social {
     color: white;
     z-index: 1000;
-    width: 100%;
+    width: 70%;
     height: 187px;
     border-radius: 18px;
     border-style: solid;
