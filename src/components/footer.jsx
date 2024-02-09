@@ -22,12 +22,12 @@ const Footer = () => {
           alt="Logo_5ig"
         ></img>
         <div className="footer-general-info">
-          <a onClick={() => handleRedirect("/aboutus")}>
+          <div onClick={() => handleRedirect("/aboutus")}>
             <p>¿Quienes somos?</p>
-          </a>
-          <a onClick={() => handleRedirect("/to-contact")}>
+          </div>
+          <div onClick={() => handleRedirect("/to-contact")}>
             <p>Contactanos</p>
-          </a>
+          </div>
           <div className="footer-logos">
             <a
               href="https://www.instagram.com/5ig_solutions/"

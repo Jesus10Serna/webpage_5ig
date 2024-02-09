@@ -13,13 +13,7 @@ const Form = () => {
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    
-    console.log('Formulario enviado:', formData);
-  };
-
+  
   return (
     <div>
       <div className="contact-us-forms">

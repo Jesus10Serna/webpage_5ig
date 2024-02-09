@@ -9,7 +9,7 @@ const Benefits = () => {
         <h1>TRABAJA CON NOSOTROS</h1>
         <button className="blue-button">
           <span>
-            <img src={WspIcon} />
+            <img src={WspIcon} alt="wspImg"/>
           </span>
           Chatea con nosotros
         </button>

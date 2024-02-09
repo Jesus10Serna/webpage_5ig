@@ -1,9 +1,12 @@
 import React from "react";
 import "../style/banner.css";
+import { useNavigate } from "react-router";
 
-const banner = () => {
+
+const   Banner = () => {
+  const navigate = useNavigate();
   const handleRedirect = (route) => {
-    window.location.href = `/${route}`;
+    navigate(route);
   };
   return (
     <div className="banner-container">
@@ -26,4 +29,4 @@ const banner = () => {
   );
 };
 
-export default banner;
+export default Banner;
