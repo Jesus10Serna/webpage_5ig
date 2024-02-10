@@ -20,22 +20,18 @@
   margin-bottom: 1.0625rem;
   font-weight: 900;
   text-align: left;
-  width: 1008px;
+  width: 52.5%;
   height: 155px;
 }
 .title1 {
-  width: 26.875rem;
+  width: 42%;
   height: 3.2rem;
 }
 .title2 {
-  width: 64.375rem;
+  width: 100%;
   height: 5.3125rem;
 }
-.title1 h1,
-.title1 h2 {
-  width: 100%;
-  height: 100%;
-}
+
 
 .title1 h2{
   font-size: 4rem;
