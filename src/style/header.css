@@ -1,19 +1,23 @@
 .header-container {
-  height: auto;
-  width: 100%;
   display: grid;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 2rem;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--color-primary);
   justify-content: space-between;
 }
+
+/* Otros estilos permanecen igual */
+
+
+/* Otros estilos permanecen igual */
+
 
 .header-home-container {
   display: flex;
   align-items: center;
   margin-left: 80px;
   padding-top: 4px;
-  gap: 1rem;
+  
 }
 
 .header-contact-container {

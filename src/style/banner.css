@@ -2,34 +2,34 @@
   margin: 0;
   padding: 0;
   background-image: url("../components/background_banner.svg");
-  height: 597px;
-  width: 100%;
-  background-size: cover;
+  height: 31rem;
+  min-width: 100%;
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   position: relative;
 }
 .banner-title {
-  margin-top: 244px;
-  margin-left: 150px;
+  margin-top: 15.25rem;
+  margin-left: 9.375rem;
   position: relative;
 }
 .titles {
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
   font-weight: 900;
   text-align: left;
   width: 1008px;
   height: 155px;
 }
 .title1 {
-  width: 430px;
-  height: 53px;
+  width: 26.875rem;
+  height: 3.2rem;
 }
 .title2 {
-  width: 1030px;
-  height: 85px;
+  width: 64.375rem;
+  height: 5.3125rem;
 }
 .title1 h1,
 .title1 h2 {
@@ -38,18 +38,18 @@
 }
 
 .title1 h2{
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 900;
-  line-height: 53px;
-  letter-spacing: -1.4600000381469727px;
+  line-height: 3.3125rem;
+  letter-spacing: -0.09rem;
   text-align: left;
   
 }
 .title2 h1{
-  font-size: 77px;
+  font-size: 4.81rem;
   font-weight: 900;
-  line-height: 85px;
-  letter-spacing: -1.4600000381469727px;
+  line-height: 5.3125rem;
+  letter-spacing: -0.09rem;
   
 }
 
@@ -72,11 +72,11 @@
 .banner-buttons .yellow-button,
 .banner-buttons .blue-button {
   border: none;
-  border-radius: 16px;
-  width: 387px;
-  height: 54px;
-  gap: 8px;
-  margin-right: 8px;
+  border-radius: 1rem;
+  width: 24.1875rem;
+  height: 3.375rem;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
   cursor: pointer;
   font-weight: bold;
 }
