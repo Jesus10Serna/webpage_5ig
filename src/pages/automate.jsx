@@ -114,7 +114,7 @@ function automate() {
     </div>
     <ContactUs></ContactUs>
     <Footer></Footer>
-    </div>
+   </div>
   )
 }
 
