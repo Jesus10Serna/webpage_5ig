@@ -23,18 +23,20 @@ const Footer = () => {
           alt="Logo_5ig"
         ></img>
       </div>
-      <div className="policy-approval-date">
+      <div className="policy-approval">
+        <div className="policy-approval-date"></div>
         <p>
-          Se aprueba la política de tratamiento de datos el 8 de febrero de
-          2024, Se publica en las respectivas plataformas para el acceso
-          público.
+          La gerencia aprueba la política de tratamiento de datos el 8 de
+          febrero de 2024, Se publica en las respectivas plataformas para el
+          acceso público.
         </p>
       </div>
+      <div className="line-middle"></div>
       {/* <div className="footer-general-info"> */}
       <div className="policy-title-links">
-        <h3 className="policy-publication">Politicas</h3>
+        <h3 className="policy-publication">Políticas</h3>
         <a href="/terminos-de-uso" className="policy-link">
-          Términos de uso
+          Términos de uso <br />
         </a>
         <a href="/tratamiento-de-datos" className="policy-link">
           Tratamiento de datos
@@ -42,10 +44,10 @@ const Footer = () => {
       </div>
       <div className="policy-logos-info">
         <div onClick={() => handleRedirect("/aboutus")}>
-          <p>¿Quienes somos?</p>
+          <h3>¿Quiénes somos?</h3>
         </div>
         <div onClick={() => handleRedirect("/to-contact")}>
-          <p>Contactanos</p>
+          <p>Contáctanos</p>
         </div>
         <div className="footer-logos">
           <a

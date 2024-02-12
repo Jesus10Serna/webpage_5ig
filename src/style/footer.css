@@ -7,7 +7,7 @@
 }
 
 .footer-info-container {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .logo-5ig-footer {
@@ -15,34 +15,97 @@
   height: 130px;
 }
 
-/* .footer-general-info {
-  font-family: Inter;
-  color: white;
-  width: 100%; 
-  height: 160px;
-} */
-
 .footer-logos {
   display: flex;
   width: 68px;
   height: 24px;
   gap: 20px;
 }
+
 .logo-5ig-footer {
   grid-column: 1;
+  height: 18rem;
+}
+
+.policy-approval {
+  color: white;
+  /* height: 7.5rem; */
+  width: 38.8125rem;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  text-align: left;
 }
 
 .policy-approval-date {
   grid-column: 2;
-  color: white;
+  height: 3.5rem;
+}
+
+.line-middle {
+  grid-column: 3;
+  height: 85%;
+  width: 1.5px;
+  background: rgba(255, 255, 255, 1);
+  align-self: center;
 }
 
 .policy-title-links {
   color: white;
-  grid-column: 3;
+  grid-column: 4;
+}
+
+.policy-title-links h3 {
+  grid-column: 4;
+  width: 13.875rem;
+  height: 2.4375rem;
+  /* font-family: Inter; */
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
+
+.policy-title-links a {
+  width: 7.3125rem;
+  height: 2.375rem;
+  color: rgba(255, 229, 0, 1);
+  /* font-family: Inter; */
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
 }
 
 .policy-logos-info {
   color: white;
-  grid-column: 4;
+  grid-column: 5;
+}
+
+.policy-logos-info h3 {
+  grid-column: 5;
+  width: 13.875rem;
+  height: 3.25rem;
+  color: rgba(255, 229, 0, 1);
+  /* font-family: Inter; */
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
+}
+
+.policy-logos-info p {
+  width: 13.75rem;
+  height: 3.75rem;
+  color: rgba(255, 229, 0, 1);
+  /* font-family: Inter; */
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -1.4600000381469727px;
+  text-align: left;
 }
