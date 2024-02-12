@@ -1,8 +1,19 @@
+.automate{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    /* position: relative; */
+}
 .automate-top-banner{
     margin: 0;
     padding: 0;
     background-image: url('../components/rascaciielos1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 386px;
+    width: 100%;
     display: flex;
     position: relative;
 }
@@ -20,7 +31,7 @@
 .automate-top-container{
     margin-top: 102px;
     margin-left: 150px;
-    margin-bottom: 17px;
+    margin-bottom: 1rem;
     gap: 24px;
     position: relative;
     display: flex;
@@ -76,7 +87,7 @@
 .automate-container{
     position:absolute;
     top:627px;
-    width:1246px;
+    width: 77rem;
     height:2291px;
     border-radius: 45px;
     background-color: white;
@@ -147,6 +158,7 @@
 }
 .automate-container > div:nth-child(2) > div{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
     gap: 40px;
@@ -160,6 +172,7 @@
     background-image: url("../components/automate-client1.svg");
 }
 .automate-container > div:nth-child(2) > div > div:nth-child(2){
+    text-align: justify;
     width: 725px;
     height: 450px;
 }
@@ -170,10 +183,11 @@
 }
 .automate-container > div:nth-child(3) > div{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
     padding-bottom: 20px;
-    gap: 20px;
+    gap: 40px;
 }
 .automate-container > div:nth-child(3) > div > div:nth-child(2){
     width: 481px;
@@ -185,6 +199,7 @@
     border-radius: 43px;
 }
 .automate-container > div:nth-child(3) > div > div:first-child{
+    text-align: justify;
     width: 725px;
     height: 407px;
 }
@@ -195,6 +210,7 @@
 }
 .automate-container > div:nth-child(4) > div{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
     gap: 40px;
@@ -208,6 +224,7 @@
     background-image: url("../components/automate-client3.svg");
 }
 .automate-container > div:nth-child(4) > div > div:nth-child(2){
+    text-align: justify;
     width: 725px;
     height: 450px;
 }
@@ -236,4 +253,27 @@
     height: 2px;
     background-color: white;
     align-self: center;
+}
+
+/*Portatil*/
+
+@media (min-width: 900px) and (max-width: 1400px) {
+    .automate-container > div:nth-child(1) > div:nth-child(2) {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        justify-items: center; /* Centra horizontalmente los elementos */
+        align-items: center;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 700px) and (max-width: 900px) {
+    
+}
+
+/*Telefono*/
+@media (min-width: 320px) and (max-width: 700px) {
+    
 }
