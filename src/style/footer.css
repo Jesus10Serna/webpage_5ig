@@ -1,13 +1,10 @@
 .footer-container{
     height: 274px;
     background-color: var(--color-primary);
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
     gap: 10px;
     padding:10px 150px;
 }
 .footer-info-container{
-    gap: 240px;
     display: flex;
     align-items:center;
 }

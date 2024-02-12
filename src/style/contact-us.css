@@ -20,12 +20,15 @@
     display: flex;
     align-items: center;
     margin: 30px 0;
+    width: 80%;
+    justify-content: center;
+    gap: 18rem;
 }
 
 .contact-us-set {
     justify-content: start;
     align-items:center;
-    width: 565px;
+    width: fit-content;
     height: 423px;
 }
 
@@ -33,7 +36,6 @@
 .contact-us-social {
     color: white;
     z-index: 1000;
-    width: 70%;
     height: 187px;
     border-radius: 18px;
     border-style: solid;
@@ -65,7 +67,6 @@
 }
 
 .contact-us-countries p {
-    width: 274px;
     height: 38px;
 }
 
@@ -78,10 +79,9 @@
 }
 
 .contact-us-forms {
-    margin-left: 100px;
     min-width: 661px;
     padding: 10px 35px;
-    display: inline-flex;    
+    display: inline-flex;
     border-radius: 17px;
     padding-bottom: 30px;
     display: flex;
@@ -117,7 +117,7 @@ textarea.input-width {
     font-weight: 600;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-    margin: 10px 0 8px;
+    margin: 20px 0 8px;
 }
 
 .contact-us-forms form button {
@@ -272,4 +272,108 @@ textarea.input-width {
 }
 .contact-us-container .contact-us-forms.contract{
     margin-left: 0;
+}
+
+.termsAndConditionsContainer{
+    max-width: 640px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.termsAndConditionsContainer input{
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid #605D62;
+}
+
+.termsAndConditionsContainer .termsAndConditionsText {
+    font-size: 16px;
+    color: #fff;
+    width: fit-content;
+    margin: 0;
+}
+
+.termsAndConditionsContainer .termsAndConditionsText a{
+ color: #0075BF;
+}
+
+@media (min-width: 530px) and (max-width: 900px) {
+
+    .phoneContactContainer{
+        width: 96%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 900px) {
+    .contact-us-forms {
+        min-width: 0;
+    }
+
+    .contact-us-total {
+        flex-direction: column;
+    }
+
+    .input-width {
+        width: 87%;
+    }
+
+    .contact-us-forms form button{
+        width: 100%;
+    }
+
+    .termsAndConditionsContainer{
+        width: 100%;
+    }
+
+    textarea.input-width {
+        width: 87%;
+    }
+
+    .inputComponentContainer{
+        width: 100%;
+    }
+
+    .phoneContactContainer .phoneContactDropdown input{
+        width: 2rem;
+    }
+
+    .phoneContactContainer .phoneContactInputContainer img{
+        left: 3.7rem;
+    }
+}
+
+
+@media (min-width: 900px) and (max-width: 1400px) {
+    .contact-us-forms {
+        min-width: 0;
+    }
+
+    .input-width {
+        width: 87%;
+    }
+
+    .contact-us-forms form button{
+        width: 100%;
+    }
+
+    .termsAndConditionsContainer{
+        width: 100%;
+    }
+
+    textarea.input-width {
+        width: 87%;
+    }
+
+    .inputComponentContainer{
+        width: 100%;
+    }
+
+    .contact-us-total{
+        gap: 6rem;
+    }
+
 }
