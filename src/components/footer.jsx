@@ -24,7 +24,6 @@ const Footer = () => {
         ></img>
       </div>
       <div className="policy-approval">
-        <div className="policy-approval-date"></div>
         <p>
           La gerencia aprueba la política de tratamiento de datos el 8 de
           febrero de 2024, Se publica en las respectivas plataformas para el

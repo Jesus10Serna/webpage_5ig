@@ -315,6 +315,7 @@ textarea.input-width {
 
     .contact-us-total {
         flex-direction: column;
+        gap: 7rem;
     }
 
     .input-width {
