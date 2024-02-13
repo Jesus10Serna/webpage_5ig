@@ -91,3 +91,45 @@
 .blue-button:hover {
   background: linear-gradient(#003566, #0898f2);
 }
+
+
+
+/*Portatil*/
+ 
+@media (min-width: 910px) and (max-width: 1400px) {
+  .title2 h1{
+    font-size: 3.8rem;
+  }
+
+}
+ 
+/*Tablet*/
+@media (min-width: 702px) and (max-width: 910px) {
+  .title2 h1{
+    font-size: 3.8rem;
+  }
+
+  .banner-buttons{
+    margin-top: 5rem;
+  }
+}
+ 
+/*Telefono*/
+@media (min-width: 320px) and (max-width: 702px) {
+  .title2 h1{
+    font-size: 2.2rem;
+    line-height:4.3125rem;
+  }
+  .title1 h2{
+    font-size: 2rem;
+    line-height:4.3125rem;
+  }
+  .banner-buttons{
+    margin-top: 5rem;
+    width: 50%;
+  }
+  .banner-title{
+    margin-left: 6.375rem;
+  }
+   
+}
