@@ -77,11 +77,13 @@ function automate() {
         <div>
           <h2>Nuestros Clientes suelen querer</h2>
           <div>
-            <div></div>
+            <div className='imgAutomate'></div>
             <div>
               <ul>
-                <li><h3>Adquirir las habilidades y conocimientos necesarios para aprovechar las oportunidades que ofrecen las tecnologías de automatización, y crear soluciones que se ajusten a sus necesidades y objetivos específicos. Para ello, puede ser útil ofrecerles formación, asesoramiento y recursos que les ayuden a entender cómo funcionan los procesos automatizados, qué factores influyen en sus resultados y cómo optimizar su rendimiento y valor.</h3></li>
-                <li><h3>Acompañamiento al enfrentarse a barreras técnicas, organizativas o regulatorias para implementar los procesos automatizados en sus procesos y sistemas.  Para ello, puede ser útil proporcionarles una visión estratégica, un marco de gobernabilidad y una plataforma tecnológica que les permitan integrar los procesos automatizados con sus sistemas existentes y cumplir con las normas y regulaciones.</h3></li>
+                <li className='textAutomate'><h3>Adquirir las habilidades y conocimientos necesarios para aprovechar las oportunidades que ofrecen las tecnologías de automatización, y crear soluciones que se ajusten a sus necesidades y objetivos específicos. Para ello, puede ser útil ofrecerles formación, asesoramiento y recursos que les ayuden a entender cómo funcionan los procesos automatizados, qué factores influyen en sus resultados y cómo optimizar su rendimiento y valor.</h3></li>
+                <li className='smallerTextAutomate'><h3>Los clientes quieren adquirir habilidades y conocimientos en automatización para crear soluciones adaptadas a sus necesidades.</h3></li>
+                <li className='textAutomate'><h3>Acompañamiento al enfrentarse a barreras técnicas, organizativas o regulatorias para implementar los procesos automatizados en sus procesos y sistemas.  Para ello, puede ser útil proporcionarles una visión estratégica, un marco de gobernabilidad y una plataforma tecnológica que les permitan integrar los procesos automatizados con sus sistemas existentes y cumplir con las normas y regulaciones.</h3></li>
+                <li className='smallerTextAutomate'><h3>Los clientes necesitan apoyo para superar barreras técnicas, organizativas o regulatorias al implementar procesos automatizados.</h3></li>
               </ul>
             </div>
           </div>
@@ -91,21 +93,25 @@ function automate() {
           <div>
             <div>
               <ul>
-                <li><h3>Ser un líder en su industria o campo gracias a la innovación y la transformación digital impulsadas por los procesos automatizados. Para ello, puede ser útil inspirarles con ejemplos de casos de éxito, mostrarles los beneficios y el potencial de los procesos automatizados, y animarles a experimentar y a innovar con las tecnologías de automatización</h3></li>
-                <li><h3>Lograr una armonía y una sinergia entre los procesos automatizados y los humanos, y crear una cultura de colaboración y empoderamiento. Para ello, puede ser útil involucrarles en el diseño, la implementación y el mantenimiento de los procesos automatizados, explicarles el propósito y el valor de los procesos automatizados, y reconocer y recompensar sus contribuciones y logros</h3></li>
+                <li className='textAutomate'><h3>Ser un líder en su industria o campo gracias a la innovación y la transformación digital impulsadas por los procesos automatizados. Para ello, puede ser útil inspirarles con ejemplos de casos de éxito, mostrarles los beneficios y el potencial de los procesos automatizados, y animarles a experimentar y a innovar con las tecnologías de automatización</h3></li>
+                <li className='smallerTextAutomate'><h3>Los clientes sueñan con liderar en sus industrias mediante la innovación impulsada por la automatización.</h3></li>
+                <li className='textAutomate'><h3>Lograr una armonía y una sinergia entre los procesos automatizados y los humanos, y crear una cultura de colaboración y empoderamiento. Para ello, puede ser útil involucrarles en el diseño, la implementación y el mantenimiento de los procesos automatizados, explicarles el propósito y el valor de los procesos automatizados, y reconocer y recompensar sus contribuciones y logros</h3></li>
+                <li className='smallerTextAutomate'><h3>Los clientes aspiran a lograr armonía entre procesos automatizados y humanos para fomentar una cultura colaborativa.</h3></li>
               </ul>
             </div>
-            <div></div>
+            <div className='imgAutomate'></div>
           </div>
         </div>
         <div>
         <h2>Nuestros Clientes temen</h2>
           <div>
-            <div></div>
+            <div className='imgAutomate'></div>
             <div>
               <ul>
-                <li><h3>Perder el control o la confianza en los procesos automatizados, y que estos causen errores, daños o perjuicios. Tu audiencia puede tener dudas o preocupaciones sobre la fiabilidad, la seguridad y la responsabilidad de los procesos automatizados, y temer que estos fallen, se desvíen o se vuelvan en su contra. Para ello, puede ser útil garantizarles la calidad, la transparencia y la trazabilidad de los procesos automatizados, establecer mecanismos de control, supervisión y auditoría de los procesos automatizados, y definir normas y protocolos de actuación en caso de incidencias o emergencias</h3></li>
-                <li><h3>Ser reemplazado o desplazado por los procesos automatizados, y perder su relevancia o competitividad en el mercado. Tu audiencia puede sentirse amenazada o desvalorizada por los procesos automatizados, y temer que estos les quiten su trabajo, su rol o su posición.  Para ello, puede ser útil asegurarles que los procesos automatizados no pretenden sustituirles sino complementarles, identificar y desarrollar sus fortalezas y capacidades diferenciales, y ofrecerles oportunidades de crecimiento y desarrollo profesional</h3></li>
+                <li className='textAutomate'><h3>Perder el control o la confianza en los procesos automatizados, y que estos causen errores, daños o perjuicios. Tu audiencia puede tener dudas o preocupaciones sobre la fiabilidad, la seguridad y la responsabilidad de los procesos automatizados, y temer que estos fallen, se desvíen o se vuelvan en su contra. Para ello, puede ser útil garantizarles la calidad, la transparencia y la trazabilidad de los procesos automatizados, establecer mecanismos de control, supervisión y auditoría de los procesos automatizados, y definir normas y protocolos de actuación en caso de incidencias o emergencias</h3></li>
+                <li className='smallerTextAutomate'><h3>Los clientes temen perder el control o la confianza en los procesos automatizados, preocupados por errores o daños.</h3></li>
+                <li className='textAutomate'><h3>Ser reemplazado o desplazado por los procesos automatizados, y perder su relevancia o competitividad en el mercado. Tu audiencia puede sentirse amenazada o desvalorizada por los procesos automatizados, y temer que estos les quiten su trabajo, su rol o su posición.  Para ello, puede ser útil asegurarles que los procesos automatizados no pretenden sustituirles sino complementarles, identificar y desarrollar sus fortalezas y capacidades diferenciales, y ofrecerles oportunidades de crecimiento y desarrollo profesional</h3></li>
+                <li className='smallerTextAutomate'><h3>Los clientes tienen miedo de ser reemplazados por procesos automatizados y perder su relevancia en el mercado laboral.  </h3></li>
               </ul>
             </div>
           </div>
