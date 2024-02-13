@@ -11,7 +11,7 @@
   position: relative;
 }
 .banner-title {
-  margin-top: 15.25rem;
+  margin-top: 9rem;
   margin-left: 9.375rem;
   position: relative;
 }
@@ -20,26 +20,22 @@
   margin-bottom: 1.0625rem;
   font-weight: 900;
   text-align: left;
-  width: 1008px;
+  width: 100%;
   height: 155px;
+  font-weight: 900;
 }
 .title1 {
-  width: 26.875rem;
+  width: auto;
   height: 3.2rem;
 }
 .title2 {
-  width: 64.375rem;
+  width: auto;
   height: 5.3125rem;
 }
-.title1 h1,
-.title1 h2 {
-  width: 100%;
-  height: 100%;
-}
+
 
 .title1 h2{
   font-size: 4rem;
-  font-weight: 900;
   line-height: 3.3125rem;
   letter-spacing: -0.09rem;
   text-align: left;
@@ -47,7 +43,6 @@
 }
 .title2 h1{
   font-size: 4.81rem;
-  font-weight: 900;
   line-height: 5.3125rem;
   letter-spacing: -0.09rem;
   
@@ -95,4 +90,46 @@
 
 .blue-button:hover {
   background: linear-gradient(#003566, #0898f2);
+}
+
+
+
+/*Portatil*/
+ 
+@media (min-width: 910px) and (max-width: 1400px) {
+  .title2 h1{
+    font-size: 3.8rem;
+  }
+
+}
+ 
+/*Tablet*/
+@media (min-width: 702px) and (max-width: 910px) {
+  .title2 h1{
+    font-size: 3.8rem;
+  }
+
+  .banner-buttons{
+    margin-top: 5rem;
+  }
+}
+ 
+/*Telefono*/
+@media (min-width: 320px) and (max-width: 702px) {
+  .title2 h1{
+    font-size: 2.2rem;
+    line-height:4.3125rem;
+  }
+  .title1 h2{
+    font-size: 2rem;
+    line-height:4.3125rem;
+  }
+  .banner-buttons{
+    margin-top: 5rem;
+    width: 50%;
+  }
+  .banner-title{
+    margin-left: 6.375rem;
+  }
+   
 }
