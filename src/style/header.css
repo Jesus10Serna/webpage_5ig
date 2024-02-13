@@ -1,9 +1,7 @@
 .header-container {
-  display: grid;
-  padding: 0.5rem 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   background-color: var(--color-primary);
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Otros estilos permanecen igual */
@@ -15,7 +13,6 @@
 .header-home-container {
   display: flex;
   align-items: center;
-  margin-left: 80px;
   padding-top: 4px;
   
 }
@@ -101,6 +98,11 @@ a {
   cursor: pointer;
 }
 
+.header-contact-container_phone, 
+.menuHeaderPhone {
+  display: none;
+}
+
 
 /*Portatil*/
 
@@ -113,10 +115,56 @@ a {
     
 }
 
-/*Telefono*/
-@media (min-width: 320px) and (max-width: 700px) {
-    
-}
+/*Telefono*/@media (min-width: 300px) and (max-width: 900px) {
+  .header-contact-container {
+    display: none;
+    position: relative;
+  }
 
+  .menuHeaderPhone {
+    display: block;
+    position: relative;
+    z-index: 99;
+  }
+
+  .header-contact-container_phone {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    background-color: #001D3D;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 30px 0;
+    z-index: 100;
+    top: -260px;
+    gap: 25px;
+    border-radius: 10px;
+    left: calc(50% - 9rem);
+    transition: 0.5s;
+  }
+
+  .header-contact-container_phone button {
+    height: auto;
+  }
+
+  .header-contact-container_phone #contract{
+    height: 40px;
+  }
+
+  .header-contact-container_phone.active {
+    top: 70px;
+  }
+
+  .blur-background.active {
+    height: 100vh;
+    background-color: rgba(0, 8, 20, 0.294);
+    position: absolute;
+    width: 100vw;
+    transition: 0.5s;
+    z-index: 80;
+  }
+
+}
 
 

@@ -5,7 +5,7 @@ import linkedin from "./linkedin.svg";
 import arrowIcon from "./arrowDown.svg";
 import InputComponent from "./inputComponent";
 import TextAreaComponent from "./textAreaComponent";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 const Contact_us = () => {
   const [openDropdown, setOpenDropdown] = useState(false)
@@ -146,22 +146,12 @@ const Contact_us = () => {
     setErros(err)
     if (Object.keys(err).length === 0) {
       setLoading(true)
-      fetch("https://formsubmit.co/ajax/martin.sanchez0653@gmail.com", {
-        method: "POST",
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(form)
-      })
-        .then(response => response.json())
+      axios.post('https://formsubmit.co/ajax/martin.sanchez0653@gmail.com', form)
         .then(data => {
-          console.log(data)
-          data.success === "true" && setForm(initialData)
+          data.data.success === "true" && setForm(initialData)
           setLoading(false)
         })
         .catch(error => {
-          console.log(error)
           setLoading(false)
         });
     }
@@ -185,6 +175,7 @@ const Contact_us = () => {
           </div>
         </div>
         <div className="contact-us-forms">
+          {/* <form action="https://formsubmit.co/your@email.com" method="POST"> */}
           <form onSubmit={handleSubmitContact}>
             <InputComponent
               className={`input-width`}
@@ -243,6 +234,10 @@ const Contact_us = () => {
               handleChange={handleChange}
               value={form.message}
             />
+            <div className="termsAndConditionsContainer">
+              <input type="checkbox" />
+              <p className="termsAndConditionsText">Al marcar esta casilla, confirmas que has leído y aceptas nuestra política de tratamiento de datos. <a href="">Haz clic aquí para leer la política completa.</a></p>
+            </div>
             {errors.message && <div className="alert alert-danger p-2 mt-2">{errors.message}</div>}
             <button className="sendFormConatct" disabled={loading}>{loading ? "Enviando..." : "Enviar"}</button>
             {/* <input type="hidden" name="_next" value="/"/>
