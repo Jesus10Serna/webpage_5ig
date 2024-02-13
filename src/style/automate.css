@@ -36,11 +36,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 50;
 
 }
 .automate-top-container h1{
-    height: 85px;
     letter-spacing: -1.46 px;
     font-size: 4.8rem;
     font-weight: 1035px;
@@ -324,9 +323,9 @@
         justify-items: center; /* Centra horizontalmente los elementos */
         align-items: center;
     }
-    .automate-top-container {
+    /* .automate-top-container {
         gap: 6.25rem;
-    }
+    } */
     .automate-title h1 {
         font-size: 2rem;
         align-self: center;
@@ -354,9 +353,6 @@
         justify-content: center;
         justify-items: center; /* Centra horizontalmente los elementos */
         align-items: center;
-    }
-    .automate-top-container {
-        gap: 5.25rem;
     }
     .automate-title h1 {
         font-size: 2rem;
@@ -433,7 +429,7 @@
         margin: 10% 10%;
     }
     .automate-top-container h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
         line-height: 70px;
     }
 }
