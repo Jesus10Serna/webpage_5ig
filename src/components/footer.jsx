@@ -34,10 +34,13 @@ const Footer = () => {
       {/* <div className="footer-general-info"> */}
       <div className="policy-title-links">
         <h3 className="policy-publication">Políticas</h3>
-        <a href="/terminos-de-uso" className="policy-link">
+        <a href="/TerminosDeUso.docx" className="policy-link">
           Términos de uso <br />
         </a>
-        <a href="/tratamiento-de-datos" className="policy-link">
+        <a
+          href="/PoliticaDeTratamientoDeDatosPersonales.docx"
+          className="policy-link"
+        >
           Tratamiento de datos
         </a>
       </div>
