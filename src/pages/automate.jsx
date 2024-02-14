@@ -79,7 +79,7 @@ function Automate() {
         <div>
           <h2>{t('AUT_FIRST_TITLE')}</h2>
           <div>
-            <div></div>
+            <div className='imgAutomate'></div>
             <div>
               <ul>
                 <li><h3>{t('AUT_THIRD_TEXT')}</h3></li>
@@ -97,13 +97,13 @@ function Automate() {
                 <li><h3>{t('AUT_SIX_TEXT')}</h3></li>
               </ul>
             </div>
-            <div></div>
+            <div className='imgAutomate'></div>
           </div>
         </div>
         <div>
         <h2>{t('AUT_THIRD_TITLE')}</h2>
           <div>
-            <div></div>
+            <div className='imgAutomate'></div>
             <div>
               <ul>
                 <li><h3>{t('AUT_SEVEN_TEXT')}</h3></li>
