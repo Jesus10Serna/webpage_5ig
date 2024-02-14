@@ -410,6 +410,10 @@ textarea.input-width {
     .input-width {
         width: 87%;
     }
+    
+    .phoneContactContainer{
+        width: 95%;
+    }
 
     .contact-us-forms form button {
         width: 100%;

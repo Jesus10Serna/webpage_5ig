@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import logo5ig from "./logo5ig.svg";
 import home from "./home.svg";
 import insta from "./insta.svg";
@@ -17,6 +17,28 @@ const Header = (props) => {
   const handleRedirect = (route) => {
     navigate(route);
   };
+
+  const elementoRef = useRef(null);
+
+  useEffect(() => {
+    // Función para manejar los clics en toda la página
+    const handleClickOutside = (event) => {
+      console.log(event.target);
+      if (elementoRef.current && !elementoRef.current.contains(event.target) &&
+      !event.target.classList.contains('menuHeaderPhone')) {
+        // Si el clic ocurre fuera del elemento deseado, cambiar el estado
+        setShowMenu(false);
+      }
+    };
+
+    // Agregar event listener al montar el componente
+    document.addEventListener('click', handleClickOutside);
+
+    // Limpiar event listener al desmontar el componente
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []); // Se ejecuta solo al montar y desmontar el componente
 
   return (
     <>
@@ -40,7 +62,7 @@ const Header = (props) => {
         <img className="menuHeaderPhone" src="/img/Menu_svg.svg" alt="" onClick={() => setShowMenu(!showMenu)}/>
 
       </div>
-      <div className={`header-contact-container_phone ${showMenu && "active"}`}>
+      <div className={`header-contact-container_phone ${showMenu && "active"}`} ref={elementoRef}>
         <button className="header-button" id="contract" onClick={() => handleRedirect('/contractus')}>{t('HEADER_CONTRACT')}</button>
 
         <button className="secondary-header-button" onClick={() => handleRedirect('/to-service')}>{t('HEADER_SERVICES')}</button>

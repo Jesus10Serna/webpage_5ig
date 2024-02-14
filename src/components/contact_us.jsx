@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../style/contact-us.css";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
@@ -162,7 +162,7 @@ const Contact_us = () => {
     setErros(err)
     if (Object.keys(err).length === 0) {
       setLoading(true)
-      axios.post('https://formsubmit.co/ajax/martin.sanchez0653@gmail.com', form)
+      axios.post('https://formsubmit.co/ajax/contact@5igsolutions.com', form)
         .then(data => {
           data.data.success === "true" && setForm(initialData)
           setLoading(false)
@@ -172,6 +172,27 @@ const Contact_us = () => {
         });
     }
   }
+
+  const elementoRef = useRef(null);
+
+  useEffect(() => {
+    // Función para manejar los clics en toda la página
+    const handleClickOutside = (event) => {
+      if (elementoRef.current && !elementoRef.current.contains(event.target)) {
+        // Si el clic ocurre fuera del elemento deseado, cambiar el estado
+        setOpenDropdown(false);
+      }
+    };
+
+    // Agregar event listener al montar el componente
+    document.addEventListener('click', handleClickOutside);
+
+    // Limpiar event listener al desmontar el componente
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []); // Se ejecuta solo al montar y desmontar el componente
+
 
   return (
     <div className="contact-us-container">
@@ -220,7 +241,7 @@ const Contact_us = () => {
             {errors.email && <div className="alert alert-danger">{errors.email}</div>}
             <p>{t('FORM_PHONE')}</p>
             <div className="phoneContactContainer">
-              <div className="phoneContactDropdown">
+              <div className="phoneContactDropdown" ref={elementoRef}>
                 <div className="phoneContactInputContainer">
                   <input type="text" className={`inputNumber ${openDropdown && "active"}`} onClick={() => handleDropdown()} placeholder="+57" name="phone_prefix" readOnly value={form.phone_prefix} />
                   <img src={arrowIcon} alt="" />
