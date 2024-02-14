@@ -271,7 +271,7 @@
 
 @media (min-width: 1060px) and (max-width: 1400px) {
     .automate-container{
-        height: ;
+        /* height: ; */
     }
     .automate-top-container h1 {
         font-size: 3.8rem;
@@ -333,7 +333,7 @@
         line-height: 3rem;
     }
     .automate-container{
-        width: 80%;
+        width: 100%;
     }
     .automate-container h3 {
         font-size: 1rem;
