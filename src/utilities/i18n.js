@@ -96,7 +96,12 @@ i18n
                     AUT_SIX_TEXT: 'Achieve harmony and synergy between automated processes and humans and create a culture of collaboration and empowerment. To do this, it can be helpful to involve them in the design, implementation, and maintenance of automated processes, explain the purpose and value of automated processes, and recognize and reward their contributions and achievements. ',
                     AUT_SEVEN_TEXT: 'Fear losing control or confidence in automated processes, and that these may cause errors, damage, or harm. Your audience may have doubts or concerns about the reliability, security, and accountability of automated processes, and fear that these may fail, deviate, or turn against them. To address this, it can be helpful to ensure the quality, transparency, and traceability of automated processes, establish control mechanisms, supervision, and audit of automated processes, and define standards and protocols for action in case of incidents or emergencies. ',
                     AUT_EIGHT_TEXT: 'Being replaced or displaced by automated processes and losing their relevance or competitiveness in the market. Your audience may feel threatened or undervalued by automated processes and fear that these may take away their jobs, roles, or positions. To address this, it can be helpful to assure them that automated processes are not intended to replace them but to complement their work, identify and develop their strengths and distinctive capabilities, and offer them opportunities for growth and professional development. ',
-
+                    AUT_THIRD_TEXT_SMALLER:'Customers want to acquire skills and knowledge in automation to create solutions tailored to their needs.',
+                    AUT_FOUR_TEXT_SMALLER:'Customers need support in overcoming technical, organizational or regulatory barriers when implementing automated processes.',
+                    AUT_FIFTH_TEXT_SMALLER:'Customers dream of leading in their industries through automation-driven innovation.',
+                    AUT_SIX_TEXT_SMALLER:'Customers aspire to achieve harmony between automated and human processes to foster a culture',
+                    AUT_SEVEN_TEXT_SMALLER:'Customers are afraid of losing control or trust in automated processes, worried about errors or damage.',
+                    AUT_EIGHT_TEXT_SMALLER:'Customers are afraid of being replaced by automated processes and losing their relevance in the labor market. ',
 
                     //OTHER TITLES
                     MORE_SERVICES: '',
@@ -217,6 +222,16 @@ i18n
                     AUT_SIX_TEXT: 'Lograr una armonía y una sinergia entre los procesos automatizados y los humanos, y crear una cultura de colaboración y empoderamiento. Para ello, puede ser útil involucrarles en el diseño, la implementación y el mantenimiento de los procesos automatizados, explicarles el propósito y el valor de los procesos automatizados, y reconocer y recompensar sus contribuciones y logros',
                     AUT_SEVEN_TEXT: 'Perder el control o la confianza en los procesos automatizados, y que estos causen errores, daños o perjuicios. Tu audiencia puede tener dudas o preocupaciones sobre la fiabilidad, la seguridad y la responsabilidad de los procesos automatizados, y temer que estos fallen, se desvíen o se vuelvan en su contra. Para ello, puede ser útil garantizarles la calidad, la transparencia y la trazabilidad de los procesos automatizados, establecer mecanismos de control, supervisión y auditoría de los procesos automatizados, y definir normas y protocolos de actuación en caso de incidencias o emergencias',
                     AUT_EIGHT_TEXT: 'Ser reemplazado o desplazado por los procesos automatizados, y perder su relevancia o competitividad en el mercado. Tu audiencia puede sentirse amenazada o desvalorizada por los procesos automatizados, y temer que estos les quiten su trabajo, su rol o su posición. Para ello, puede ser útil asegurarles que los procesos automatizados no pretenden sustituirles sino complementarles, identificar y desarrollar sus fortalezas y capacidades diferenciales, y ofrecerles oportunidades de crecimiento y desarrollo profesional',
+                    AUT_THIRD_TEXT_SMALLER:'Los clientes quieren adquirir habilidades y conocimientos en automatización para crear soluciones adaptadas a sus necesidades.',
+                    AUT_FOUR_TEXT_SMALLER:'Los clientes necesitan apoyo para superar barreras técnicas, organizativas o regulatorias al implementar procesos automatizados.',
+                    AUT_FIFTH_TEXT_SMALLER:'Los clientes sueñan con liderar en sus industrias mediante la innovación impulsada por la automatización.',
+                    AUT_SIX_TEXT_SMALLER:'Los clientes aspiran a lograr armonía entre procesos automatizados y humanos para fomentar una cultura colaborativa.',
+                    AUT_SEVEN_TEXT_SMALLER:'Los clientes temen perder el control o la confianza en los procesos automatizados, preocupados por errores o daños.',
+                    AUT_EIGHT_TEXT_SMALLER:'Los clientes tienen miedo de ser reemplazados por procesos automatizados y perder su relevancia en el mercado laboral.',
+
+
+
+                    
 
 
                     //OTHER TITLES

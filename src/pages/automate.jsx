@@ -82,8 +82,10 @@ function Automate() {
             <div className='imgAutomate'></div>
             <div>
               <ul>
-                <li><h3>{t('AUT_THIRD_TEXT')}</h3></li>
-                <li><h3>{t('AUT_FOUR_TEXT')}</h3></li>
+                <li className='textAutomate'><h3>{t('AUT_THIRD_TEXT')}</h3></li>
+                <li className='textAutomate'><h3>{t('AUT_FOUR_TEXT')}</h3></li>
+                <li className='smallerTextAutomate'><h3>{t('AUT_THIRD_TEXT_SMALLER')}</h3></li>
+                <li className='smallerTextAutomate'><h3>{t('AUT_FOUR_TEXT_SMALLER')}</h3></li>
               </ul>
             </div>
           </div>
@@ -93,8 +95,10 @@ function Automate() {
           <div>
             <div>
               <ul>
-                <li><h3>{t('AUT_FIFTH_TEXT')}</h3></li>
-                <li><h3>{t('AUT_SIX_TEXT')}</h3></li>
+                <li className='textAutomate'><h3>{t('AUT_FIFTH_TEXT')}</h3></li>
+                <li className='textAutomate'><h3>{t('AUT_SIX_TEXT')}</h3></li>
+                <li className='smallerTextAutomate'><h3>{t('AUT_FIFTH_TEXT_SMALLER')}</h3></li>
+                <li className='smallerTextAutomate'><h3>{t('AUT_SIX_TEXT_SMALLER')}</h3></li>
               </ul>
             </div>
             <div className='imgAutomate'></div>
@@ -106,8 +110,10 @@ function Automate() {
             <div className='imgAutomate'></div>
             <div>
               <ul>
-                <li><h3>{t('AUT_SEVEN_TEXT')}</h3></li>
-                <li><h3>{t('AUT_EIGHT_TEXT')}</h3></li>
+                <li className='textAutomate'><h3>{t('AUT_SEVEN_TEXT')}</h3></li>
+                <li className='textAutomate'><h3>{t('AUT_EIGHT_TEXT')}</h3></li>
+                <li className='smallerTextAutomate'><h3>{t('AUT_SEVEN_TEXT_SMALLER')}</h3></li>
+                <li className='smallerTextAutomate'><h3>{t('AUT_EIGHT_TEXT_SMALLER')}</h3></li>
               </ul>
             </div>
           </div>
