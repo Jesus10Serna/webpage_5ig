@@ -12,12 +12,17 @@ const Contact_us = () => {
   const { t } = useTranslation();
   const [openDropdown, setOpenDropdown] = useState(false)
 
+  const handleRedirectWP = () => {
+    window.open("https://api.whatsapp.com/send?phone=573025779018")
+  };
+
   const initialData = {
     name: '',
     email: '',
     phone_prefix: '',
     phone: '',
-    message: ''
+    message: '',
+    policies: false
   }
   const [loading, setLoading] = useState(false)
   const [errors, setErros] = useState({})
@@ -107,13 +112,18 @@ const Contact_us = () => {
   }
 
   const handleChange = (event) => {
-    const { name, value } = event.target
-    setForm({ ...form, [name]: value })
+    const { name, value, checked } = event.target
+    if (name === 'policies') {
+      setForm({ ...form, [name]: checked })
+    } else {
+      setForm({ ...form, [name]: value })
+    }
+    console.log(form);
   }
 
   const handleSelectOption = (option) => {
     // setSelectedPhonePrefix(option)
-    setForm({ ...form, phone_prefix : option })
+    setForm({ ...form, phone_prefix: option })
   }
 
   const onValidate = (form) => {
@@ -137,6 +147,10 @@ const Contact_us = () => {
 
     if (!form.message.trim()) {
       errors.message = 'Este campo debe ser completado.'
+    }
+
+    if (form.policies === false) {
+      errors.policies = 'Este campo debe ser completado.'
     }
 
     return errors
@@ -175,6 +189,13 @@ const Contact_us = () => {
               <a href="https://www.linkedin.com/company/5ig-solutions/about" target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
             </div>
           </div>
+          <button
+            className="wsp-contact-button"
+            onClick={handleRedirectWP}
+          >
+            <img src="/img/wsp_black_icon.svg" alt="Whatsapp Logo para chatear con nosotros" />
+            {t('AUT_BUTTON')}
+          </button>
         </div>
         <div className="contact-us-forms">
           {/* <form action="https://formsubmit.co/your@email.com" method="POST"> */}
@@ -187,7 +208,7 @@ const Contact_us = () => {
               value={form.name}
               handleChange={handleChange}
             />
-            {errors.name && <div className="alert alert-danger p-2 mt-2">{errors.name}</div>}
+            {errors.name && <div className="alert alert-danger">{errors.name}</div>}
             <InputComponent
               className={`input-width`}
               label={t('FORM_EMAIL')}
@@ -196,7 +217,7 @@ const Contact_us = () => {
               value={form.email}
               handleChange={handleChange}
             />
-            {errors.email && <div className="alert alert-danger p-2 mt-2">{errors.email}</div>}
+            {errors.email && <div className="alert alert-danger">{errors.email}</div>}
             <p>{t('FORM_PHONE')}</p>
             <div className="phoneContactContainer">
               <div className="phoneContactDropdown">
@@ -225,8 +246,8 @@ const Contact_us = () => {
                 value={form.phone}
               />
             </div>
-              {errors.phone_prefix && <div className="alert alert-danger p-2 mt-2">{errors.phone_prefix}</div>}
-              {errors.phone && <div className="alert alert-danger p-2 mt-2">{errors.phone}</div>}
+            {errors.phone_prefix && <div className="alert alert-danger">{errors.phone_prefix}</div>}
+            {errors.phone && <div className="alert alert-danger">{errors.phone}</div>}
 
             <TextAreaComponent
               className={`input-width textArea`}
@@ -236,12 +257,13 @@ const Contact_us = () => {
               handleChange={handleChange}
               value={form.message}
             />
+            {errors.message && <div className="alert alert-danger">{errors.message}</div>}
             <div className="termsAndConditionsContainer">
-              <input type="checkbox" />
+              <input type="checkbox" name="policies" onChange={handleChange} />
               <p className="termsAndConditionsText">{t('FORM_POLICY')} <a href="">{t('FORM_POLICY_LINK')}</a></p>
             </div>
-            {errors.message && <div className="alert alert-danger p-2 mt-2">{errors.message}</div>}
-            <button className="sendFormConatct" disabled={loading}>{loading ?  t('FORM_BUTTON_LOADING') : t('FORM_BUTTON')}</button>
+            {errors.policies && <div className="alert alert-danger">{errors.policies}</div>}
+            <button className="sendFormConatct" disabled={loading}>{loading ? t('FORM_BUTTON_LOADING') : t('FORM_BUTTON')}</button>
             {/* <input type="hidden" name="_next" value="/"/>
             <input type="hidden" name="_captcha" valu`e="false"/> */}
           </form>

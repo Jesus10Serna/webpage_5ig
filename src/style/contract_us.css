@@ -7,14 +7,10 @@
     margin: 0;
     padding: 0;
 }
-.contract-us-set{
-    width: 600px;
-    height: 205px;
-}
+
 .contract-us-set p{
     width: 100%;
     justify-content: justify;
-    height: 108px;
     font: 'Inter';
     font-weight: 900;
     font-size: 40px;
@@ -22,11 +18,8 @@
     color: white;
     letter-spacing: -1.46px;
 }
+
 .contract-us-set button{
-    width: 284px;
-    height:54px;
-    border-radius: 16px;
-    padding: 16px 28px;
-    border:none;
-    background-color: var(--color-yellow-primary);
+    width: auto;
+    padding: 10px 60px;
 }

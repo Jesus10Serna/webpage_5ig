@@ -84,9 +84,9 @@ i18n
                     AUT_IMG_TITLE_3: 'Machine Learning',
                     AUT_IMG_TITLE_4: 'Innovative Technological Platforms',
 
-                    AUT_FIRST_TITLE:'Our clients usually want.',
-                    AUT_SECOND_TITLE:'Our client dreams of',
-                    AUT_THIRD_TITLE:'Our clients fear of',
+                    AUT_FIRST_TITLE: 'Our clients usually want.',
+                    AUT_SECOND_TITLE: 'Our client dreams of',
+                    AUT_THIRD_TITLE: 'Our clients fear of',
 
                     AUT_FIRST_TEXT: 'Automated processes are those that are carried out through the use of technologies such as:',
                     AUT_SECOND_TEXT: 'These processes allow organizations to improve their performance, efficiency, and adaptability, as well as create exceptional and memorable customer experiences. ',
@@ -96,12 +96,18 @@ i18n
                     AUT_SIX_TEXT: 'Achieve harmony and synergy between automated processes and humans and create a culture of collaboration and empowerment. To do this, it can be helpful to involve them in the design, implementation, and maintenance of automated processes, explain the purpose and value of automated processes, and recognize and reward their contributions and achievements. ',
                     AUT_SEVEN_TEXT: 'Fear losing control or confidence in automated processes, and that these may cause errors, damage, or harm. Your audience may have doubts or concerns about the reliability, security, and accountability of automated processes, and fear that these may fail, deviate, or turn against them. To address this, it can be helpful to ensure the quality, transparency, and traceability of automated processes, establish control mechanisms, supervision, and audit of automated processes, and define standards and protocols for action in case of incidents or emergencies. ',
                     AUT_EIGHT_TEXT: 'Being replaced or displaced by automated processes and losing their relevance or competitiveness in the market. Your audience may feel threatened or undervalued by automated processes and fear that these may take away their jobs, roles, or positions. To address this, it can be helpful to assure them that automated processes are not intended to replace them but to complement their work, identify and develop their strengths and distinctive capabilities, and offer them opportunities for growth and professional development. ',
+<<<<<<< HEAD
                     AUT_THIRD_TEXT_SMALLER:'Customers want to acquire skills and knowledge in automation to create solutions tailored to their needs.',
                     AUT_FOUR_TEXT_SMALLER:'Customers need support in overcoming technical, organizational or regulatory barriers when implementing automated processes.',
                     AUT_FIFTH_TEXT_SMALLER:'Customers dream of leading in their industries through automation-driven innovation.',
                     AUT_SIX_TEXT_SMALLER:'Customers aspire to achieve harmony between automated and human processes to foster a culture',
                     AUT_SEVEN_TEXT_SMALLER:'Customers are afraid of losing control or trust in automated processes, worried about errors or damage.',
                     AUT_EIGHT_TEXT_SMALLER:'Customers are afraid of being replaced by automated processes and losing their relevance in the labor market. ',
+=======
+
+                    //CONTACT US PAGE
+                    CONTACT_US_TITLE: 'Carry your business into the new era of technology!',
+>>>>>>> 258c53d73819beb1e2325549942a8393918aa9c0
 
                     //OTHER TITLES
                     MORE_SERVICES: '',
@@ -117,6 +123,9 @@ i18n
                     FORM_POLICY_LINK: ' Click here to read the full policy.',
                     FORM_BUTTON: 'Send',
                     FORM_BUTTON_LOADING: 'Sending...',
+                    FORM_NAME_LABEL:'Name',
+                    FORM_NAME_PHONE:'Phone',
+                    FORM_NAME_MESSAGE:'Message',
 
                     //HEADER
                     HEADER_CONTRACT: 'Contract with us',
@@ -210,9 +219,9 @@ i18n
                     AUT_IMG_TITLE_3: 'Machine Learning',
                     AUT_IMG_TITLE_4: 'Plataformas Tecnológicas Innovadoras',
 
-                    AUT_FIRST_TITLE:'Nuestros Clientes suelen querer',
-                    AUT_SECOND_TITLE:'Nuestros Clientes sueñan con',
-                    AUT_THIRD_TITLE:'Nuestros Clientes temen',
+                    AUT_FIRST_TITLE: 'Nuestros Clientes suelen querer',
+                    AUT_SECOND_TITLE: 'Nuestros Clientes sueñan con',
+                    AUT_THIRD_TITLE: 'Nuestros Clientes temen',
 
                     AUT_FIRST_TEXT: 'Los procesos automatizados son aquellos que se realizan mediante el uso de tecnologías como:',
                     AUT_SECOND_TEXT: 'Estos procesos permiten a las organizaciones mejorar su rendimiento, eficiencia y adaptabilidad, así como crear experiencias de cliente excepcionales y memorables.',
@@ -237,6 +246,9 @@ i18n
                     //OTHER TITLES
                     MORE_SERVICES: '',
 
+                    //CONTACT US PAGE
+                    CONTACT_US_TITLE: 'Lleva tu negocio a la nueva era de la tecnología!',
+
                     //CONTACT FORM
                     FORM_CONTACT_US: 'CONTÁCTANOS',
                     FORM_FOLLOW: 'SIGUENOS EN',
@@ -248,6 +260,9 @@ i18n
                     FORM_POLICY_LINK: 'Haz clic aquí para leer la política completa.',
                     FORM_BUTTON: 'Enviar',
                     FORM_BUTTON_LOADING: 'Enviando...',
+                    FORM_NAME_LABEL:'Nombre',
+                    FORM_NAME_PHONE:'Telefono',
+                    FORM_NAME_MESSAGE:'Mensaje',
 
                     //HEADER
                     HEADER_CONTRACT: 'Contrata con nosotros',
