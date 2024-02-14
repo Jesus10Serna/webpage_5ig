@@ -28,41 +28,41 @@ i18n
                     HOME_LINKEDIN_BUTTON: 'Find us on LinkedIn',
 
                     //SERVICES PAGES(IA)
-                    IA_SERVICE_FIRST_TITLE: '',
-                    IA_SERVICE_SECOND_TITLE: '',
-                    IA_SERVICE_THIRD_TITLE: '',
+                    IA_SERVICE_FIRST_TITLE: 'Predictive Analysis Platform',
+                    IA_SERVICE_SECOND_TITLE: 'Intelligent Virtual Assistant',
+                    IA_SERVICE_THIRD_TITLE: 'Recommendation Systems',
 
-                    IA_SERVICE_FIRST_DESCR: '',
-                    IA_SERVICE_SECOND_DESCR: '',
-                    IA_SERVICE_THIRD_DESCR: '',
+                    IA_SERVICE_FIRST_DESCR: 'We offer a predictive analysis platform powered by AI and ML that helps companies make more informed decisions by identifying trends and patterns in their data.',
+                    IA_SERVICE_SECOND_DESCR: 'We develop custom virtual assistants that use AI to enhance customer service, automate responses, and provide support 24 hours daily.',
+                    IA_SERVICE_THIRD_DESCR: 'We create Machine Learning-based recommendation systems that help companies increase customer retention and sales by offering personalized recommendations.',
 
                     //SERVICES PAGES(RPA)
-                    RPA_SERVICE_FIRST_TITLE: '',
-                    RPA_SERVICE_SECOND_TITLE: '',
+                    RPA_SERVICE_FIRST_TITLE: 'Business Process Automation',
+                    RPA_SERVICE_SECOND_TITLE: 'RPA Implementation Consultancy',
 
-                    RPA_SERVICE_FIRST_DESCR: '',
-                    RPA_SERVICE_SECOND_DESCR: '',
+                    RPA_SERVICE_FIRST_DESCR: 'We implement RPA solutions to automate repetitive and manual tasks, which increases efficiency and reduces human errors.',
+                    RPA_SERVICE_SECOND_DESCR: 'We provide consultancy and RPA implementation services to help companies identify automation opportunities and design automated workflows.',
 
                     //SERVICES PAGES (CLOUD)
-                    CLOUD_SERVICE_FIRST_TITLE: '',
-                    CLOUD_SERVICE_SECOND_TITLE: '',
+                    CLOUD_SERVICE_FIRST_TITLE: 'Cloud Migration',
+                    CLOUD_SERVICE_SECOND_TITLE: 'Cloud Management',
 
-                    CLOUD_SERVICE_FIRST_DESCR: '',
-                    CLOUD_SERVICE_SECOND_DESCR: '',
+                    CLOUD_SERVICE_FIRST_DESCR: 'We help companies migrate their systems and data to the cloud, offering scalable and secure infrastructure options.',
+                    CLOUD_SERVICE_SECOND_DESCR: 'We provide cloud management, monitoring, and optimization services to ensure optimal performance and robust security in cloud environments.',
 
                     //SERVICES PAGES (BI)
-                    BI_SERVICE_FIRST_TITLE: '',
-                    BI_SERVICE_SECOND_TITLE: '',
+                    BI_SERVICE_FIRST_TITLE: 'Personalized Dashboards',
+                    BI_SERVICE_SECOND_TITLE: 'Advanced Data Analysis',
 
-                    BI_SERVICE_FIRST_DESCR: '',
-                    BI_SERVICE_SECOND_DESCR: '',
+                    BI_SERVICE_FIRST_DESCR: 'We design custom dashboards and control panels that provide real-time information and data analysis for strategic decision-making.',
+                    BI_SERVICE_SECOND_DESCR: 'We use BI tools to perform advanced analyses, such as trend analysis, customer segmentation, and anomaly detection.',
 
                     //SERVICES PAGES(WEB_DEV)
-                    WEB_DEV_SERVICE_FIRST_TITLE: '',
-                    WEB_DEV_SERVICE_SECOND_TITLE: '',
+                    WEB_DEV_SERVICE_FIRST_TITLE: 'Responsive Website Development',
+                    WEB_DEV_SERVICE_SECOND_TITLE: 'Mobile App Development',
 
-                    WEB_DEV_SERVICE_FIRST_DESCR: '',
-                    WEB_DEV_SERVICE_SECOND_DESCR: '',
+                    WEB_DEV_SERVICE_FIRST_DESCR: 'We create responsive and appealing websites that adapt to different devices and provide an exceptional user experience.',
+                    WEB_DEV_SERVICE_SECOND_DESCR: 'We design and develop native and cross-platform mobile applications to meet the specific needs of our clients.',
 
                     //QUIENES SOMOS
                     QS_TITLE: 'Who we are? ',
@@ -101,7 +101,7 @@ i18n
                     CONTACT_US_TITLE: 'Carry your business into the new era of technology!',
 
                     //OTHER TITLES
-                    MORE_SERVICES: '',
+                    MORE_SERVICES: 'More services',
 
                     //CONTACT FORM
                     FORM_CONTACT_US: 'CONTACT US',
@@ -154,41 +154,41 @@ i18n
                     HOME_LINKEDIN_BUTTON: 'Encuentranos en LinkedIn',
 
                     //SERVICES PAGES (IA)
-                    IA_SERVICE_FIRST_TITLE: '',
-                    IA_SERVICE_SECOND_TITLE: '',
-                    IA_SERVICE_THIRD_TITLE: '',
+                    IA_SERVICE_FIRST_TITLE: 'Plataforma de Análisis Predictivo',
+                    IA_SERVICE_SECOND_TITLE: 'Asistente Virtual Inteligente',
+                    IA_SERVICE_THIRD_TITLE: 'Sistemas de Recomendación',
 
-                    IA_SERVICE_FIRST_DESCR: '',
-                    IA_SERVICE_SECOND_DESCR: '',
-                    IA_SERVICE_THIRD_DESCR: '',
+                    IA_SERVICE_FIRST_DESCR: 'Ofrecemos una plataforma de análisis predictivo impulsada por IA y ML que ayuda a las empresas a tomar decisiones más informadas mediante la identificación de tendencias y patrones en sus datos.',
+                    IA_SERVICE_SECOND_DESCR: 'Desarrollamos asistentes virtuales personalizados que utilizan IA para mejorar la atención al cliente, automatizar respuestas y proporcionar soporte las 24 horas del día.',
+                    IA_SERVICE_THIRD_DESCR: 'Creamos sistemas de recomendación basados en ML que ayudan a las empresas a aumentar la retención de clientes y las ventas al ofrecer recomendaciones personalizadas.',
 
                     //SERVICES PAGES(RPA)
-                    RPA_SERVICE_FIRST_TITLE: '',
-                    RPA_SERVICE_SECOND_TITLE: '',
+                    RPA_SERVICE_FIRST_TITLE: 'Automatización de Procesos Empresariales',
+                    RPA_SERVICE_SECOND_TITLE: 'Asesoría en Implementación de RPA',
 
-                    RPA_SERVICE_FIRST_DESCR: '',
-                    RPA_SERVICE_SECOND_DESCR: '',
+                    RPA_SERVICE_FIRST_DESCR: 'Implementamos soluciones RPA para automatizar tareas repetitivas y manuales, lo que aumenta la eficiencia y reduce los errores humanos.',
+                    RPA_SERVICE_SECOND_DESCR: 'Brindamos consultoría y servicios de implementación de RPA para ayudar a las empresas a identificar oportunidades de automatización y diseñar flujos de trabajo automatizados.',
 
                     //SERVICES PAGES (CLOUD)
-                    CLOUD_SERVICE_FIRST_TITLE: '',
-                    CLOUD_SERVICE_SECOND_TITLE: '',
+                    CLOUD_SERVICE_FIRST_TITLE: 'Migración a la Nube',
+                    CLOUD_SERVICE_SECOND_TITLE: 'Gestión de la Nube',
 
-                    CLOUD_SERVICE_FIRST_DESCR: '',
-                    CLOUD_SERVICE_SECOND_DESCR: '',
+                    CLOUD_SERVICE_FIRST_DESCR: 'Ayudamos a las empresas a migrar sus sistemas y datos a la nube, ofreciendo opciones de infraestructura escalable y segura.',
+                    CLOUD_SERVICE_SECOND_DESCR: 'Proporcionamos servicios de gestión de la nube, monitoreo y optimización para garantizar un rendimiento óptimo y una seguridad sólida en entornos de nube.',
 
                     //SERVICES PAGES (BI)
-                    BI_SERVICE_FIRST_TITLE: '',
-                    BI_SERVICE_SECOND_TITLE: '',
+                    BI_SERVICE_FIRST_TITLE: 'Dashboards Personalizado',
+                    BI_SERVICE_SECOND_TITLE: 'Análisis de Datos Avanzado',
 
-                    BI_SERVICE_FIRST_DESCR: '',
-                    BI_SERVICE_SECOND_DESCR: '',
+                    BI_SERVICE_FIRST_DESCR: 'Diseñamos dashboards y paneles de control personalizados que brindan información en tiempo real y análisis de datos para la toma de decisiones estratégicas.',
+                    BI_SERVICE_SECOND_DESCR: 'Utilizamos herramientas de BI para realizar análisis avanzados, como análisis de tendencias, segmentación de clientes y detección de anomalías.',
 
                     //SERVICES PAGES(WEB_DEV)
-                    WEB_DEV_SERVICE_FIRST_TITLE: '',
-                    WEB_DEV_SERVICE_SECOND_TITLE: '',
+                    WEB_DEV_SERVICE_FIRST_TITLE: 'Desarrollo de Sitios Web Responsive',
+                    WEB_DEV_SERVICE_SECOND_TITLE: 'Desarrollo de Aplicaciones Móviles',
 
-                    WEB_DEV_SERVICE_FIRST_DESCR: '',
-                    WEB_DEV_SERVICE_SECOND_DESCR: '',
+                    WEB_DEV_SERVICE_FIRST_DESCR: 'Creamos sitios web responsivos y atractivos que se adaptan a diferentes dispositivos y ofrecen una experiencia de usuario excepcional.',
+                    WEB_DEV_SERVICE_SECOND_DESCR: 'Diseñamo y desarrollamos aplicaciones móviles nativas y multiplataforma para satisfacer las necesidades específicas de nuestros clientes.',
 
                     //QUIENES SOMOS
                     QS_TITLE: '¿QUIÉNES SOMOS?',
@@ -225,7 +225,7 @@ i18n
 
 
                     //OTHER TITLES
-                    MORE_SERVICES: '',
+                    MORE_SERVICES: 'Mas servicios',
 
                     //CONTACT US PAGE
                     CONTACT_US_TITLE: 'Lleva tu negocio a la nueva era de la tecnología!',

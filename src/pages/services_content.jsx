@@ -13,8 +13,10 @@ import imgBanner3 from "../components/bi.svg";
 import imgBanner4 from "../components/wd&ad.svg";
 import arrow from "../components/arrow_contract.svg";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const Services_content = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const handleRedirect = (route) => {
@@ -118,15 +120,15 @@ const Services_content = () => {
   
                   <DynamicImage src={item.img_source} alt="Imagen" />
                   <div className="desc_service">
-                    <h2>{item.title}</h2>
-                    <p>{item.info}</p>
+                    <h2>{t(item.title)}</h2>
+                    <p>{t(item.info)}</p>
                   </div>
                 </>
               ) : (
                 <>
                   <div className="desc_service">
-                    <h2>{item.title}</h2>
-                    <p>{item.info}</p>
+                    <h2>{t(item.title)}</h2>
+                    <p>{t(item.info)}</p>
                   </div>
                   <DynamicImage src={item.img_source} alt="Imagen" />
                 </>
@@ -164,15 +166,15 @@ const Services_content = () => {
                 <>
                   <DynamicImage src={item.img_source} alt="Imagen" />
                   <div className="desc_service">
-                    <h2>{item.title}</h2>
-                    <p>{item.info}</p>
+                    <h2>{t(item.title)}</h2>
+                    <p>{t(item.info)}</p>
                   </div>
                 </>
               ) : (
                 <>
                   <div className="desc_service">
-                    <h2>{item.title}</h2>
-                    <p>{item.info}</p>
+                    <h2>{t(item.title)}</h2>
+                    <p>{t(item.info)}</p>
                   </div>
                   <DynamicImage src={item.img_source} alt="Imagen" />
                 </>
@@ -239,35 +241,35 @@ const Services_content = () => {
       {content}
       <div className="more-services-background">
         <div className="more-services-container">
-          <div className="more-services-title"><div></div><h1>más servicios</h1><div></div></div>
+          <div className="more-services-title"><div></div><h1>{t('HOME_SERVICES_BUTTON')}</h1><div></div></div>
           <div className="more-services-content-grid">
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content" >
                 {iconImg1 && <img src={iconImg1} alt="" />}
                 <h1 style={services[0].link1 === "/services/web-app-dev" || services[0].link1==="/services/ia" ? styleForWebItem : {}}>{services[0].text1}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link1)}}>Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link1)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg2} alt="" />}
                 <h1 style={services[0].link2 === "/services/web-app-dev" || services[0].link2==="/services/ia" ? styleForWebItem : {}}>{services[0].text2}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link2)}}>Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link2)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
                 {iconImg1 && <img src={iconImg3} alt="" />}
                 <h1 style={services[0].link3 === "/services/web-app-dev" || services[0].link3==="/services/ia" ? styleForWebItem : {}}>{services[0].text3}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link3)}}>Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link3)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg4} alt="" />}
                 <h1 style={services[0].link4 === "/services/web-app-dev" || services[0].link4 ==="/services/ia" ? styleForWebItem : {}}> {services[0].text4}</h1>
               </div>
-              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link4)}}>Más Información</button>
+              <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link4)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
           </div>
         </div>
