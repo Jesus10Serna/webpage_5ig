@@ -11,7 +11,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 200.1875rem;
+  height: 204.1875rem;
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -384,7 +384,7 @@ a {
   }
 
   #services-container {
-    height: 230.1875rem;
+    height: 235.1875rem;
   }
   .ia h2,
   .wdad h2 {
