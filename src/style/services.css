@@ -331,7 +331,7 @@ a {
 
   .r {
     left: 39.059%;
-    max-width: 55%;
+    max-width: 58%;
   }
   .l {
     left: 5.42%;
@@ -344,9 +344,10 @@ a {
 
   .r h2,
   .l h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 30px;
   }
+
   .services-container {
     height: 220.1875rem;
   }
@@ -387,7 +388,7 @@ a {
   }
   .ia h2,
   .wdad h2 {
-    width: 39.8vw;
+    width: 55.8vw;
   }
   .cloud h2 {
     width: auto;
@@ -417,5 +418,42 @@ a {
     font-size: 1.3rem;
     line-height: 1px;
     height: 0px;
+  }
+
+  .l button,
+  .r button {
+    font-size: 13px;
+  }
+
+  .r {
+    left: 39.059%;
+    max-width: 58%;
+  }
+
+  .second-child {
+    top: 3020px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .second-child .line_1,
+  .second-child .line_2 {
+    display: none;
+  }
+
+  .services-title .line_1,
+  .services-title .line_2 {
+    display: none;
+  }
+
+  .services-title h2 {
+    font-size: 2.5rem;
+    line-height: 45px;
+    letter-spacing: -1.46px;
+    font-weight: 900px;
+  }
+
+  #services-container {
+    height: 245.1875rem;
   }
 }
