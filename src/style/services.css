@@ -237,8 +237,9 @@
 
 .button-contact-us .img_link {
   background-image: url("../components/linkedin2.svg");
-  width: 24px;
+  width: 31px;
   height: 24px;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -410,6 +411,15 @@ a {
     width: 35px;
     height: 24px;
   }
+  .button-contact-us .img_link {
+    background-image: url("../components/linkedin2.svg");
+    width: 37px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+
+
+
 }
 
 @media (min-width: 300px) and (max-width: 375px) {
@@ -456,4 +466,18 @@ a {
   #services-container {
     height: 245.1875rem;
   }
+  .button-contact-us .img_link {
+    background-image: url("../components/linkedin2.svg");
+    width: 37px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+  .button-contact-us p {
+    font-size: 0.58rem;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+    color: #000814;
+}
+
 }
