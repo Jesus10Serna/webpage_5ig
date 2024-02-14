@@ -1,438 +1,437 @@
-.automate{
-    width: 100%;
-    margin:0;
-    padding: 0;
-    overflow: hidden;
-    /* position: relative; */
+.automate {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* position: relative; */
 }
-.automate-top-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../components/rascaciielos1.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 386px;
-    width: 100%;
-    display: flex;
-    position: relative;
+.automate-top-banner {
+  margin: 0;
+  padding: 0;
+  background-image: url("../components/rascaciielos1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 386px;
+  width: 100%;
+  display: flex;
+  position: relative;
 }
-.blend::before{
-    content: ""; /* Agrega esta línea para que el seudoelemento funcione correctamente */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #003566; /* Color del rectángulo, puedes cambiarlo según tus necesidades */
-    opacity: 0.4; /* Ajusta la opacidad según tus necesidades */
-    mix-blend-mode: multiply;
+.blend::before {
+  content: ""; /* Agrega esta línea para que el seudoelemento funcione correctamente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #003566; /* Color del rectángulo, puedes cambiarlo según tus necesidades */
+  opacity: 0.4; /* Ajusta la opacidad según tus necesidades */
+  mix-blend-mode: multiply;
 }
-.automate-top-container{
-    margin-top: 102px;
-    margin-left: 150px;
-    margin-bottom: 1rem;
-    gap: 24px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 50;
-
+.automate-top-container {
+  margin-top: 102px;
+  margin-left: 150px;
+  margin-bottom: 1rem;
+  gap: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
 }
-.automate-top-container h1{
-    letter-spacing: -1.46 px;
-    font-size: 4.8rem;
-    font-weight: 1035px;
-    line-height: 85px;
-    margin: 0;
-    padding: 0;
-    color: var(--color-yellow-primary)
+.automate-top-container h1 {
+  letter-spacing: -1.46 px;
+  font-size: 4.8rem;
+  font-weight: 1035px;
+  line-height: 85px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-yellow-primary);
 }
 .automate-top-container .blue-button {
-    font-size: 1.25rem;
-    top: 312px;
-    border: none;
-    border-radius: 1rem;
-    width: 24.18rem;
-    height:52px;
-    gap:0.5rem;
-    margin-right: 8px; 
-    align-items: center;
-    display:  flex;
-    justify-content: center;
-    background: linear-gradient(#0898F2, #003566);
-    color: white;
-    z-index: 0;
+  font-size: 1.25rem;
+  top: 312px;
+  border: none;
+  border-radius: 1rem;
+  width: 24.18rem;
+  height: 52px;
+  gap: 0.5rem;
+  margin-right: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#0898f2, #003566);
+  color: white;
+  z-index: 0;
 }
-.automate-top-container .blue-button:hover{
-    background:linear-gradient( #003566,#0898F2);
+.automate-top-container .blue-button:hover {
+  background: linear-gradient(#003566, #0898f2);
 }
 
-.content-automate{
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(
-                 rgba(0, 53, 102, 0.6), 
-                rgba(0, 6, 10, 0.6),
-                rgba(8, 152, 242, 0.6))
-    ,url('../components/background_services.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 2618px;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
+.content-automate {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(0, 53, 102, 0.6),
+      rgba(0, 6, 10, 0.6),
+      rgba(8, 152, 242, 0.6)
+    ),
+    url("../components/background_services.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2618px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
 }
-.automate-container{
-    position:absolute;
-    top:627px;
-    /* width: 77.875rem; */
-    height:2291px;
-    border-radius: 45px;
-    background-color: white;
-    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 3.125rem 2.5rem 3.125rem;
-    margin: 0 25% 0 25%;
-    gap: 20px;
+.automate-container {
+  position: absolute;
+  top: 627px;
+  /* width: 77.875rem; */
+  height: 2291px;
+  border-radius: 45px;
+  background-color: white;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+  margin: 0 25% 0 25%;
+  gap: 20px;
 }
-.automate-container h3{
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 29.05px;
-    letter-spacing: -1.46px;
-    color: rgba(0, 29, 61, 1);
+.automate-container h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29.05px;
+  letter-spacing: -1.46px;
+  color: rgba(0, 29, 61, 1);
 }
-.automate-container > div:nth-child(1) h2{
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 36.31px;
-    letter-spacing: -1.46px;
-    color: rgba(0, 117, 191, 1);
-    margin: 0;
-    width: auto;
-    height: auto;
+.automate-container > div:nth-child(1) h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 36.31px;
+  letter-spacing: -1.46px;
+  color: rgba(0, 117, 191, 1);
+  margin: 0;
+  width: auto;
+  height: auto;
 }
 .automate-container > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid 1px rgba(0, 29, 61, 1);
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px rgba(0, 29, 61, 1);
 }
-.automate-container > div:nth-child(1) > div:nth-child(2){
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+.automate-container > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
 }
-.automate-container > div:nth-child(1) > div:nth-child(2) div{
-    text-align: center;
-    width: auto;
+.automate-container > div:nth-child(1) > div:nth-child(2) div {
+  text-align: center;
+  width: auto;
 }
-.automate-container > div:nth-child(1) > div:nth-child(2) img{
-    height: 80px;
-    width: 5rem;
+.automate-container > div:nth-child(1) > div:nth-child(2) img {
+  height: 80px;
+  width: 5rem;
 }
-.automate-container > div:nth-child(1) > div:nth-child(2) > div:nth-child(4){
-    width: 22.8rem;
+.automate-container > div:nth-child(1) > div:nth-child(2) > div:nth-child(4) {
+  width: 22.8rem;
 }
-.automate-container > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
-    width: 14.18rem;
+.automate-container > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  width: 14.18rem;
 }
 
-.automate-container h2{
-    font-weight: 700;
-    font-size: 1.875rem;
-    line-height: 85px;
-    letter-spacing: -1.46px;
-    color: rgba(0, 117, 191, 1);
-    margin: 0;
-    width: 26.4rem;
-    height: 53px;
-    margin-bottom: 40px;
+.automate-container h2 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 85px;
+  letter-spacing: -1.46px;
+  color: rgba(0, 117, 191, 1);
+  margin: 0;
+  width: 26.4rem;
+  height: 53px;
+  margin-bottom: 40px;
 }
 .automate-container > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid 1px rgba(0, 29, 61, 1);
-    padding-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px rgba(0, 29, 61, 1);
+  padding-bottom: 1.25rem;
 }
-.automate-container > div:nth-child(2) > div{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    gap: 40px;
+.automate-container > div:nth-child(2) > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
 }
-.automate-container > div:nth-child(2) > div > div:first-child{
-    width: 40%;
-    height: 450px;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-image: url("../components/automate-client1.svg");
-    border-radius: 43px;
+.automate-container > div:nth-child(2) > div > div:first-child {
+  width: 40%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../components/automate-client1.svg");
+  border-radius: 43px;
 }
-.automate-container > div:nth-child(2) > div > div:nth-child(2){
-    text-align: justify;
-    width: 45.3rem;
-    height: 450px;
+.automate-container > div:nth-child(2) > div > div:nth-child(2) {
+  text-align: justify;
+  width: 45.3rem;
+  height: 450px;
 }
 .automate-container > div:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-    border-bottom: solid 1px rgba(0, 29, 61, 1);
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px rgba(0, 29, 61, 1);
 }
-.automate-container > div:nth-child(3) > div{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20px;
-    gap: 40px;
+.automate-container > div:nth-child(3) > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  gap: 40px;
 }
-.automate-container > div:nth-child(3) > div > div:nth-child(2){
-    width: 40%;
-    height: 407px;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-image: url("../components/automate-client2.svg");
-    border-radius: 43px;
+.automate-container > div:nth-child(3) > div > div:nth-child(2) {
+  width: 40%;
+  height: 407px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../components/automate-client2.svg");
+  border-radius: 43px;
 }
-.automate-container > div:nth-child(3) > div > div:first-child{
-    text-align: justify;
-    width: 45.3rem;
-    height: 407px;
+.automate-container > div:nth-child(3) > div > div:first-child {
+  text-align: justify;
+  width: 45.3rem;
+  height: 407px;
 }
 
 .automate-container > div:nth-child(4) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.automate-container > div:nth-child(4) > div{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    gap: 40px;
+.automate-container > div:nth-child(4) > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
 }
-.automate-container > div:nth-child(4) > div > div:first-child{
-    width: 30rem;
-    height: 552px;
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-image: url("../components/automate-client3.svg");
-    border-radius: 83px;
+.automate-container > div:nth-child(4) > div > div:first-child {
+  width: 30rem;
+  height: 552px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../components/automate-client3.svg");
+  border-radius: 83px;
 }
-.automate-container > div:nth-child(4) > div > div:nth-child(2){
-    text-align: justify;
-    width: 45.3rem;
-    height: 450px;
+.automate-container > div:nth-child(4) > div > div:nth-child(2) {
+  text-align: justify;
+  width: 45.3rem;
+  height: 450px;
 }
 
-.automate-container div{
-    width: 100%;
-    height: 100%;
+.automate-container div {
+  width: 100%;
+  height: 100%;
 }
-.automate-title{
-    width:90%;
-    max-width: 1326px;
-    height: 145px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 0.5rem;
+.automate-title {
+  width: 90%;
+  max-width: 1326px;
+  height: 145px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
 }
-.automate-title div:nth-child(2){
-    display: flex;
-    justify-content: center;
+.automate-title div:nth-child(2) {
+  display: flex;
+  justify-content: center;
 }
-.automate-title h1{
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2.7rem;
-    line-height: 85px;
-    letter-spacing: -1.46 px;
-    align-items: center;
-    color: white;
+.automate-title h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.7rem;
+  line-height: 85px;
+  letter-spacing: -1.46 px;
+  align-items: center;
+  color: white;
 }
-.mid-line-container{
-    flex: 1;
-    height: 2px;
-    background-color: white;
-    align-self: center;
+.mid-line-container {
+  flex: 1;
+  height: 2px;
+  background-color: white;
+  align-self: center;
 }
-.smallerTextAutomate{
-    display: none;
+.smallerTextAutomate {
+  display: none;
 }
 
 /*Portatil*/
 
 @media (min-width: 1060px) and (max-width: 1400px) {
-    .automate-container{
+  /* .automate-container{
         height: ;
-    }
-    .automate-top-container h1 {
-        font-size: 3.8rem;
-    }
-    .automate-container h3{
-        font-size: 1.2rem;
-    }
-    .automate-title h1 {
-        font-size: 2rem;
-        align-self: center;
-        text-align: center;
-    }
-    .automate-title{
-        width: 66.25rem;
-    }
-    .automate-container{
-        width: 60rem;
-    }
+    } */
+  .automate-top-container h1 {
+    font-size: 3.8rem;
+  }
+  .automate-container h3 {
+    font-size: 1.2rem;
+  }
+  .automate-title h1 {
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+  }
+  .automate-title {
+    width: 66.25rem;
+  }
+  .automate-container {
+    width: 60rem;
+  }
 
-    .automate-container > div:nth-child(1) > div:nth-child(2) {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        justify-items: center; /* Centra horizontalmente los elementos */
-        align-items: center;
-    }
+  .automate-container > div:nth-child(1) > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: center;
+  }
 }
-@media (min-width: 700px) and (max-width:917px){
-    .smallerTextAutomate{
-        display: list-item;
-        width: 100%;
-    }
-    .smallerTextAutomate h3{
-        width: 100%;
-    }
-    .textAutomate{
-        display: none;
-    }
-    
+@media (min-width: 700px) and (max-width: 917px) {
+  .smallerTextAutomate {
+    display: list-item;
+    width: 100%;
+  }
+  .smallerTextAutomate h3 {
+    width: 100%;
+  }
+  .textAutomate {
+    display: none;
+  }
 }
 /*Tablet*/
 @media (min-width: 700px) and (max-width: 1060px) {
-    .automate-container > div:nth-child(1) > div:nth-child(2) {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        justify-items: center; /* Centra horizontalmente los elementos */
-        align-items: center;
-    }
-    /* .automate-top-container {
+  .automate-container > div:nth-child(1) > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: center;
+  }
+  /* .automate-top-container {
         gap: 6.25rem;
     } */
-    .automate-title h1 {
-        font-size: 2rem;
-        align-self: center;
-        text-align: center;
-        line-height: 3rem;
-    }
-    .automate-container{
-        width: 80%;
-    }
-    .automate-container h3 {
-        font-size: 1rem;
-    }
-    .automate-top-container h1 {
-        font-size: 3.8rem;
-    }
+  .automate-title h1 {
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .automate-container {
+    width: 80%;
+  }
+  .automate-container h3 {
+    font-size: 1rem;
+  }
+  .automate-top-container h1 {
+    font-size: 3.8rem;
+  }
 }
 
 /*Telefono*/
 @media (min-width: 320px) and (max-width: 700px) {
-    .automate-container > div:nth-child(1) h2 {
-        font-size: 1.1rem;
-    }
-    .automate-container > div:nth-child(1) > div:nth-child(2) {
-        height: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        justify-content: center;
-        justify-items: center; /* Centra horizontalmente los elementos */
-        align-items: center;
-    }
-    .automate-title h1 {
-        font-size: 2rem;
-        align-self: center;
-        text-align: center;
-        line-height: 3rem;
-    }
-    .content-automate{
-        height: 2739px;
-    }
-    .automate-container{
-        width: 80%;
-        height: 2469px;
-        padding: 2.5rem 1.125rem 2.5rem 1.125rem;
-    }
-    .automate-container h3 {
-        font-size: 1rem;
-    }
-    .smallerTextAutomate{
-        display: list-item;
-        width: 100%;
-    }
-    .smallerTextAutomate h3{
-        width: 100%;
-    }
-    .textAutomate{
-        display: none;
-    }
-    .automate-container > div:nth-child(2) > div {
-        gap: 0px;
-        flex-direction: column;
-    }
-    .automate-container > div:nth-child(2) > div > div:nth-child(2){
-        width: auto;
-    } 
-        
-    .automate-container > div:nth-child(3) > div {
-        gap: 20px;
-        flex-direction: column;
-    }
-    .automate-container > div:nth-child(3) > div > div:first-child {
-        width: auto;
-    }
-    .automate-container > div:nth-child(4) > div {
-        gap: 0px;
-    }
-    .automate-container > div:nth-child(2) > div > div:first-child {
-        width: 100%;
-        height: 80%;
-        object-fit: cover;
-        object-position: top;
-    }
-    .automate-container > div:nth-child(3) > div > div:nth-child(2) {
-        width: 100%;
-        height: 90%;
-    }
-    .automate-container > div:nth-child(4) > div > div:first-child {
-        width: 100%;
-        height: 75%;
-    }
-    .automate-container h2 {
-        text-align: center;
-        width: 100%;
-        line-height: 30px;
-    }
-    .automate-container ul{
-        padding: 0 20px;
-    }
-    .automate-top-container .blue-button {
-        width: 80%;
-    }
-    
-    .automate-top-container {
-        margin: 10% 10%;
-    }
-    .automate-top-container h1 {
-        font-size: 2.5rem;
-        line-height: 70px;
-    }
+  .automate-container > div:nth-child(1) h2 {
+    font-size: 1.1rem;
+  }
+  .automate-container > div:nth-child(1) > div:nth-child(2) {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: center;
+  }
+  .automate-title h1 {
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .content-automate {
+    height: 2739px;
+  }
+  .automate-container {
+    width: 80%;
+    height: 2469px;
+    padding: 2.5rem 1.125rem 2.5rem 1.125rem;
+  }
+  .automate-container h3 {
+    font-size: 1rem;
+  }
+  .smallerTextAutomate {
+    display: list-item;
+    width: 100%;
+  }
+  .smallerTextAutomate h3 {
+    width: 100%;
+  }
+  .textAutomate {
+    display: none;
+  }
+  .automate-container > div:nth-child(2) > div {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .automate-container > div:nth-child(2) > div > div:nth-child(2) {
+    width: auto;
+  }
+
+  .automate-container > div:nth-child(3) > div {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .automate-container > div:nth-child(3) > div > div:first-child {
+    width: auto;
+  }
+  .automate-container > div:nth-child(4) > div {
+    gap: 0px;
+  }
+  .automate-container > div:nth-child(2) > div > div:first-child {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .automate-container > div:nth-child(3) > div > div:nth-child(2) {
+    width: 100%;
+    height: 90%;
+  }
+  .automate-container > div:nth-child(4) > div > div:first-child {
+    width: 100%;
+    height: 75%;
+  }
+  .automate-container h2 {
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+  }
+  .automate-container ul {
+    padding: 0 20px;
+  }
+  .automate-top-container .blue-button {
+    width: 80%;
+  }
+
+  .automate-top-container {
+    margin: 10% 10%;
+  }
+  .automate-top-container h1 {
+    font-size: 2.5rem;
+    line-height: 70px;
+  }
 }
