@@ -79,23 +79,24 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 2618px;
+  /* height: 2618px; */
   z-index: -1;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+    align-items: center;
 }
 .automate-container {
-  position: absolute;
   top: 627px;
-  /* width: 77.875rem; */
-  height: 2291px;
+  width: 77.875rem;
+  /* height: 2291px; */
   border-radius: 45px;
   background-color: white;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   padding: 2.5rem 3.125rem 2.5rem 3.125rem;
-  margin: 0 25% 0 25%;
+  margin: 1% 25% 1% 25%;
   gap: 20px;
 }
 .automate-container h3 {
@@ -171,12 +172,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../components/automate-client1.svg");
-  border-radius: 43px;
 }
 .automate-container > div:nth-child(2) > div > div:nth-child(2) {
   text-align: justify;
   width: 45.3rem;
-  height: 450px;
+  /* height: 450px; */
 }
 .automate-container > div:nth-child(3) {
   display: flex;
@@ -198,12 +198,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../components/automate-client2.svg");
-  border-radius: 43px;
 }
 .automate-container > div:nth-child(3) > div > div:first-child {
   text-align: justify;
   width: 45.3rem;
-  height: 407px;
+  /* height: 407px; */
 }
 
 .automate-container > div:nth-child(4) {
@@ -224,12 +223,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../components/automate-client3.svg");
-  border-radius: 83px;
 }
 .automate-container > div:nth-child(4) > div > div:nth-child(2) {
   text-align: justify;
-  width: 45.3rem;
-  height: 450px;
+  /* height: 450px; */
 }
 
 .automate-container div {
@@ -265,6 +262,9 @@
 }
 .smallerTextAutomate {
   display: none;
+}
+.automate-container .imgAutomate{
+    border-radius: 8px;
 }
 
 /*Portatil*/
@@ -363,12 +363,13 @@
     line-height: 3rem;
   }
   .content-automate {
-    height: 2739px;
+    height: auto;
   }
   .automate-container {
     width: 80%;
-    height: 2469px;
+    height: auto;
     padding: 2.5rem 1.125rem 2.5rem 1.125rem;
+    margin-bottom: 30px;
   }
   .automate-container h3 {
     font-size: 1rem;
@@ -399,11 +400,12 @@
     width: auto;
   }
   .automate-container > div:nth-child(4) > div {
+    flex-direction: column;
     gap: 0px;
   }
   .automate-container > div:nth-child(2) > div > div:first-child {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
     object-position: top;
     transform: scale(1);
@@ -411,11 +413,11 @@
   }
   .automate-container > div:nth-child(3) > div > div:nth-child(2) {
     width: 100%;
-    height: 90%;
+    height: 240px;
   }
   .automate-container > div:nth-child(4) > div > div:first-child {
     width: 100%;
-    height: 75%;
+    height: 240px;
   }
   .automate-container h2 {
     text-align: center;
@@ -436,4 +438,8 @@
     font-size: 2.5rem;
     line-height: 70px;
   }
+  .automate-container > div:nth-child(2) > div > div:first-child {
+    background-position:inherit;
+  }
+
 }
