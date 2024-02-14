@@ -129,7 +129,26 @@
     width: 50%;
   }
   .banner-title{
-    margin-left: 6.375rem;
+    width: 80%;
+    margin: 0 auto;
+    align-self: center;
+    text-align: center;
   }
-   
+
+  .second-child h2 {
+    width: 135%;
+    font-size: 1.2rem;
+    line-height: 32px;
+    height: 37px;
+  }
+  .r h2, .l h2 {
+    font-size: 1rem;
+    line-height: 30px;
+}
+.max-container-services button {
+  padding: 10px;
+}
+
+
+  
 }

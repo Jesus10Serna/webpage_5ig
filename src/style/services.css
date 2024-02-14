@@ -28,15 +28,19 @@
   width: 70%;
 }
 
-.first-child{
-  top:625px;
-  
+.first-child {
+  top: 625px;
 }
 
 .second-child {
-  top:3050px;
+  top: 3050px;
 }
-
+.second-child .line_1 {
+  width: 113px;
+}
+.second-child .line_2 {
+  width: 562px;
+}
 
 .services-title .line_1,
 .services-title .line_2 {
@@ -158,17 +162,11 @@
 
 .second-child h2 {
   width: 630.39px;
-  height: 90px; /*Revisar esto */
+
+  font-size: 2.5rem;
   font-weight: 900px;
   padding: 0;
   margin: 0;
-}
-
-.second-child .line_1 {
-  width: 113px;
-}
-.second-child .line_2 {
-  width: 562px;
 }
 
 .container-about-us-grid {
@@ -191,14 +189,15 @@
 }
 
 .text-about-us {
-  display: grid;
+  width: 100%;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   text-align: center;
 }
 
-.text-about-us h3 {
+.text-about-us h3,
+.text-about-us p {
   width: 100%;
   margin: 0 auto;
 }
@@ -214,6 +213,10 @@
   margin-top: 25px;
 }
 
+.text-about-us a {
+  width: 60%;
+}
+
 .button-contact-us {
   display: flex;
   justify-content: center;
@@ -225,9 +228,11 @@
   padding: 13px 28px;
   border-radius: 16px;
   cursor: pointer;
-  margin-left: 120px;
+  margin: auto;
+  margin-top: 20px;
   gap: 8px;
   font-weight: bold;
+  background-repeat: no-repeat;
 }
 
 .button-contact-us .img_link {
@@ -251,4 +256,166 @@ a {
 }
 .button-contact-us:hover {
   background: linear-gradient(#ffd60a, #fbbc05);
+}
+
+/*Portatil*/
+
+@media (min-width: 900px) and (max-width: 1617px) {
+  .r {
+    left: 48.0591%;
+    max-width: 47.63%;
+  }
+
+  .second-child .line_1 {
+    width: 60px;
+  }
+  .second-child .line_2 {
+    width: 260px;
+  }
+  .second-child h2 {
+    font-size: 2.3rem;
+  }
+  .container-about-us-grid {
+    gap: 3px;
+  }
+  .text-about-us {
+    justify-self: center;
+    text-align: justify;
+    width: 65%;
+  }
+  .button-contact-us {
+    width: auto;
+    justify-self: center;
+  }
+}
+
+/*Tablet*/
+@media (min-width: 781px) and (max-width: 900px) {
+  .r {
+    left: 48.0591%;
+    max-width: 50.63%;
+  }
+
+  .second-child h2 {
+    font-size: 1.9rem;
+    line-height: 8px;
+  }
+  .second-child .line_1 {
+    width: 60px;
+  }
+  .second-child .line_2 {
+    width: 260px;
+  }
+  .container-about-us-grid {
+    gap: 3px;
+  }
+  .text-about-us {
+    justify-self: center;
+    text-align: justify;
+    width: 65%;
+  }
+  .button-contact-us {
+    width: auto;
+    justify-self: center;
+    margin-left: 0;
+  }
+}
+
+/*Telefono*/
+@media (min-width: 300px) and (max-width: 781px) {
+  .text-about-us {
+    justify-self: center;
+    text-align: justify;
+    width: 65%;
+  }
+
+  .r {
+    left: 39.059%;
+    max-width: 55%;
+  }
+  .l {
+    left: 5.42%;
+    max-width: 39.64%;
+  }
+  .l button,
+  .r button {
+    font-size: 15px;
+  }
+
+  .r h2,
+  .l h2 {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .services-container {
+    height: 220.1875rem;
+  }
+  .container-about-us-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea los elementos flexibles en el centro */
+    gap: 3px;
+  }
+  .text-about-us a {
+    width: 30%;
+  }
+  .button-contact-us {
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 75%;
+  }
+  .second-child .line_1 {
+    width: 10%;
+  }
+  .second-child .line_2 {
+    width: 10%;
+  }
+  .second-child h2 {
+    width: 64%;
+    font-size: 1.3rem;
+    line-height: 1px;
+    height: 0px;
+  }
+  .first-child .line_1,
+  .first-child .line_2 {
+    width: 10%;
+  }
+
+  #services-container {
+    height: 230.1875rem;
+  }
+  .ia h2,
+  .wdad h2 {
+    width: 39.8vw;
+  }
+  .cloud h2 {
+    width: auto;
+  }
+  .button-contact-us {
+    align-self: center;
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 100%;
+  }
+  .button-contact-us p {
+    font-size: 0.7rem;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+    color: #000814;
+  }
+  .button-contact-us .img_link {
+    width: 35px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 375px) {
+  .second-child h2 {
+    width: 220%;
+    font-size: 1.3rem;
+    line-height: 1px;
+    height: 0px;
+  }
 }
