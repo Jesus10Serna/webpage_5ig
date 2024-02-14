@@ -83,15 +83,12 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
 }
 
 .img-banner h1 {
-  position: absolute;
   z-index: 10000;
   color: white;
-  top: 65%;
   font-weight: 900;
-  font-size: 2.8125rem;
+  font-size: 1.8125rem;
   line-height: 3.40375rem;
   letter-spacing: 1.46px;
-  left: 5.9375rem;
 }
 
 .img-banner img {
@@ -104,11 +101,8 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
 }
 
 .img-banner button {
-  position: absolute;
   width: 284px;
-  top: 78%;
   height: 54px;
-  left: 75%;
   padding: 16px 28px 16px 28px;
   background: var(--color-yellow-primary);
   color: var(--color-secondary);
@@ -218,13 +212,13 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   height: 102px;
   display: flex;
   gap: 30px;
+  align-items: center;
 }
 .more-services-content-grid-item-content img {
   width: 102px;
   height: 102px;
 }
 .more-services-content-grid-item-content h1 {
-  height: 41px;
   font-weight: 500;
   font-size: 34px;
   line-height: 41.15px;
@@ -232,10 +226,6 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   align-self: center;
   margin: 0;
 }
-/* .more-services-content-grid div:last-child h1 {
-  padding-top: 4px;
-  align-self: start;
-} */
 
 .more-services-content-grid-item-content-button {
   height: 54px;
@@ -253,6 +243,16 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   background-color: rgba(0, 29, 61, 0.9);
 }
 
+
+.title_button_container{
+  position: absolute;
+  top: 65%;
+  min-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .image_service {
     width: 100%;
@@ -333,7 +333,7 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
     width: 60px;
   }
   .more-services-content-grid-item-content h1 {
-    height: 41px;
+    height: auto;
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
@@ -350,5 +350,27 @@ Esta(.content-services) es la que define la separacion entre la seccion de mas s
   .more-services-title h1 {
     width: auto;
     line-height: 35px;
+  }
+
+  .img-banner h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: auto !important;
+    text-align: center;
+  }
+
+  .title_button_container{
+    top: 4%;
+    flex-direction: column;
+  }
+  .img-banner button {
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+  }
+
+  .arrow-container{
+    display: none;
   }
 }

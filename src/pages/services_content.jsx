@@ -107,10 +107,12 @@ const Services_content = () => {
               alt="arrow_back"
             ></img>
           </div>
-          <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
-          <button onClick={() => handleRedirect("/contractus")}>
-            Contrata Con Nosotros
-          </button>
+          <div className="title_button_container">
+            <h1 style={service === "ia" ? miEstilo : {}}>{sectionTitle}</h1>
+            <button onClick={() => handleRedirect("/contractus")}>
+              {t('HEADER_CONTRACT')}
+            </button>
+          </div>
         </div>
         <div className="parent_container">
           {info.slice(startIdx, endIdx).map((item, index) => (
@@ -246,28 +248,28 @@ const Services_content = () => {
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content" >
                 {iconImg1 && <img src={iconImg1} alt="" />}
-                <h1 style={services[0].link1 === "/services/web-app-dev" || services[0].link1==="/services/ia" ? styleForWebItem : {}}>{services[0].text1}</h1>
+                <h1>{services[0].text1}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link1)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg2} alt="" />}
-                <h1 style={services[0].link2 === "/services/web-app-dev" || services[0].link2==="/services/ia" ? styleForWebItem : {}}>{services[0].text2}</h1>
+                <h1>{services[0].text2}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link2)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
                 {iconImg1 && <img src={iconImg3} alt="" />}
-                <h1 style={services[0].link3 === "/services/web-app-dev" || services[0].link3==="/services/ia" ? styleForWebItem : {}}>{services[0].text3}</h1>
+                <h1>{services[0].text3}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link3)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
             <div className="more-services-content-grid-item">
               <div className="more-services-content-grid-item-content">
               {iconImg1 && <img src={iconImg4} alt="" />}
-                <h1 style={services[0].link4 === "/services/web-app-dev" || services[0].link4 ==="/services/ia" ? styleForWebItem : {}}> {services[0].text4}</h1>
+                <h1> {services[0].text4}</h1>
               </div>
               <button className="more-services-content-grid-item-content-button" onClick={()=>{handleRedirect(services[0].link4)}}>{t('HOME_SERVICES_BUTTON')}</button>
             </div>
