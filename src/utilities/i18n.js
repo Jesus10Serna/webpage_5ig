@@ -96,18 +96,12 @@ i18n
                     AUT_SIX_TEXT: 'Achieve harmony and synergy between automated processes and humans and create a culture of collaboration and empowerment. To do this, it can be helpful to involve them in the design, implementation, and maintenance of automated processes, explain the purpose and value of automated processes, and recognize and reward their contributions and achievements. ',
                     AUT_SEVEN_TEXT: 'Fear losing control or confidence in automated processes, and that these may cause errors, damage, or harm. Your audience may have doubts or concerns about the reliability, security, and accountability of automated processes, and fear that these may fail, deviate, or turn against them. To address this, it can be helpful to ensure the quality, transparency, and traceability of automated processes, establish control mechanisms, supervision, and audit of automated processes, and define standards and protocols for action in case of incidents or emergencies. ',
                     AUT_EIGHT_TEXT: 'Being replaced or displaced by automated processes and losing their relevance or competitiveness in the market. Your audience may feel threatened or undervalued by automated processes and fear that these may take away their jobs, roles, or positions. To address this, it can be helpful to assure them that automated processes are not intended to replace them but to complement their work, identify and develop their strengths and distinctive capabilities, and offer them opportunities for growth and professional development. ',
-<<<<<<< HEAD
                     AUT_THIRD_TEXT_SMALLER:'Customers want to acquire skills and knowledge in automation to create solutions tailored to their needs.',
                     AUT_FOUR_TEXT_SMALLER:'Customers need support in overcoming technical, organizational or regulatory barriers when implementing automated processes.',
                     AUT_FIFTH_TEXT_SMALLER:'Customers dream of leading in their industries through automation-driven innovation.',
                     AUT_SIX_TEXT_SMALLER:'Customers aspire to achieve harmony between automated and human processes to foster a culture',
                     AUT_SEVEN_TEXT_SMALLER:'Customers are afraid of losing control or trust in automated processes, worried about errors or damage.',
                     AUT_EIGHT_TEXT_SMALLER:'Customers are afraid of being replaced by automated processes and losing their relevance in the labor market. ',
-=======
-
-                    //CONTACT US PAGE
-                    CONTACT_US_TITLE: 'Carry your business into the new era of technology!',
->>>>>>> 258c53d73819beb1e2325549942a8393918aa9c0
 
                     //OTHER TITLES
                     MORE_SERVICES: '',
