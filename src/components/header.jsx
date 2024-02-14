@@ -5,9 +5,11 @@ import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 import "../style/header.css";
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const Header = (props) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const[showMenu, setShowMenu] = useState(false)
@@ -25,10 +27,10 @@ const Header = (props) => {
           <img className="logo-5ig" src={logo5ig} onClick={() => handleRedirect('/')} alt="Logo_5ig"></img>
         </div>
         <div className="header-contact-container">
-          <button className="header-button" id="contract" onClick={() => handleRedirect('/contractus')}>Contrata con Nosotros</button>
+          <button className="header-button" id="contract" onClick={() => handleRedirect('/contractus')}>{t('HEADER_CONTRACT')}</button>
 
-          <button className="secondary-header-button" onClick={() => handleRedirect('/to-service')}>Servicios</button>
-          <button className="secondary-header-button" onClick={() => handleRedirect('/aboutus')}>¿Quienes Somos?</button>
+          <button className="secondary-header-button" onClick={() => handleRedirect('/to-service')}>{t('HEADER_SERVICES')}</button>
+          <button className="secondary-header-button" onClick={() => handleRedirect('/aboutus')}>{t('HEADER_WHOWEARE')}</button>
 
           <div className="header-logos">
             <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
@@ -39,10 +41,10 @@ const Header = (props) => {
 
       </div>
       <div className={`header-contact-container_phone ${showMenu && "active"}`}>
-        <button className="header-button" id="contract" onClick={() => handleRedirect('/contractus')}>Contrata con Nosotros</button>
+        <button className="header-button" id="contract" onClick={() => handleRedirect('/contractus')}>{t('HEADER_CONTRACT')}</button>
 
-        <button className="secondary-header-button" onClick={() => handleRedirect('/to-service')}>Servicios</button>
-        <button className="secondary-header-button" onClick={() => handleRedirect('/aboutus')}>¿Quienes Somos?</button>
+        <button className="secondary-header-button" onClick={() => handleRedirect('/to-service')}>{t('HEADER_SERVICES')}</button>
+        <button className="secondary-header-button" onClick={() => handleRedirect('/aboutus')}>{t('HEADER_WHOWEARE')}</button>
 
         <div className="header-logos">
           <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>

@@ -1,35 +1,34 @@
-.contact-us-container{
+.contact-us-container {
     position: relative;
     height: auto;
     width: 100%;
     align-items: center;
-    background-image: linear-gradient(
-        rgba(0,53,102,0.5),
-        rgba(0, 0, 0, 0.5)
-        ),url('../components/bckimagecontact.svg');
+    background-image: linear-gradient(rgba(0, 53, 102, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../components/bckimagecontact.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 30px 0 ;
+    padding: 30px 0;
 }
 
 .contact-us-total {
     display: flex;
     align-items: center;
     margin: 30px 0;
-    width: 80%;
     justify-content: center;
     gap: 18rem;
 }
 
 .contact-us-set {
     justify-content: start;
-    align-items:center;
+    align-items: center;
     width: fit-content;
-    height: 423px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-us-countries,
@@ -37,6 +36,7 @@
     color: white;
     z-index: 1000;
     height: 187px;
+    width: 100%;
     border-radius: 18px;
     border-style: solid;
     border-width: 3px;
@@ -85,13 +85,13 @@
     border-radius: 17px;
     padding-bottom: 30px;
     display: flex;
-  justify-content: center;
+    justify-content: center;
     gap: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     box-sizing: revert;
 }
 
-.contact-us-forms form{
+.contact-us-forms form {
     width: fit-content;
 }
 
@@ -107,7 +107,7 @@ textarea.input-width {
     max-width: 591px;
 }
 
-.input-width:focus-visible{
+.input-width:focus-visible {
     border: 1px solid #0075BF !important;
 }
 
@@ -139,7 +139,7 @@ textarea.input-width {
 .contact-us-forms form button.sendFormConatct:disabled {
     background: linear-gradient(#ffd60a, #fbbd05);
     color: #939094;
-    cursor:no-drop;
+    cursor: no-drop;
 }
 
 .phoneContactContainer {
@@ -153,8 +153,8 @@ textarea.input-width {
     width: 90%;
 }
 
-.phoneContactContainer .input-width:focus-visible{
-   border: 2px solid #0075BF !important;
+.phoneContactContainer .input-width:focus-visible {
+    border: 2px solid #0075BF !important;
 }
 
 .phoneContactContainer .phoneContactDropdown {
@@ -180,10 +180,10 @@ textarea.input-width {
     padding: 10px;
     position: absolute;
     top: 61px;
-  z-index: 99;
+    z-index: 99;
 }
 
-.phoneContactContainer .phoneContactDropdown .phoneContactOptions p{
+.phoneContactContainer .phoneContactDropdown .phoneContactOptions p {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -204,14 +204,14 @@ textarea.input-width {
     position: relative;
 }
 
-.phoneContactContainer .phoneContactInputContainer img{
+.phoneContactContainer .phoneContactInputContainer img {
     position: absolute;
     left: 100px;
     top: 21px;
     color: #FBBC05;
 }
 
-.phoneContactContainer .phoneContactDropdown .phoneContactOptions p:not(:last-child){
+.phoneContactContainer .phoneContactDropdown .phoneContactOptions p:not(:last-child) {
     border-bottom: 1px solid #001D3D;
 }
 
@@ -232,7 +232,7 @@ textarea.input-width {
     width: fit-content;
 }
 
-.phoneContactOptions .optionsContainer{
+.phoneContactOptions .optionsContainer {
     max-height: 106px;
     overflow: auto;
     scrollbar-width: 1px;
@@ -240,22 +240,25 @@ textarea.input-width {
 }
 
 ::-webkit-scrollbar {
-    width: 1px; /* Cambia el valor según lo que necesites */
+    width: 1px;
+    /* Cambia el valor según lo que necesites */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(95, 95, 95); /* Color del pulgar */
-    border-radius: 6px; /* Radio de borde del pulgar */
+    background-color: rgb(95, 95, 95);
+    /* Color del pulgar */
+    border-radius: 6px;
+    /* Radio de borde del pulgar */
 }
 
 
-.phone_container{
+.phone_container {
     width: 100%;
-    gap:8px;
+    gap: 8px;
     display: flex;
 }
 
-.input-width-domain{
+.input-width-domain {
     width: 10%;
     border-radius: 14px;
     border: none;
@@ -263,18 +266,19 @@ textarea.input-width {
 
 }
 
-#phone{
-    width:calc(90% - 82px);
+#phone {
+    width: calc(90% - 82px);
 }
 
-.alert.alert-danger.p-2.mt-2{
+.alert.alert-danger.p-2.mt-2 {
     width: 622px;
 }
-.contact-us-container .contact-us-forms.contract{
+
+.contact-us-container .contact-us-forms.contract {
     margin-left: 0;
 }
 
-.termsAndConditionsContainer{
+.termsAndConditionsContainer {
     max-width: 640px;
     gap: 10px;
     display: flex;
@@ -283,7 +287,7 @@ textarea.input-width {
     margin-top: 20px;
 }
 
-.termsAndConditionsContainer input{
+.termsAndConditionsContainer input {
     width: 20px;
     height: 20px;
     border-radius: 8px;
@@ -297,8 +301,8 @@ textarea.input-width {
     margin: 0;
 }
 
-.termsAndConditionsContainer .termsAndConditionsText a{
- color: #0075BF;
+.termsAndConditionsContainer .termsAndConditionsText a {
+    color: #0075BF;
 }
 
 .alert.alert-danger {
@@ -313,9 +317,30 @@ textarea.input-width {
     border-radius: 8px;
 }
 
+.wsp-contact-button {
+    background: linear-gradient(270deg, #FFDD36 -9.18%, #FFA901 109.18%);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    top: 509px;
+    width: 120%;
+    justify-content: center;
+    left: 287px;
+    padding: 10px 0;
+    border-radius: 16px;
+    gap: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 @media (min-width: 530px) and (max-width: 900px) {
 
-    .phoneContactContainer{
+    .phoneContactContainer {
         width: 96%;
     }
 }
@@ -334,11 +359,11 @@ textarea.input-width {
         width: 87%;
     }
 
-    .contact-us-forms form button{
+    .contact-us-forms form button {
         width: 100%;
     }
 
-    .termsAndConditionsContainer{
+    .termsAndConditionsContainer {
         width: 100%;
     }
 
@@ -346,16 +371,33 @@ textarea.input-width {
         width: 87%;
     }
 
-    .inputComponentContainer{
+    .inputComponentContainer {
         width: 100%;
     }
 
-    .phoneContactContainer .phoneContactDropdown input{
+    .phoneContactContainer .phoneContactDropdown input {
         width: 2rem;
     }
 
-    .phoneContactContainer .phoneContactInputContainer img{
+    .phoneContactContainer .phoneContactInputContainer img {
         left: 3.7rem;
+    }
+
+    .contact-us-container {
+        flex-direction: column;
+    }
+
+    .contract-us-set {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: auto;
+        padding:0 15px;
+    }
+
+    .contact-us-container .contact-us-forms.contract{
+        margin-top: 30px;
     }
 }
 
@@ -369,11 +411,11 @@ textarea.input-width {
         width: 87%;
     }
 
-    .contact-us-forms form button{
+    .contact-us-forms form button {
         width: 100%;
     }
 
-    .termsAndConditionsContainer{
+    .termsAndConditionsContainer {
         width: 100%;
     }
 
@@ -381,12 +423,11 @@ textarea.input-width {
         width: 87%;
     }
 
-    .inputComponentContainer{
+    .inputComponentContainer {
         width: 100%;
     }
 
-    .contact-us-total{
+    .contact-us-total {
         gap: 6rem;
     }
-
 }

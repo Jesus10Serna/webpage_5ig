@@ -6,9 +6,15 @@ import arrowIcon from "./arrowDown.svg";
 import InputComponent from "./inputComponent";
 import TextAreaComponent from "./textAreaComponent";
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 const Contact_us = () => {
+  const { t } = useTranslation();
   const [openDropdown, setOpenDropdown] = useState(false)
+
+  const handleRedirectWP = () => {
+    window.open("https://api.whatsapp.com/send?phone=573025779018")
+  };
 
   const initialData = {
     name: '',
@@ -172,24 +178,31 @@ const Contact_us = () => {
       <div className="contact-us-total">
         <div className="contact-us-set">
           <div className="contact-us-countries">
-            <h3>CONTACTANOS</h3>
+            <h3>{t('FORM_CONTACT_US')}</h3>
             <h4>USA-MX-COL</h4>
             <p>contact@5igsolutions.com</p>
           </div>
           <div className="contact-us-social">
-            <h3>SIGUENOS EN</h3>
+            <h3>{t('FORM_FOLLOW')}</h3>
             <div className="contact-us-logos">
               <a href="https://www.instagram.com/5ig_solutions/" target="_blank" rel="noreferrer"><img src={insta} alt="Instagram" ></img></a>
               <a href="https://www.linkedin.com/company/5ig-solutions/about" target="_blank" rel="noreferrer"><img src={linkedin} alt="LinkedIn"></img></a>
             </div>
           </div>
+          <button
+            className="wsp-contact-button"
+            onClick={handleRedirectWP}
+          >
+            <img src="/img/wsp_black_icon.svg" alt="Whatsapp Logo para chatear con nosotros" />
+            {t('AUT_BUTTON')}
+          </button>
         </div>
         <div className="contact-us-forms">
           {/* <form action="https://formsubmit.co/your@email.com" method="POST"> */}
           <form onSubmit={handleSubmitContact}>
             <InputComponent
               className={`input-width`}
-              label={`¿Quien nos escribe?`}
+              label={t('FORM_NAME')}
               placeholdel={`Nombre`}
               name={'name'}
               value={form.name}
@@ -198,14 +211,14 @@ const Contact_us = () => {
             {errors.name && <div className="alert alert-danger">{errors.name}</div>}
             <InputComponent
               className={`input-width`}
-              label={`Regálanos tu correo`}
+              label={t('FORM_EMAIL')}
               placeholdel={`E-mail`}
               name={'email'}
               value={form.email}
               handleChange={handleChange}
             />
             {errors.email && <div className="alert alert-danger">{errors.email}</div>}
-            <p>Regálanos tu télefono</p>
+            <p>{t('FORM_PHONE')}</p>
             <div className="phoneContactContainer">
               <div className="phoneContactDropdown">
                 <div className="phoneContactInputContainer">
@@ -238,7 +251,7 @@ const Contact_us = () => {
 
             <TextAreaComponent
               className={`input-width textArea`}
-              label={`Déjanos tu mensaje`}
+              label={t('FORM_MESSAGE')}
               placeholdel={`Mensaje`}
               name={'message'}
               handleChange={handleChange}
@@ -247,10 +260,10 @@ const Contact_us = () => {
             {errors.message && <div className="alert alert-danger">{errors.message}</div>}
             <div className="termsAndConditionsContainer">
               <input type="checkbox" name="policies" onChange={handleChange} />
-              <p className="termsAndConditionsText">Al marcar esta casilla, confirmas que has leído y aceptas nuestra política de tratamiento de datos. <a href="">Haz clic aquí para leer la política completa.</a></p>
+              <p className="termsAndConditionsText">{t('FORM_POLICY')} <a href="">{t('FORM_POLICY_LINK')}</a></p>
             </div>
             {errors.policies && <div className="alert alert-danger">{errors.policies}</div>}
-            <button className="sendFormConatct" disabled={loading}>{loading ? "Enviando..." : "Enviar"}</button>
+            <button className="sendFormConatct" disabled={loading}>{loading ? t('FORM_BUTTON_LOADING') : t('FORM_BUTTON')}</button>
             {/* <input type="hidden" name="_next" value="/"/>
             <input type="hidden" name="_captcha" valu`e="false"/> */}
           </form>

@@ -4,8 +4,10 @@ import "../style/footer.css";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const handleRedirect = (route) => {
     window.scrollTo(0, 0);
@@ -25,31 +27,29 @@ const Footer = () => {
       </div>
       <div className="policy-approval">
         <p>
-          La gerencia aprueba la política de tratamiento de datos el 8 de
-          febrero de 2024, Se publica en las respectivas plataformas para el
-          acceso público.
+          {t('FOOTER_MESSAGE')}
         </p>
       </div>
       <div className="line-middle"></div>
       {/* <div className="footer-general-info"> */}
       <div className="policy-title-links">
-        <h3 className="policy-publication">Políticas</h3>
+        <h3 className="policy-publication">{t('FOOTER_POLICIES')}</h3>
         <a href="/TerminosDeUso.docx" className="policy-link">
-          Términos de uso <br />
+          {t('FOOTER_TERMS')} <br />
         </a>
         <a
           href="/PoliticaDeTratamientoDeDatosPersonales.docx"
           className="policy-link"
         >
-          Tratamiento de datos
+          {t('FOOTER_DATA')}
         </a>
       </div>
       <div className="policy-logos-info">
         <div onClick={() => handleRedirect("/aboutus")}>
-          <h3>¿Quiénes somos?</h3>
+          <h3>{t('FOOTER_WHOWEARE')}</h3>
         </div>
         <div onClick={() => handleRedirect("/to-contact")}>
-          <p>Contáctanos</p>
+          <p>{t('FOOTER_CONTACT_US')}</p>
         </div>
         <div className="footer-logos">
           <a

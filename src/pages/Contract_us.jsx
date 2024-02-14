@@ -5,9 +5,14 @@ import "../style/contract_us.css";
 import arrowIcon from "../components/arrowDown.svg";
 import InputComponent from "../components/inputComponent";
 import TextAreaComponent from "../components/textAreaComponent";
+import { useTranslation } from 'react-i18next';
 
 const Contract_us = () => {
   const [openDropdown, setOpenDropdown] = useState(false)
+  const { t } = useTranslation();
+  const handleRedirectWP = () => {
+    window.open("https://api.whatsapp.com/send?phone=573025779018")
+  };
 
   const initialData = {
     name: '',
@@ -110,7 +115,7 @@ const Contract_us = () => {
 
   const handleSelectOption = (option) => {
     // setSelectedPhonePrefix(option)
-    setForm({ ...form, phone_prefix : option })
+    setForm({ ...form, phone_prefix: option })
   }
 
   const onValidate = (form) => {
@@ -165,15 +170,21 @@ const Contract_us = () => {
         });
     }
   }
-  
+
   return (
     <>
       <Header></Header>
       <div className="contact-us-container">
         <div className="contact-us-total">
           <div className="contract-us-set">
-            <p>Lleva tu negocio a la nueva era de la tecnología</p>
-            {/* <button>Contrata Con Nosotros</button> */}
+            <p>{t('CONTACT_US_TITLE')}</p>
+            <button
+              className="wsp-contact-button"
+              onClick={handleRedirectWP}
+            >
+              <img src="/img/wsp_black_icon.svg" alt="Whatsapp Logo para chatear con nosotros" />
+              {t('AUT_BUTTON')}
+            </button>
           </div>
         </div>
         <div className="contact-us-forms contract">
@@ -181,7 +192,7 @@ const Contract_us = () => {
             <InputComponent
               className={`input-width`}
               label={`¿Quien nos escribe?`}
-              placeholdel={`Nombre`}
+              placeholdel={t('FORM_NAME_LABEL')}
               name={'name'}
               value={form.name}
               handleChange={handleChange}
@@ -218,19 +229,19 @@ const Contract_us = () => {
               </div>
               <InputComponent
                 className={`input-width`}
-                placeholdel={`Telefono`}
+                placeholdel={t('FORM_NAME_PHONE')}
                 name={'phone'}
                 handleChange={handleChange}
                 value={form.phone}
               />
             </div>
-              {errors.phone_prefix && <div className="alert alert-danger p-2 mt-2">{errors.phone_prefix}</div>}
-              {errors.phone && <div className="alert alert-danger p-2 mt-2">{errors.phone}</div>}
+            {errors.phone_prefix && <div className="alert alert-danger p-2 mt-2">{errors.phone_prefix}</div>}
+            {errors.phone && <div className="alert alert-danger p-2 mt-2">{errors.phone}</div>}
 
             <TextAreaComponent
               className={`input-width textArea`}
               label={`Déjanos tu mensaje`}
-              placeholdel={`Mensaje`}
+              placeholdel={t('FORM_NAME_MESSAGE')}
               name={'message'}
               handleChange={handleChange}
               value={form.message}
