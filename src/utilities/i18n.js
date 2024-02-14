@@ -99,7 +99,27 @@ i18n
 
 
                     //OTHER TITLES
-                    MORE_SERVICES: ''
+                    MORE_SERVICES: '',
+
+                    //CONTACT FORM
+                    FORM_CONTACT_US: 'CONTACT US',
+                    FORM_FOLLOW: 'FOLLOW US ON',
+                    FORM_NAME: 'Who writes to us?',
+                    FORM_EMAIL: 'Give us your email',
+                    FORM_PHONE: 'Give us your phone number',
+                    FORM_MESSAGE: 'Leave us a message',
+                    FORM_POLICY: 'By checking this box, you confirm that you have read and accept our data processing policy.',
+                    FORM_POLICY_LINK: ' Click here to read the full policy.',
+                    FORM_BUTTON: 'Send',
+                    FORM_BUTTON_LOADING: 'Sending...',
+
+                    //FOOTER
+                    FOOTER_MESSAGE: 'Management approves the data processing policy on February 8, 2024. It is published on the respective platforms for public access.',
+                    FOOTER_POLICIES: 'Policies',
+                    FOOTER_TERMS: 'Terms of use',
+                    FOOTER_DATA: 'Data treatment',
+                    FOOTER_WHOWEARE: 'Who we are?',
+                    FOOTER_CONTACT_US: 'Contact us'
 
                 },
             },
@@ -195,7 +215,27 @@ i18n
 
 
                     //OTHER TITLES
-                    MORE_SERVICES: ''
+                    MORE_SERVICES: '',
+
+                    //CONTACT FORM
+                    FORM_CONTACT_US: 'CONTÁCTANOS',
+                    FORM_FOLLOW: 'SIGUENOS EN',
+                    FORM_NAME: '¿Quién nos escribe?',
+                    FORM_EMAIL: 'Regálanos tu correo',
+                    FORM_PHONE: 'Regálanos tu télefono',
+                    FORM_MESSAGE: 'Dejanos tu mensaje',
+                    FORM_POLICY: 'Al marcar esta casilla, confirmas que has leído y aceptas nuestra política de tratamiento de datos.',
+                    FORM_POLICY_LINK: 'Haz clic aquí para leer la política completa.',
+                    FORM_BUTTON: 'Enviar',
+                    FORM_BUTTON_LOADING: 'Enviando...',
+
+                    //FOOTER
+                    FOOTER_MESSAGE: 'La gerencia aprueba la política de tratamiento de datos el 8 de febrero de 2024, Se publica en las respectivas plataformas para el acceso público.',
+                    FOOTER_POLICIES: 'Políticas',
+                    FOOTER_TERMS: 'Términos de uso',
+                    FOOTER_DATA: 'Tratamiento de datos',
+                    FOOTER_WHOWEARE: '¿Quiénes somos?',
+                    FOOTER_CONTACT_US: 'Contáctanos'
 
                 },
             },
