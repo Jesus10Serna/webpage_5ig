@@ -113,6 +113,11 @@ i18n
                     FORM_BUTTON: 'Send',
                     FORM_BUTTON_LOADING: 'Sending...',
 
+                    //HEADER
+                    HEADER_CONTRACT: 'Contract with us',
+                    HEADER_SERVICES: 'Services',
+                    HEADER_WHOWEARE: 'Who we are?',
+
                     //FOOTER
                     FOOTER_MESSAGE: 'Management approves the data processing policy on February 8, 2024. It is published on the respective platforms for public access.',
                     FOOTER_POLICIES: 'Policies',
@@ -228,6 +233,11 @@ i18n
                     FORM_POLICY_LINK: 'Haz clic aquí para leer la política completa.',
                     FORM_BUTTON: 'Enviar',
                     FORM_BUTTON_LOADING: 'Enviando...',
+
+                    //HEADER
+                    HEADER_CONTRACT: 'Contrata con nosotros',
+                    HEADER_SERVICES: 'Servicios',
+                    HEADER_WHOWEARE: '¿Quiénes somos?',
 
                     //FOOTER
                     FOOTER_MESSAGE: 'La gerencia aprueba la política de tratamiento de datos el 8 de febrero de 2024, Se publica en las respectivas plataformas para el acceso público.',
