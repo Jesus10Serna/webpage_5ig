@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 
 
+import './utilities/i18n'; // Importa la configuración de i18next
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './pages/App';
@@ -9,6 +10,7 @@ import Automate from './pages/automate';
 import WorkWithUs from './pages/work_with_us'
 import Services from './pages/services_content'
 import ContractUs from './pages/Contract_us';
+
 
 
 
