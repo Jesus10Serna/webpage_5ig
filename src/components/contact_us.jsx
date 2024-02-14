@@ -15,7 +15,8 @@ const Contact_us = () => {
     email: '',
     phone_prefix: '',
     phone: '',
-    message: ''
+    message: '',
+    policies: false
   }
   const [loading, setLoading] = useState(false)
   const [errors, setErros] = useState({})
@@ -105,13 +106,18 @@ const Contact_us = () => {
   }
 
   const handleChange = (event) => {
-    const { name, value } = event.target
-    setForm({ ...form, [name]: value })
+    const { name, value, checked } = event.target
+    if (name === 'policies') {
+      setForm({ ...form, [name]: checked })
+    } else {
+      setForm({ ...form, [name]: value })
+    }
+    console.log(form);
   }
 
   const handleSelectOption = (option) => {
     // setSelectedPhonePrefix(option)
-    setForm({ ...form, phone_prefix : option })
+    setForm({ ...form, phone_prefix: option })
   }
 
   const onValidate = (form) => {
@@ -135,6 +141,10 @@ const Contact_us = () => {
 
     if (!form.message.trim()) {
       errors.message = 'Este campo debe ser completado.'
+    }
+
+    if (form.policies === false) {
+      errors.policies = 'Este campo debe ser completado.'
     }
 
     return errors
@@ -185,7 +195,7 @@ const Contact_us = () => {
               value={form.name}
               handleChange={handleChange}
             />
-            {errors.name && <div className="alert alert-danger p-2 mt-2">{errors.name}</div>}
+            {errors.name && <div className="alert alert-danger">{errors.name}</div>}
             <InputComponent
               className={`input-width`}
               label={`Regálanos tu correo`}
@@ -194,7 +204,7 @@ const Contact_us = () => {
               value={form.email}
               handleChange={handleChange}
             />
-            {errors.email && <div className="alert alert-danger p-2 mt-2">{errors.email}</div>}
+            {errors.email && <div className="alert alert-danger">{errors.email}</div>}
             <p>Regálanos tu télefono</p>
             <div className="phoneContactContainer">
               <div className="phoneContactDropdown">
@@ -223,8 +233,8 @@ const Contact_us = () => {
                 value={form.phone}
               />
             </div>
-              {errors.phone_prefix && <div className="alert alert-danger p-2 mt-2">{errors.phone_prefix}</div>}
-              {errors.phone && <div className="alert alert-danger p-2 mt-2">{errors.phone}</div>}
+            {errors.phone_prefix && <div className="alert alert-danger">{errors.phone_prefix}</div>}
+            {errors.phone && <div className="alert alert-danger">{errors.phone}</div>}
 
             <TextAreaComponent
               className={`input-width textArea`}
@@ -234,11 +244,12 @@ const Contact_us = () => {
               handleChange={handleChange}
               value={form.message}
             />
+            {errors.message && <div className="alert alert-danger">{errors.message}</div>}
             <div className="termsAndConditionsContainer">
-              <input type="checkbox" />
+              <input type="checkbox" name="policies" onChange={handleChange} />
               <p className="termsAndConditionsText">Al marcar esta casilla, confirmas que has leído y aceptas nuestra política de tratamiento de datos. <a href="">Haz clic aquí para leer la política completa.</a></p>
             </div>
-            {errors.message && <div className="alert alert-danger p-2 mt-2">{errors.message}</div>}
+            {errors.policies && <div className="alert alert-danger">{errors.policies}</div>}
             <button className="sendFormConatct" disabled={loading}>{loading ? "Enviando..." : "Enviar"}</button>
             {/* <input type="hidden" name="_next" value="/"/>
             <input type="hidden" name="_captcha" valu`e="false"/> */}
