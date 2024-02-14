@@ -151,7 +151,7 @@ i18n
                     HOME_SERVICE_CLOUD_TITLE: 'CLOUD SOLUTIONS',
                     HOME_SERVICE_BI_TITLE: 'BUSINESS INTELLIGENCE (BI)',
                     HOME_SERVICE_WEB_DEV_TITLE: 'WEB DEVELOPMENT Y APP DEVELOPMENT',
-                    HOME_ABOUT_US: 'ACECA DE NOSOTROS',
+                    HOME_ABOUT_US: 'ACERCA DE NOSOTROS',
                     HOME_ABOUT_DESCRIPTION: 'Líderes innovadores en inteligencia artificial y automatización, nos especializamos en automatización inteligente, RPA e inteligencia empresarial.',
                     HOME_ABOUT_DESCRIPTION_2: 'Nuestra misión es simplificar los procesos organizativos para los clientes aprovechando tecnologías de vanguardia como la inteligencia artificial, el aprendizaje automático y el procesamiento del lenguaje natural.',
                     HOME_ABOUT_DESCRIPTION_3: 'Siempre de la mano con nuestros clientes y la tecnología.',
