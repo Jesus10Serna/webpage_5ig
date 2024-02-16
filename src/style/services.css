@@ -1,3 +1,4 @@
+
 .services-container {
   margin: 0;
   padding: 0;
@@ -366,9 +367,6 @@ a {
   .r button {
     padding: 0 10px;
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .r h2,
@@ -403,15 +401,14 @@ a {
     width: 10%;
     display: none;
   }
-  .first-child h2 .second-child h2 {
+  .second-child h2 {
     width: 64%;
     font-size: 55px;
     line-height: 1px;
     height: 0px;
   }
   .first-child .line_1,
-  .first-child .line_2,
-  .second-child .line_1 .second-child .line_2 {
+  .first-child .line_2 {
     width: 10%;
   }
 
@@ -448,89 +445,79 @@ a {
     height: 24px;
     background-repeat: no-repeat;
   }
+  .title2 h1 {
+    line-height: 2rem;
+  }
+  .second-child h2 {
+    width: 100%;
+    height: auto;
+    line-height: 15vh;
+  }
+  .second-child {
+    top: 3050px;
+    width: 100%;
+    text-align: center;
+  }
+  #services-container {
+    height: 3600px;
+  }
 }
 
-@media (min-width: 380px) and (max-width: 400px) {
-  .line_1,
-  .line_2 {
-    display: none;
-    .title2 h1 {
-      line-height: 2rem;
-    }
-    .second-child h2 {
-      width: 100%;
-      height: auto;
-      line-height: 15vh;
-    }
-    .second-child {
-      top: 3050px;
-      width: 100%;
-      text-align: center;
-    }
-    #services-container {
-      height: 3600px;
-    }
+@media (min-width: 300px) and (max-width: 375px) {
+  .second-child h2 {
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 1px;
+    height: auto;
   }
 
-  @media (min-width: 300px) and (max-width: 375px) {
-    .second-child h2 {
-      width: 100%;
-      font-size: 1.3rem;
-      line-height: 1px;
-      height: auto;
-    }
+  .l button,
+  .r button {
+    font-size: 13px;
+  }
 
-    .l button,
-    .r button {
-      font-size: 13px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .r {
+    left: 39.059%;
+    max-width: 58%;
+  }
 
-    .r {
-      left: 39.059%;
-      max-width: 58%;
-    }
+  .second-child {
+    top: 3050px;
+    width: 100%;
+    text-align: center;
+  }
 
-    .second-child {
-      top: 3050px;
-      width: 100%;
-      text-align: center;
-    }
+  .second-child .line_1,
+  .second-child .line_2 {
+    display: none;
+  }
 
-    .second-child .line_1,
-    .second-child .line_2 {
-      display: none;
-    }
+  .services-title .line_1,
+  .services-title .line_2 {
+    display: none;
+  }
 
-    .services-title .line_1,
-    .services-title .line_2 {
-      display: none;
-    }
+  .services-title h2 {
+    font-size: 2.5rem;
+    line-height: 45px;
+    letter-spacing: -1.46px;
+    font-weight: 900px;
+  }
 
-    .services-title h2 {
-      font-size: 2.5rem;
-      line-height: 45px;
-      letter-spacing: -1.46px;
-      font-weight: 900px;
-    }
-
-    #services-container {
-      height: 3700px;
-    }
-    .button-contact-us .img_link {
-      background-image: url("../components/linkedin2.svg");
-      width: 37px;
-      height: 24px;
-      background-repeat: no-repeat;
-    }
-    .button-contact-us p {
-      font-size: 0.58rem;
-      margin: 0;
-      text-align: center;
-      align-self: center;
-      color: #000814;
-    }
+  #services-container {
+    height: 3700px;
+  }
+  .button-contact-us .img_link {
+    background-image: url("../components/linkedin2.svg");
+    width: 37px;
+    height: 24px;
+    background-repeat: no-repeat;
+  }
+  .button-contact-us p {
+    font-size: 0.58rem;
+    margin: 0;
+    text-align: center;
+    align-self: center;
+    color: #000814;
   }
 }
