@@ -4,7 +4,7 @@ import "../style/footer.css";
 import insta from "./insta.svg";
 import linkedin from "./linkedin.svg";
 import { useNavigate } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -26,30 +26,28 @@ const Footer = () => {
         ></img>
       </div>
       <div className="policy-approval">
-        <p>
-          {t('FOOTER_MESSAGE')}
-        </p>
+        <p>{t("FOOTER_MESSAGE")}</p>
       </div>
       <div className="line-middle"></div>
       {/* <div className="footer-general-info"> */}
       <div className="policy-title-links">
-        <h3 className="policy-publication">{t('FOOTER_POLICIES')}</h3>
-        <a href="/TerminosDeUso.docx" className="policy-link">
-          {t('FOOTER_TERMS')} <br />
+        <h3 className="policy-publication">{t("FOOTER_POLICIES")}</h3>
+        <a href="/TerminosDeUso.pdf" className="policy-link">
+          {t("FOOTER_TERMS")} <br />
         </a>
         <a
-          href="/PoliticaDeTratamientoDeDatosPersonales.docx"
+          href="/PoliticaDeTratamientoDeDatosPersonales.pdf"
           className="policy-link"
         >
-          {t('FOOTER_DATA')}
+          {t("FOOTER_DATA")}
         </a>
       </div>
       <div className="policy-logos-info">
         <div onClick={() => handleRedirect("/aboutus")}>
-          <h3>{t('FOOTER_WHOWEARE')}</h3>
+          <h3>{t("FOOTER_WHOWEARE")}</h3>
         </div>
         <div onClick={() => handleRedirect("/to-contact")}>
-          <p>{t('FOOTER_CONTACT_US')}</p>
+          <p>{t("FOOTER_CONTACT_US")}</p>
         </div>
         <div className="footer-logos">
           <a
