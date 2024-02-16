@@ -115,10 +115,12 @@
 .l {
   left: 10.42%;
   max-width: 39.64%;
+  padding: 2px;
 }
 .r {
   left: 60.0591%;
-  max-width: 22.63%;
+  max-width: 39.64%;
+  padding: 8px;
 }
 
 .r h2 {
@@ -185,6 +187,7 @@
   height: 457px;
   border-radius: 42px;
   background-image: url("../components/about-us.svg");
+  background-repeat: no-repeat;
   gap: 40px;
 }
 
@@ -261,7 +264,7 @@ a {
 
 /*Portatil*/
 
-@media (min-width: 900px) and (max-width: 1617px) {
+@media (min-width: 900px) and (max-width: 1800px) {
   .r {
     left: 48.0591%;
     max-width: 47.63%;
@@ -288,10 +291,13 @@ a {
     width: auto;
     justify-self: center;
   }
+  .title2 h1 {
+    line-height: 3.8rem;
+  }
 }
 
 /*Tablet*/
-@media (min-width: 781px) and (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 900px) {
   .r {
     left: 48.0591%;
     max-width: 50.63%;
@@ -320,14 +326,32 @@ a {
     justify-self: center;
     margin-left: 0;
   }
+  .title2 h1 {
+    line-height: 3.1rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 721px) {
+  .max-container-services button {
+    padding: 10px;
+  }
+  .second-child h2 {
+    font-size: 1.6rem;
+    line-height: 8px;
+  }
 }
 
 /*Telefono*/
-@media (min-width: 300px) and (max-width: 781px) {
+@media (min-width: 300px) and (max-width: 700px) {
   .text-about-us {
     justify-self: center;
     text-align: justify;
-    width: 65%;
+    width: 85%;
+  }
+
+  .l,
+  .r {
+    align-self: center;
   }
 
   .r {
@@ -336,10 +360,11 @@ a {
   }
   .l {
     left: 5.42%;
-    max-width: 39.64%;
+    max-width: 58%;
   }
   .l button,
   .r button {
+    padding: 0 10px;
     font-size: 15px;
   }
 
@@ -369,13 +394,15 @@ a {
   }
   .second-child .line_1 {
     width: 10%;
+    display: none;
   }
   .second-child .line_2 {
     width: 10%;
+    display: none;
   }
   .second-child h2 {
     width: 64%;
-    font-size: 1.1rem;
+    font-size: 55px;
     line-height: 1px;
     height: 0px;
   }
@@ -417,17 +444,30 @@ a {
     height: 24px;
     background-repeat: no-repeat;
   }
-
-
-
+  .title2 h1 {
+    line-height: 2rem;
+  }
+  .second-child h2 {
+    width: 100%;
+    height: auto;
+    line-height: 15vh;
+  }
+  .second-child {
+    top: 3050px;
+    width: 100%;
+    text-align: center;
+  }
+  #services-container {
+    height: 3600px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 375px) {
   .second-child h2 {
-    width: 220%;
+    width: 100%;
     font-size: 1.3rem;
     line-height: 1px;
-    height: 0px;
+    height: auto;
   }
 
   .l button,
@@ -441,7 +481,7 @@ a {
   }
 
   .second-child {
-    top: 3020px;
+    top: 3050px;
     width: 100%;
     text-align: center;
   }
@@ -464,7 +504,7 @@ a {
   }
 
   #services-container {
-    height: 245.1875rem;
+    height: 3700px;
   }
   .button-contact-us .img_link {
     background-image: url("../components/linkedin2.svg");
@@ -478,6 +518,5 @@ a {
     text-align: center;
     align-self: center;
     color: #000814;
-}
-
+  }
 }
