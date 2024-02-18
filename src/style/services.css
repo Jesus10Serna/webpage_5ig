@@ -85,7 +85,20 @@
     url("../components/ia.svg");
   border-radius: 35px 35px 0 0;
 }
-.ia h2,
+.ia h2{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  width: 320px;
+  height: 178px;
+  color: white;
+  font-weight: 900;
+  font-size: 31px;
+  line-height: 42.36px;
+  letter-spacing: -1.46px;
+}
+
 .rpa h2,
 .cloud h2,
 .bi h2,
@@ -265,7 +278,7 @@ a {
 
 /*Portatil*/
 
-@media (min-width: 900px) and (max-width: 1800px) {
+@media (min-width: 900px) and (max-width: 1900px) {
   .r {
     left: 48.0591%;
     max-width: 47.63%;
@@ -295,6 +308,9 @@ a {
   .title2 h1 {
     line-height: 3.8rem;
   }
+  .ia h2{
+    width: 450px;
+  }
 }
 
 /*Tablet*/
@@ -315,12 +331,13 @@ a {
     width: 260px;
   }
   .container-about-us-grid {
-    gap: 3px;
+    gap: 5px;
+    width: 85%;
   }
   .text-about-us {
     justify-self: center;
     text-align: justify;
-    width: 65%;
+    width: 80%;
   }
   .button-contact-us {
     width: auto;
@@ -330,6 +347,12 @@ a {
   .title2 h1 {
     line-height: 3.1rem;
   }
+  .max-container-services button {
+    padding: 10px;
+  }
+  .ia h2{
+    width: 450px;
+  }
 }
 
 @media (min-width: 701px) and (max-width: 721px) {
@@ -338,7 +361,18 @@ a {
   }
   .second-child h2 {
     font-size: 1.6rem;
-    line-height: 8px;
+  }
+  .container-about-us-grid{
+    width:85%;
+  }
+  .text-about-us{
+    width:80%;
+  }
+  .max-container-services h2{
+    font-size: 22px;
+  }
+  .r{
+    left: 43%;
   }
 }
 
@@ -375,9 +409,6 @@ a {
     line-height: 30px;
   }
 
-  .services-container {
-    height: 220.1875rem;
-  }
   .container-about-us-grid {
     display: flex;
     flex-wrap: wrap;
@@ -412,9 +443,6 @@ a {
     width: 10%;
   }
 
-  #services-container {
-    height: 235.1875rem;
-  }
   .ia h2,
   .wdad h2 {
     width: 55.8vw;
@@ -429,7 +457,7 @@ a {
     width: 100%;
   }
   .button-contact-us p {
-    font-size: 0.7rem;
+    font-size: 13px;
     margin: 0;
     text-align: center;
     align-self: center;
@@ -451,7 +479,7 @@ a {
   .second-child h2 {
     width: 100%;
     height: auto;
-    line-height: 15vh;
+    line-height: 6vh;
   }
   .second-child {
     top: 3050px;
@@ -459,14 +487,20 @@ a {
     text-align: center;
   }
   #services-container {
-    height: 3600px;
+    height: 3800px;
   }
+  .services-title h2 {
+    font-size: 1.6rem;
+    line-height: 45px;
+    letter-spacing: -1.46px;
+    font-weight: 900px;
+  }
+
 }
 
-@media (min-width: 300px) and (max-width: 375px) {
+@media (min-width: 250px) and (max-width: 375px) {
   .second-child h2 {
     width: 100%;
-    font-size: 1.3rem;
     line-height: 1px;
     height: auto;
   }
@@ -498,14 +532,14 @@ a {
   }
 
   .services-title h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     line-height: 45px;
     letter-spacing: -1.46px;
     font-weight: 900px;
   }
 
   #services-container {
-    height: 3700px;
+    height: 3800px;
   }
   .button-contact-us .img_link {
     background-image: url("../components/linkedin2.svg");
@@ -513,8 +547,12 @@ a {
     height: 24px;
     background-repeat: no-repeat;
   }
+  .text-about-us{
+    text-align: justify;
+    width: 90%;
+  }
   .button-contact-us p {
-    font-size: 0.58rem;
+    font-size: 13px;
     margin: 0;
     text-align: center;
     align-self: center;
