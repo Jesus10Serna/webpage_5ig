@@ -221,10 +221,11 @@ const Contact_us = () => {
         <div className="contact-us-forms">
           {/* <form action="https://formsubmit.co/your@email.com" method="POST"> */}
           <form onSubmit={handleSubmitContact}>
+            <h2 className="form-title">{t("FORM_HEADER")}</h2>
+            <p className="form-title">{t("FORM_TITLE")}</p>
             <InputComponent
               className={`input-width`}
-              label={t('FORM_NAME')}
-              placeholdel={`Nombre`}
+              placeholdel={t('FORM_NAME_LABEL')}
               name={'name'}
               value={form.name}
               handleChange={handleChange}
@@ -232,14 +233,13 @@ const Contact_us = () => {
             {errors.name && <div className="alert alert-danger">{errors.name}</div>}
             <InputComponent
               className={`input-width`}
-              label={t('FORM_EMAIL')}
               placeholdel={`E-mail`}
               name={'email'}
               value={form.email}
               handleChange={handleChange}
             />
             {errors.email && <div className="alert alert-danger">{errors.email}</div>}
-            <p>{t('FORM_PHONE')}</p>
+            <p></p>
             <div className="phoneContactContainer">
               <div className="phoneContactDropdown" ref={elementoRef}>
                 <div className="phoneContactInputContainer">
@@ -261,7 +261,7 @@ const Contact_us = () => {
               </div>
               <InputComponent
                 className={`input-width`}
-                placeholdel={`Telefono`}
+                placeholdel={t('FORM_NAME_PHONE')}
                 name={'phone'}
                 handleChange={handleChange}
                 value={form.phone}
@@ -273,7 +273,7 @@ const Contact_us = () => {
             <TextAreaComponent
               className={`input-width textArea`}
               label={t('FORM_MESSAGE')}
-              placeholdel={`Mensaje`}
+              placeholdel={t('FORM_NAME_MESSAGE')}
               name={'message'}
               handleChange={handleChange}
               value={form.message}

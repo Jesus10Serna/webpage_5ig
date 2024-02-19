@@ -23,3 +23,8 @@
     width: auto;
     padding: 10px 60px;
 }
+
+.form-title{
+    text-align: center;
+    color: var(--color-secondary);
+}

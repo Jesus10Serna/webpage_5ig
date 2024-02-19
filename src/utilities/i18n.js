@@ -103,29 +103,31 @@ i18n
                     AUT_SEVEN_TEXT_SMALLER:'Customers are afraid of losing control or trust in automated processes, worried about errors or damage.',
                     AUT_EIGHT_TEXT_SMALLER:'Customers are afraid of being replaced by automated processes and losing their relevance in the labor market. ',
                     //CONTACT US PAGE
-                    CONTACT_US_TITLE: 'Carry your business into the new era of technology!',
+                    CONTACT_US_TITLE: 'Navigate your business into the Next Wave of Technological Innovation!',
                     //OTHER TITLES
                     MORE_SERVICES: 'More services',
 
                     //CONTACT FORM
+                    FORM_HEADER: 'CONTACT US',
+                    FORM_TITLE: 'Please use the form below to contact us. We will get back to you as quickly as possible. Thanks!',
                     FORM_CONTACT_US: 'CONTACT US',
                     FORM_FOLLOW: 'FOLLOW US ON',
-                    FORM_NAME: 'Who writes to us?',
+                    FORM_NAME: 'Contact',
                     FORM_EMAIL: 'Give us your email',
                     FORM_PHONE: 'Give us your phone number',
-                    FORM_MESSAGE: 'Leave us a message',
+                    FORM_MESSAGE: 'What would you like to contact us about?',
                     FORM_POLICY: 'By checking this box, you confirm that you have read and accept our data processing policy.',
                     FORM_POLICY_LINK: ' Click here to read the full policy.',
                     FORM_BUTTON: 'Send',
                     FORM_BUTTON_LOADING: 'Sending...',
-                    FORM_NAME_LABEL:'Name',
+                    FORM_NAME_LABEL:'Your name here',
                     FORM_NAME_PHONE:'Phone',
-                    FORM_NAME_MESSAGE:'Message',
+                    FORM_NAME_MESSAGE:'Type your message here',
 
                     //HEADER
-                    HEADER_CONTRACT: 'Contract with us',
+                    HEADER_CONTRACT: 'Contact Us',
                     HEADER_SERVICES: 'Services',
-                    HEADER_WHOWEARE: 'Who we are?',
+                    HEADER_WHOWEARE: 'Our Team',
 
                     //FOOTER
                     FOOTER_MESSAGE: 'Management approves the data processing policy on February 8, 2024. It is published on the respective platforms for public access.',
@@ -155,7 +157,7 @@ i18n
                     HOME_ABOUT_DESCRIPTION: 'Líderes innovadores en inteligencia artificial y automatización, nos especializamos en automatización inteligente, RPA e inteligencia empresarial.',
                     HOME_ABOUT_DESCRIPTION_2: 'Nuestra misión es simplificar los procesos organizativos para los clientes aprovechando tecnologías de vanguardia como la inteligencia artificial, el aprendizaje automático y el procesamiento del lenguaje natural.',
                     HOME_ABOUT_DESCRIPTION_3: 'Siempre de la mano con nuestros clientes y la tecnología.',
-                    HOME_LINKEDIN_BUTTON: 'Encuentranos en LinkedIn',
+                    HOME_LINKEDIN_BUTTON: 'Encuéntranos en LinkedIn',
 
                     //SERVICES PAGES (IA)
                     IA_SERVICE_FIRST_TITLE: 'Plataforma de Análisis Predictivo',
@@ -192,7 +194,7 @@ i18n
                     WEB_DEV_SERVICE_SECOND_TITLE: 'Desarrollo de Aplicaciones Móviles',
 
                     WEB_DEV_SERVICE_FIRST_DESCR: 'Creamos sitios web responsivos y atractivos que se adaptan a diferentes dispositivos y ofrecen una experiencia de usuario excepcional.',
-                    WEB_DEV_SERVICE_SECOND_DESCR: 'Diseñamo y desarrollamos aplicaciones móviles nativas y multiplataforma para satisfacer las necesidades específicas de nuestros clientes.',
+                    WEB_DEV_SERVICE_SECOND_DESCR: 'Diseñamos y desarrollamos aplicaciones móviles nativas y multiplataforma para satisfacer las necesidades específicas de nuestros clientes.',
 
                     //QUIENES SOMOS
                     QS_TITLE: '¿QUIÉNES SOMOS?',
@@ -245,18 +247,20 @@ i18n
                     CONTACT_US_TITLE: 'Lleva tu negocio a la nueva era de la tecnología!',
 
                     //CONTACT FORM
+                    FORM_HEADER: 'CONTÁCTANOS',
+                    FORM_TITLE: 'Por favor, utiliza el formulario a continuación para contactarnos. Nos pondremos en contacto contigo lo antes posible. ¡Gracias!',
                     FORM_CONTACT_US: 'CONTÁCTANOS',
-                    FORM_FOLLOW: 'SIGUENOS EN',
+                    FORM_FOLLOW: 'SÍGUENOS EN',
                     FORM_NAME: '¿Quién nos escribe?',
                     FORM_EMAIL: 'Regálanos tu correo',
-                    FORM_PHONE: 'Regálanos tu télefono',
+                    FORM_PHONE: 'Regálanos tu teléfono',
                     FORM_MESSAGE: 'Dejanos tu mensaje',
                     FORM_POLICY: 'Al marcar esta casilla, confirmas que has leído y aceptas nuestra política de tratamiento de datos.',
                     FORM_POLICY_LINK: 'Haz clic aquí para leer la política completa.',
                     FORM_BUTTON: 'Enviar',
                     FORM_BUTTON_LOADING: 'Enviando...',
                     FORM_NAME_LABEL:'Nombre',
-                    FORM_NAME_PHONE:'Telefono',
+                    FORM_NAME_PHONE:'Teléfono',
                     FORM_NAME_MESSAGE:'Mensaje',
 
                     //HEADER

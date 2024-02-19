@@ -104,7 +104,6 @@
 
 textarea.input-width {
     height: 150px;
-    max-width: 591px;
 }
 
 .input-width:focus-visible {
@@ -150,7 +149,7 @@ textarea.input-width {
 }
 
 .phoneContactContainer .input-width {
-    width: 90%;
+    width: 89%;
 }
 
 .phoneContactContainer .input-width:focus-visible {
@@ -412,7 +411,7 @@ textarea.input-width {
     }
     
     .phoneContactContainer{
-        width: 95%;
+        width: 98%;
     }
 
     .contact-us-forms form button {
@@ -434,4 +433,9 @@ textarea.input-width {
     .contact-us-total {
         gap: 6rem;
     }
+}
+
+.form-title{
+    text-align: center;
+    color: var(--color-secondary);
 }
