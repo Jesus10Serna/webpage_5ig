@@ -65,7 +65,7 @@ i18n
                     WEB_DEV_SERVICE_SECOND_DESCR: 'Our team develops custom mobile applications, including both native and cross-platform solutions, designed to meet the distinct needs and goals of our clients.',
 
                     //QUIENES SOMOS
-                    QS_TITLE: 'Our Team',
+                    QS_TITLE: 'OUR TEAM',
                     QS_VALUES: 'Values',
                     QS_VALUES_DESCR: 'At our core, we value trust, transparency, and ethical conduct. We\'re committed to developing solutions that not only respond swiftly to our clients\' needs but also incorporate cutting-edge technology and innovation to secure a competitive advantage.',
                     QS_MISION: 'Goal',
@@ -125,14 +125,14 @@ i18n
                     //HEADER
                     HEADER_CONTRACT: 'Contract with us',
                     HEADER_SERVICES: 'Services',
-                    HEADER_WHOWEARE: 'Who we are?',
+                    HEADER_WHOWEARE: 'Our Team',
 
                     //FOOTER
                     FOOTER_MESSAGE: 'Management approves the data processing policy on February 8, 2024. It is published on the respective platforms for public access.',
                     FOOTER_POLICIES: 'Policies',
                     FOOTER_TERMS: 'Terms of use',
                     FOOTER_DATA: 'Data treatment',
-                    FOOTER_WHOWEARE: 'Who we are?',
+                    FOOTER_WHOWEARE: 'Our Team',
                     FOOTER_CONTACT_US: 'Contact us'
 
                 },

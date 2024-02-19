@@ -30,6 +30,7 @@
   height: 85px;
   width: 1300px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
@@ -284,11 +285,11 @@
   }
 
   .about-title .line_1 {
-    width: 7%;
+    display: none;
   }
 
   .about-title .line_2 {
-    width: 7%;
+    display: none;
   }
 
   .about-title {
@@ -358,11 +359,11 @@
   }
 
   .about-title .line_1 {
-    width: 7%;
+    display: none;
   }
 
   .about-title .line_2 {
-    width: 7%;
+    display: none;
   }
 
   .about-title {
@@ -389,7 +390,7 @@
     line-height: 45px;
     top: 80px;
     width: 56%;
-    left: 70px;
+    left: 50px;
   }
 
   /* .image {
@@ -405,10 +406,10 @@
   .about-text-mision,
   .about-text-vision {
     top: 50px;
-    left: 70px;
+    left: 50px;
     width: 73%;
     font-size: 19px;
-    line-height: 30px;
+    line-height: 25px;
     text-align: justify;
   }
 
