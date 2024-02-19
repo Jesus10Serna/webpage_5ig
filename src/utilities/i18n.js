@@ -22,8 +22,8 @@ i18n
                     HOME_SERVICE_BI_TITLE: 'BUSINESS INTELLIGENCE (BI)',
                     HOME_SERVICE_WEB_DEV_TITLE: 'WEB DEVELOPMENT AND APP DEVELOPMENT',
                     HOME_ABOUT_US: 'ABOUT US',
-                    HOME_ABOUT_DESCRIPTION: 'We are 5IG, innovative artificial intelligence and automation leaders, with extensive experience handling Microsoft\'s Power Platform. We specialize in intelligent automation, RPA, and artificial intelligence.',
-                    HOME_ABOUT_DESCRIPTION_2: 'Our mission is to simplify organizational processes for clients by leveraging cutting-edge technologies such as artificial intelligence, machine learning, and natural language processing.',
+                    HOME_ABOUT_DESCRIPTION: 'At 5ig, innovation meets intelligence in the dynamic world of artificial intelligence (AI) and automation. As leaders in this exciting field, our passion and expertise shine brightest in our work with Microsoft’s Power Platform, redefining new standards in intelligent automation and Robotic Process Automation (RPA).',
+                    HOME_ABOUT_DESCRIPTION_2: 'Our mission is to transform the way organizations operate. We harness the power of AI, machine learning, and natural language processing to turn complex challenges into opportunities for efficiency and growth. Our goal is to take your operations from good to great, making every process smoother, faster, and more efficient.',
                     HOME_ABOUT_DESCRIPTION_3: 'Always hand in hand with our clients and technology.',
                     HOME_LINKEDIN_BUTTON: 'Find us on LinkedIn',
 
@@ -32,46 +32,46 @@ i18n
                     IA_SERVICE_SECOND_TITLE: 'Intelligent Virtual Assistant',
                     IA_SERVICE_THIRD_TITLE: 'Recommendation Systems',
 
-                    IA_SERVICE_FIRST_DESCR: 'We offer a predictive analysis platform powered by AI and ML that helps companies make more informed decisions by identifying trends and patterns in their data.',
-                    IA_SERVICE_SECOND_DESCR: 'We develop custom virtual assistants that use AI to enhance customer service, automate responses, and provide support 24 hours daily.',
-                    IA_SERVICE_THIRD_DESCR: 'We create Machine Learning-based recommendation systems that help companies increase customer retention and sales by offering personalized recommendations.',
+                    IA_SERVICE_FIRST_DESCR: 'Our platform utilizes the latest in AI and ML technology to offer predictive insights, allowing organizations to navigate future trends and data patterns for smarter decision-making. ',
+                    IA_SERVICE_SECOND_DESCR: 'Our custom-designed virtual assistants, powered by AI, redefine customer service with automated responses and continuous, 24/7 support, enhancing user engagement and satisfaction.',
+                    IA_SERVICE_THIRD_DESCR: 'By implementing Machine Learning, our team develops personalized recommendation systems that assist businesses in boosting customer retention and amplifying sales, ensuring a tailored user experience. ',
 
                     //SERVICES PAGES(RPA)
                     RPA_SERVICE_FIRST_TITLE: 'Business Process Automation',
                     RPA_SERVICE_SECOND_TITLE: 'RPA Implementation Consultancy',
 
-                    RPA_SERVICE_FIRST_DESCR: 'We implement RPA solutions to automate repetitive and manual tasks, which increases efficiency and reduces human errors.',
-                    RPA_SERVICE_SECOND_DESCR: 'We provide consultancy and RPA implementation services to help companies identify automation opportunities and design automated workflows.',
+                    RPA_SERVICE_FIRST_DESCR: 'Our expertise in RPA allows us to transform manual and repetitive tasks with automation solutions, significantly enhancing efficiency and minimizing human error.',
+                    RPA_SERVICE_SECOND_DESCR: 'Offering both consultancy and implementation services, our team guides companies through identifying automation potentials and crafting streamlined automated workflows.',
 
                     //SERVICES PAGES (CLOUD)
                     CLOUD_SERVICE_FIRST_TITLE: 'Cloud Migration',
                     CLOUD_SERVICE_SECOND_TITLE: 'Cloud Management',
 
-                    CLOUD_SERVICE_FIRST_DESCR: 'We help companies migrate their systems and data to the cloud, offering scalable and secure infrastructure options.',
-                    CLOUD_SERVICE_SECOND_DESCR: 'We provide cloud management, monitoring, and optimization services to ensure optimal performance and robust security in cloud environments.',
+                    CLOUD_SERVICE_FIRST_DESCR: 'Our team specializes in assisting organizations with the transition of their systems and data to the cloud, ensuring scalable, secure infrastructure solutions tailored to meet specific needs.',
+                    CLOUD_SERVICE_SECOND_DESCR: 'Our services extend to comprehensive cloud management, including monitoring and optimization, to ensure peak performance and robust security within cloud infrastructures.',
 
                     //SERVICES PAGES (BI)
                     BI_SERVICE_FIRST_TITLE: 'Personalized Dashboards',
                     BI_SERVICE_SECOND_TITLE: 'Advanced Data Analysis',
 
-                    BI_SERVICE_FIRST_DESCR: 'We design custom dashboards and control panels that provide real-time information and data analysis for strategic decision-making.',
-                    BI_SERVICE_SECOND_DESCR: 'We use BI tools to perform advanced analyses, such as trend analysis, customer segmentation, and anomaly detection.',
+                    BI_SERVICE_FIRST_DESCR: 'Our expertise lies in crafting tailored dashboards and control panels, offering instant access to real-time information and insightful data analysis to empower strategic decision-making.',
+                    BI_SERVICE_SECOND_DESCR: 'Leveraging Business Intelligence (BI) tools, our team conducts sophisticated data analyses, including trend analysis, customer segmentation, and anomaly detection, to uncover actionable insights.',
 
                     //SERVICES PAGES(WEB_DEV)
                     WEB_DEV_SERVICE_FIRST_TITLE: 'Responsive Website Development',
                     WEB_DEV_SERVICE_SECOND_TITLE: 'Mobile App Development',
 
-                    WEB_DEV_SERVICE_FIRST_DESCR: 'We create responsive and appealing websites that adapt to different devices and provide an exceptional user experience.',
-                    WEB_DEV_SERVICE_SECOND_DESCR: 'We design and develop native and cross-platform mobile applications to meet the specific needs of our clients.',
+                    WEB_DEV_SERVICE_FIRST_DESCR: 'Our team specializes in developing responsive websites that deliver a seamless and engaging user experience across all devices, ensuring accessibility and appeal.',
+                    WEB_DEV_SERVICE_SECOND_DESCR: 'Our team develops custom mobile applications, including both native and cross-platform solutions, designed to meet the distinct needs and goals of our clients.',
 
                     //QUIENES SOMOS
-                    QS_TITLE: 'Who we are? ',
-                    QS_VALUES: 'Our Values',
-                    QS_VALUES_DESCR: 'Through trust, honesty, and ethical practices, we create quick and valuable solutions that offer a competitive advantage by leveraging technology and human innovation.',
+                    QS_TITLE: 'Our Team',
+                    QS_VALUES: 'Values',
+                    QS_VALUES_DESCR: 'At our core, we value trust, transparency, and ethical conduct. We\'re committed to developing solutions that not only respond swiftly to our clients\' needs but also incorporate cutting-edge technology and innovation to secure a competitive advantage.',
                     QS_MISION: 'Goal',
-                    QS_MISION_DESCR: 'Become the leading trusted partner to enable artificial intelligence, automation, and innovation through a wide range of cost-effective solutions.',
+                    QS_MISION_DESCR: 'Our mission is to establish ourselves as the foremost trusted advisor in the realms of artificial intelligence, automation, and innovation. We aim to achieve this through offering a suite of solutions that are both effective and accessible, ensuring our clients receive unparalleled value.',
                     QS_VISION: 'Vision',
-                    QS_VISION_DESCR: 'Transforming society and corporations with technology and innovation at an extraordinary speed.',
+                    QS_VISION_DESCR: 'We envision a future where technology and innovation drive transformative change in both society and the corporate world. Our goal is to lead this change by delivering rapid advancements and tangible impacts, setting new standards of excellence and progress.',
 
                     //AUTOMATE PAGE
                     AUT_TITLE: 'Automate your company. ',
@@ -84,18 +84,18 @@ i18n
                     AUT_IMG_TITLE_3: 'Machine Learning',
                     AUT_IMG_TITLE_4: 'Innovative Technological Platforms',
 
-                    AUT_FIRST_TITLE: 'Our clients usually want.',
-                    AUT_SECOND_TITLE: 'Our client dreams of',
-                    AUT_THIRD_TITLE: 'Our clients fear of',
+                    AUT_FIRST_TITLE: 'Our Clients Aim',
+                    AUT_SECOND_TITLE: 'Our Clients Vision',
+                    AUT_THIRD_TITLE: 'Our Clients Concerns',
 
-                    AUT_FIRST_TEXT: 'Automated processes are those that are carried out through the use of technologies such as:',
-                    AUT_SECOND_TEXT: 'These processes allow organizations to improve their performance, efficiency, and adaptability, as well as create exceptional and memorable customer experiences. ',
-                    AUT_THIRD_TEXT: 'To acquire the skills and knowledge necessary to take advantage of the opportunities offered by automation technologies, and to create solutions that meet their specific needs and objectives. To do this, it can be helpful to offer them training, advice, and resources that help them understand how automated processes work, what factors influence their results, and how to optimize their performance and value. ',
-                    AUT_FOUR_TEXT: 'Support when facing technical, organizational, or regulatory barriers to implement automated processes in their processes and systems. To do this, it can be useful to provide them with a strategic vision, a governance framework, and a technological platform that allows them to integrate automated processes with their existing systems and comply with standards and regulations. ',
-                    AUT_FIFTH_TEXT: 'To be a leader in their industry or field thanks to innovation and digital transformation driven by automated processes. To achieve this, it can be helpful to inspire them with examples of successful cases, show them the benefits and potential of automated processes, and encourage them to experiment and innovate with automation technologies. ',
-                    AUT_SIX_TEXT: 'Achieve harmony and synergy between automated processes and humans and create a culture of collaboration and empowerment. To do this, it can be helpful to involve them in the design, implementation, and maintenance of automated processes, explain the purpose and value of automated processes, and recognize and reward their contributions and achievements. ',
-                    AUT_SEVEN_TEXT: 'Fear losing control or confidence in automated processes, and that these may cause errors, damage, or harm. Your audience may have doubts or concerns about the reliability, security, and accountability of automated processes, and fear that these may fail, deviate, or turn against them. To address this, it can be helpful to ensure the quality, transparency, and traceability of automated processes, establish control mechanisms, supervision, and audit of automated processes, and define standards and protocols for action in case of incidents or emergencies. ',
-                    AUT_EIGHT_TEXT: 'Being replaced or displaced by automated processes and losing their relevance or competitiveness in the market. Your audience may feel threatened or undervalued by automated processes and fear that these may take away their jobs, roles, or positions. To address this, it can be helpful to assure them that automated processes are not intended to replace them but to complement their work, identify and develop their strengths and distinctive capabilities, and offer them opportunities for growth and professional development. ',
+                    AUT_FIRST_TEXT: 'Automated processes, powered by Artificial Intelligence, Microsoft Power Platform, Machine Learning, and innovative technology platforms, empower organizations to enhance their performance, efficiency, and flexibility.',
+                    AUT_SECOND_TEXT: 'By integrating these cutting-edge solutions, businesses can craft exceptional and unforgettable customer experiences, setting new standards in service delivery and operational excellence.',
+                    AUT_THIRD_TEXT: 'Our clients want to make their work better using automation technology. They\'re looking to improve and speed up their processes with solutions that fit exactly what they need. We help them do this by offering training, advice, and resources to make automated processes easier to use and more effective.',
+                    AUT_FOUR_TEXT: 'They also need our help to fit these new technologies into their existing systems without running into problems with tech, organization, or rules. We provide smart plans, help with setting up, and technology platforms that make it easy to start using automation, ensuring everything works smoothly and meets the required standards. ',
+                    AUT_FIFTH_TEXT: 'Our clients dream of becoming industry leaders through innovation and digital transformation enabled by automation. To support this vision, we aim to inspire them with success stories, highlight the advantages and possibilities of automation, and motivate them to embrace and innovate with these technologies.',
+                    AUT_SIX_TEXT: 'They also strive for a seamless blend of automation and human effort, fostering a culture of teamwork and empowerment. Involving them in the creation, deployment, and upkeep of automated systems, clarifying the importance and benefits of these processes, and appreciating their efforts and accomplishments can be key strategies in achieving this harmony. ',
+                    AUT_SEVEN_TEXT: 'Our clients worry about keeping control when using automated processes. They\'re concerned about mistakes or problems automation might cause. Our goal is to make sure these processes are safe, clear, and easy to track. We set up checks and oversight to keep everything running smoothly and have clear plans for handling any unexpected situations.',
+                    AUT_EIGHT_TEXT: 'Another common worry is about automation taking over jobs and making people less important or competitive. We want to reassure everyone that our automation is here to support and enhance human work, not replace it. We focus on bringing out the best in everyone\'s abilities and providing chances for learning and growing in your career, making sure automation works for you, not against you.',
                     AUT_THIRD_TEXT_SMALLER:'Customers want to acquire skills and knowledge in automation to create solutions tailored to their needs.',
                     AUT_FOUR_TEXT_SMALLER:'Customers need support in overcoming technical, organizational or regulatory barriers when implementing automated processes.',
                     AUT_FIFTH_TEXT_SMALLER:'Customers dream of leading in their industries through automation-driven innovation.',
