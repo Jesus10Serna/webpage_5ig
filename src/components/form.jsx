@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../components/form.css';
+import { useTranslation } from 'react-i18next';
 
 const Form = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +20,7 @@ const Form = () => {
     <div>
       <div className="contact-us-forms">
         <form target="_blank" action="https://formsubmit.co/eduardortegon2398@gmail.com" method="POST">
-          <p>¿Quién nos escribe?</p>
+          <p>{t('FORM_NAME')}</p>
           <input
             className="input-width"
             placeholder="Nombre"
@@ -28,7 +30,7 @@ const Form = () => {
             onChange={handleChange}
             required
           />
-          <p>Regálanos tu correo</p>
+          <p>{t('FORM_EMAIL')}</p>
           <input
             className="input-width"
             placeholder="E-mail"
@@ -38,7 +40,7 @@ const Form = () => {
             value={formData.email}
             onChange={handleChange}
           />
-          <p>Regálanos tu Teléfono</p>
+          <p>{t('FORM_PHONE')}</p>
           <div className="phone_container">
             <input
               className="input-width-domain"
@@ -60,7 +62,7 @@ const Form = () => {
               onChange={handleChange}
             />
           </div>
-          <p>Déjanos tu mensaje</p>
+          <p>{t('FORM_MESSAGE')}</p>
           <textarea
             className="input-width message"
             placeholder="Mensaje"

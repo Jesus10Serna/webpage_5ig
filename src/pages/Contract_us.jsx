@@ -189,9 +189,10 @@ const Contract_us = () => {
         </div>
         <div className="contact-us-forms contract">
           <form onSubmit={handleSubmitContact}>
+            <h2 className="form-title">{t("FORM_HEADER")}</h2>
+            <p className="form-title">{t("FORM_TITLE")}</p>
             <InputComponent
               className={`input-width`}
-              label={`¿Quien nos escribe?`}
               placeholdel={t('FORM_NAME_LABEL')}
               name={'name'}
               value={form.name}
@@ -200,14 +201,13 @@ const Contract_us = () => {
             {errors.name && <div className="alert alert-danger p-2 mt-2">{errors.name}</div>}
             <InputComponent
               className={`input-width`}
-              label={`Regálanos tu correo`}
               placeholdel={`E-mail`}
               name={'email'}
               value={form.email}
               handleChange={handleChange}
             />
             {errors.email && <div className="alert alert-danger p-2 mt-2">{errors.email}</div>}
-            <p>Regálanos tu télefono</p>
+            <p></p>
             <div className="phoneContactContainer">
               <div className="phoneContactDropdown">
                 <div className="phoneContactInputContainer">
@@ -240,14 +240,14 @@ const Contract_us = () => {
 
             <TextAreaComponent
               className={`input-width textArea`}
-              label={`Déjanos tu mensaje`}
+              label={t('FORM_MESSAGE')}
               placeholdel={t('FORM_NAME_MESSAGE')}
               name={'message'}
               handleChange={handleChange}
               value={form.message}
             />
             {errors.message && <div className="alert alert-danger p-2 mt-2">{errors.message}</div>}
-            <button className="sendFormConatct" disabled={loading}>{loading ? "Enviando..." : "Enviar"}</button>
+            <button className="sendFormConatct" disabled={loading}>{loading ? t('FORM_BUTTON_LOADING') : t('FORM_BUTTON')}</button>
             {/* <input type="hidden" name="_next" value="/"/>
             <input type="hidden" name="_captcha" valu`e="false"/> */}
           </form>
