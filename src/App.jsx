@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+
 
 
 import './utilities/i18n'; // Importa la configuración de i18next
