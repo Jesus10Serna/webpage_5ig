@@ -92,7 +92,7 @@
 }
 
 .contact-us-forms form {
-    width: fit-content;
+    width: 700px;
 }
 
 .input-width {
@@ -112,7 +112,6 @@ textarea.input-width {
 
 .contact-us-forms form p {
     color: var(--color-secondary);
-    width: fit-content;
     font-weight: 600;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -148,9 +147,7 @@ textarea.input-width {
     width: 100%;
 }
 
-.phoneContactContainer .input-width {
-    width: 89%;
-}
+
 
 .phoneContactContainer .input-width:focus-visible {
     border: 2px solid #0075BF !important;
@@ -214,8 +211,10 @@ textarea.input-width {
     border-bottom: 1px solid #001D3D;
 }
 
+/* 
+Esta es la clase que esta fallando con respecto al form */
 .phoneContactContainer .inputComponentContainer {
-    width: 100%;
+    width: 70%;
     display: flex;
 }
 
@@ -228,7 +227,7 @@ textarea.input-width {
 }
 
 .inputComponentContainer {
-    width: fit-content;
+    width: 70%;
 }
 
 .phoneContactOptions .optionsContainer {
@@ -344,7 +343,8 @@ textarea.input-width {
     }
 }
 
-@media (min-width: 200px) and (max-width: 900px) {
+
+@media (min-width: 200px) and (max-width: 1137px) {
     .contact-us-forms {
         min-width: 0;
     }
@@ -358,6 +358,7 @@ textarea.input-width {
         width: 87%;
     }
 
+
     .contact-us-forms form button {
         width: 100%;
     }
@@ -370,9 +371,18 @@ textarea.input-width {
         width: 87%;
     }
 
+    .phoneContactContainer .inputComponentContainer {
+        width: 100%;
+    }
     .inputComponentContainer {
         width: 100%;
     }
+
+    .phoneContactContainer .inputComponentContainer {
+        width: 88%;
+        display: flex;
+    }
+    
 
     .phoneContactContainer .phoneContactDropdown input {
         width: 2rem;
@@ -422,6 +432,11 @@ textarea.input-width {
         width: 100%;
     }
 
+    .phoneContactContainer .inputComponentContainer {
+        width: 83%;
+        display: flex;
+    }
+
     textarea.input-width {
         width: 87%;
     }
@@ -439,3 +454,12 @@ textarea.input-width {
     text-align: center;
     color: var(--color-secondary);
 }
+
+
+
+@media (min-width: 200px) and (max-width: 792px) {
+    .contact-us-forms form{
+        width: 80%;
+    }
+}
+
