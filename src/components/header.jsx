@@ -23,7 +23,6 @@ const Header = (props) => {
   useEffect(() => {
     // Función para manejar los clics en toda la página
     const handleClickOutside = (event) => {
-      console.log(event.target);
       if (elementoRef.current && !elementoRef.current.contains(event.target) &&
       !event.target.classList.contains('menuHeaderPhone')) {
         // Si el clic ocurre fuera del elemento deseado, cambiar el estado

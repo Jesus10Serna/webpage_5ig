@@ -42,7 +42,6 @@ const Services_content = () => {
   const [service, setService] = useState("");
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(params.service, ".");
     setService(params.service);
   }, [params.service]);
 

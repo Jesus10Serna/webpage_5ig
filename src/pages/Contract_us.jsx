@@ -160,12 +160,10 @@ const Contract_us = () => {
       })
         .then(response => response.json())
         .then(data => {
-          console.log(data)
           data.success === "true" && setForm(initialData)
           setLoading(false)
         })
         .catch(error => {
-          console.log(error)
           setLoading(false)
         });
     }

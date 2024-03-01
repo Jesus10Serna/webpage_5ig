@@ -118,7 +118,7 @@ const Contact_us = () => {
     } else {
       setForm({ ...form, [name]: value })
     }
-    console.log(form);
+    // console.log(form);
   }
 
   const handleSelectOption = (option) => {

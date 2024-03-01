@@ -10,9 +10,7 @@ const handleRedirect2 = (sectionClass) => {
     window.addEventListener('load', () => {
       const section1 = document.getElementsByClassName(sectionClass);
       const firstElement1 = section1 instanceof HTMLCollection ? section1[0] : section1;
-      console.log('aa')
       if (section1.length > 0) {
-        console.log('aa')
         firstElement1.scrollIntoView({ behavior: 'smooth' });
         
       } else {
